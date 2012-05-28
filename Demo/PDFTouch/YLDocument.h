@@ -11,6 +11,7 @@
 @class YLPageInfo;
 @class YLOutlineParser;
 @class YLDocumentScanner;
+@class YLAnnotationParser;
 
 @interface YLDocument : NSObject {
     NSString *_uuid;
@@ -30,6 +31,7 @@
 @property (nonatomic, readonly) NSUInteger pageCount;
 @property (nonatomic, readonly) YLOutlineParser *outlineParser;
 @property (nonatomic, readonly) YLDocumentScanner *scanner;
+@property (nonatomic, readonly) YLAnnotationParser *annotationParser;
 
 
 + (YLDocument *)YLDocumentWithURL:(NSURL *)url;

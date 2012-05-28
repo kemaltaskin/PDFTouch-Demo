@@ -22,6 +22,8 @@
 
 - (id)initWithDocument:(YLDocument *)document page:(NSUInteger)page;
 
+- (void)updateForSearchResults;
+
 - (void)enableTiling;
 - (void)disableTiling;
 
