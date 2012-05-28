@@ -17,5 +17,6 @@ PDFTouch SDK offers you a solid framework that's easy to use and customize to yo
 - Double tap to zoom in and out.
 - Text search and highlighting.
 - Outline view (TOC).
+- Annotation support: page and web links, video and web pages.
 - Retina Display ready.
 - Optimized for both the iPhone and iPad.
