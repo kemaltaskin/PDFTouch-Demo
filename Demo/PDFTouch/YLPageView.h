@@ -9,16 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "YLCache.h"
 
-@class YLTiledView;
 @class YLDocument;
+@class YLPDFViewController;
 
-@interface YLPageView : UIView<YLCacheDelegate> {
-    YLDocument *_document;
-    NSUInteger _page;
-    
-    UIImageView *_imageView;
-    YLTiledView *_tiledView;
-}
+@interface YLPageView : UIView<YLCacheDelegate>
+
+@property (nonatomic, assign) YLPDFViewController *pdfViewController;
 
 - (id)initWithDocument:(YLDocument *)document page:(NSUInteger)page;
 
@@ -26,5 +22,8 @@
 
 - (void)enableTiling;
 - (void)disableTiling;
+
+- (void)showAnnotations;
+- (void)hideAnnotations;
 
 @end

@@ -10,13 +10,7 @@
 
 @class Selection;
 
-@interface YLSearchResult : NSObject {
-    NSUInteger _page;
-    NSString *_shortText;
-    NSRange _boldRange;
-    
-    Selection *_selection;
-}
+@interface YLSearchResult : NSObject 
 
 @property (nonatomic, readonly) NSUInteger page;
 @property (nonatomic, readonly) NSString *shortText;

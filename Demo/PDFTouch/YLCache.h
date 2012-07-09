@@ -20,9 +20,7 @@ typedef enum {
 - (void)didCacheDocument:(YLDocument *)document page:(NSUInteger)page size:(YLPDFImageSize)size image:(UIImage *)image;
 @end
 
-@interface YLCache : NSObject<NSCacheDelegate> {
-    NSCache *_thumbCache;
-}
+@interface YLCache : NSObject<NSCacheDelegate>
 
 + (YLCache *)sharedCache;
 

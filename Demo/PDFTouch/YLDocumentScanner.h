@@ -11,14 +11,7 @@
 
 @class YLDocument;
 
-@interface YLDocumentScanner : NSObject {
-    YLDocument *_document;
-    
-    NSString *_lastSearchText;
-    NSArray *_searchResults;
-    
-    NSObject<YLSearchDelegate> *_delegate;
-}
+@interface YLDocumentScanner : NSObject
 
 @property (nonatomic, readonly) NSString *lastSearchText;
 @property (nonatomic, retain) NSArray *searchResults;

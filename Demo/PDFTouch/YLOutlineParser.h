@@ -10,9 +10,7 @@
 
 @class YLDocument;
 
-@interface YLOutlineParser : NSObject {
-    YLDocument *_document;
-}
+@interface YLOutlineParser : NSObject
 
 - (id)initWithDocument:(YLDocument *)document;
 

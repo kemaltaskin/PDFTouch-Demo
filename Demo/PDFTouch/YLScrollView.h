@@ -7,29 +7,25 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "YLPDFViewController.h"
 
 @class YLPageView;
 @class YLTiledView;
 @class YLDocument;
-@class YLPDFViewController;
 
-@interface YLScrollView : UIScrollView<UIScrollViewDelegate> {
-    YLDocument *_document;
-    NSUInteger _page;
-    
-    UIView *_containerView;
-    YLPageView *_leftPageView;
-    YLPageView *_rightPageView;
-}
+@interface YLScrollView : UIScrollView<UIScrollViewDelegate>
 
 @property (nonatomic, readonly) NSUInteger page;
-@property (nonatomic, retain, readonly) YLPageView *leftPageView;
-@property (nonatomic, retain, readonly) YLPageView *rightPageView;
+@property (nonatomic, assign) YLDocumentMode documentMode;
+@property (nonatomic, assign) YLDocumentLead documentLead;
+@property (nonatomic, readonly) YLPageView *leftPageView;
+@property (nonatomic, readonly) YLPageView *rightPageView;
 @property (nonatomic, assign) YLPDFViewController *pdfViewController;
 
 - (id)initWithFrame:(CGRect)frame;
 
 - (void)displayDocument:(YLDocument *)document withPage:(NSUInteger)page;
+- (void)invalidate;
 
 - (void)updateForSearchResults;
 

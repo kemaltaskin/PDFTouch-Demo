@@ -13,17 +13,9 @@
 @class YLPDFViewController;
 @protocol YLPagesToolbarDelegate;
 
-@interface YLPagesToolbar : UIView<YLCacheDelegate> {
-    YLDocument *_document;
-    YLPDFViewController *_parentViewController;
-    
-    UIToolbar *_toolbar;
-    
-    NSObject<YLPagesToolbarDelegate> *_delegate;
-}
+@interface YLPagesToolbar : UIView<YLCacheDelegate> 
 
 @property (nonatomic, assign) NSObject<YLPagesToolbarDelegate> *delegate;
-
 @property (nonatomic, assign) YLPDFViewController *parentViewController;
 @property (nonatomic, readonly) UIToolbar *toolbar;
 

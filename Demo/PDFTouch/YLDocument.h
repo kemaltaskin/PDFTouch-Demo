@@ -13,30 +13,22 @@
 @class YLDocumentScanner;
 @class YLAnnotationParser;
 
-@interface YLDocument : NSObject {
-    NSString *_uuid;
-    NSString *_title;
-    NSString *_password;
-    
-    NSURL *_fileURL;
-    
-    CGPDFDocumentRef _documentRef;
-    NSUInteger _pageCount;
-}
+@interface YLDocument : NSObject
 
 @property (nonatomic, readonly) NSString *uuid;
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, copy) NSString *password;
 @property (nonatomic, assign, readonly, getter=isLocked) BOOL locked;
+@property (nonatomic, readonly, getter=isValidPDF) BOOL validPDF;
 @property (nonatomic, readonly) NSUInteger pageCount;
 @property (nonatomic, readonly) YLOutlineParser *outlineParser;
 @property (nonatomic, readonly) YLDocumentScanner *scanner;
 @property (nonatomic, readonly) YLAnnotationParser *annotationParser;
 
 
-+ (YLDocument *)YLDocumentWithURL:(NSURL *)url;
++ (YLDocument *)YLDocumentWithFilePath:(NSString *)path;
 
-- (id)initWithURL:(NSURL *)url;
+- (id)initWithFilePath:(NSString *)path;
 
 - (BOOL)unlockWithPassword:(NSString *)password;
 - (YLPageInfo *)pageInfoForPage:(NSUInteger)page;

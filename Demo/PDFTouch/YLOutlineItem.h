@@ -8,11 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface YLOutlineItem : NSObject {
-    NSString *_title;
-    NSUInteger _indentation;
-    NSUInteger _page;
-}
+@interface YLOutlineItem : NSObject
 
 @property (nonatomic, retain) NSString *title;
 @property (nonatomic, assign) NSUInteger indentation;

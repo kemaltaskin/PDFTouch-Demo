@@ -10,10 +10,7 @@
 
 @class YLPDFViewController;
 
-@interface YLOutlineViewController : UITableViewController {
-    YLPDFViewController *_pdfViewController;
-    UIPopoverController *_poController;
-}
+@interface YLOutlineViewController : UITableViewController 
 
 @property (nonatomic, assign) UIPopoverController *popoverController;
 

@@ -55,9 +55,12 @@
 #pragma mark -
 #pragma mark Private Methods
 - (void)viewTapped {
-    NSURL *url = [[NSBundle mainBundle] URLForResource:@"pdftouch" withExtension:@"pdf"];
-    YLDocument *document = [[[YLDocument alloc] initWithURL:url] autorelease];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"Developers" ofType:@"pdf"];
+    YLDocument *document = [[[YLDocument alloc] initWithFilePath:path] autorelease];
     YLPDFViewController *v = [[YLPDFViewController alloc] initWithDocument:document];
+    [v setDocumentMode:YLDocumentModeDouble];
+    [v setPageCurlEnabled:YES];
+    [v setDocumentLead:YLDocumentLeadRight];
     [v setModalPresentationStyle:UIModalPresentationFullScreen];
     [v setModalTransitionStyle:UIModalTransitionStyleCoverVertical];
     [self.navigationController presentModalViewController:v animated:YES];

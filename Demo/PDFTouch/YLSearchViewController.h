@@ -11,10 +11,7 @@
 
 @class YLPDFViewController;
 
-@interface YLSearchViewController : UITableViewController<UISearchBarDelegate,UITextFieldDelegate,YLSearchDelegate> {
-    YLPDFViewController *_pdfViewController;
-    UIPopoverController *_poController;
-}
+@interface YLSearchViewController : UITableViewController<UISearchBarDelegate,UITextFieldDelegate,YLSearchDelegate>
 
 @property (nonatomic, assign) UIPopoverController *popoverController;
 

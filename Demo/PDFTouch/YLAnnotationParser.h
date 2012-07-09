@@ -12,9 +12,7 @@
 @class YLDocument;
 @class YLAnnotation;
 
-@interface YLAnnotationParser : NSObject {
-    YLDocument *_document;
-}
+@interface YLAnnotationParser : NSObject
 
 - (id)initWithDocument:(YLDocument *)document;
 

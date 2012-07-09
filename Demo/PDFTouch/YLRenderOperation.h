@@ -9,9 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "YLOperation.h"
 
-@interface YLRenderOperation : YLOperation {
-    BOOL _shouldCache;
-}
+@interface YLRenderOperation : YLOperation
 
 @property (nonatomic, assign) BOOL shouldCache;
     

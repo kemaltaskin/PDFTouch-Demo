@@ -8,12 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface YLPageInfo : NSObject {
-    CGRect _origRect;
-    CGRect _rotatedRect;
-    int _rotation;
-    NSUInteger _page;
-}
+@interface YLPageInfo : NSObject
 
 @property (nonatomic, readonly) CGRect origRect;
 @property (nonatomic, readonly) CGRect rotatedRect;

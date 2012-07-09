@@ -8,18 +8,32 @@
 
 #import <UIKit/UIKit.h>
 
+typedef enum {
+    YLViewModeDocument = 0,
+    YLViewModeThumbnails
+} YLViewMode;
+
+typedef enum {
+    YLDocumentModeSingle = 0,
+    YLDocumentModeDouble
+} YLDocumentMode;
+
+typedef enum {
+    YLDocumentLeadLeft = 0,
+    YLDocumentLeadRight
+} YLDocumentLead;
+
 @class YLDocument;
 @protocol YLPDFViewControllerDelegate;
 
-@interface YLPDFViewController : UIViewController {
-    YLDocument *_document;
-    NSUInteger _currentPage;
-    
-    NSObject<YLPDFViewControllerDelegate> *_delegate;
-}
+@interface YLPDFViewController : UIViewController 
 
 @property (nonatomic, retain) YLDocument *document;
 @property (nonatomic, readonly) NSUInteger currentPage;
+@property (nonatomic, assign) YLViewMode viewMode;
+@property (nonatomic, assign) YLDocumentMode documentMode;
+@property (nonatomic, assign) YLDocumentLead documentLead;
+@property (nonatomic, assign) BOOL pageCurlEnabled;
 @property (nonatomic, assign) NSObject<YLPDFViewControllerDelegate> *delegate;
 
 - (id)initWithDocument:(YLDocument *)document;

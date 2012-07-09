@@ -11,12 +11,7 @@
 @class YLDocument;
 @protocol YLSearchDelegate;
 
-@interface YLSearchOperation : NSOperation {
-    YLDocument *_document;
-    NSString *_keyword;
-    
-    NSObject<YLSearchDelegate> *_delegate;
-}
+@interface YLSearchOperation : NSOperation
 
 @property (nonatomic, readonly) NSString *keyword;
 @property (nonatomic, readonly) NSArray *searchResults;
