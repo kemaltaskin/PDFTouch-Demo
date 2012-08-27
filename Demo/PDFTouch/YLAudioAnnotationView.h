@@ -8,7 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "YLAnnotationView.h"
+#import <MediaPlayer/MediaPlayer.h>
 
 @interface YLAudioAnnotationView : UIView<YLAnnotationView>
+
+@property (nonatomic, readonly) MPMoviePlayerController *audioPlayer;
+@property (nonatomic, assign) BOOL autostart;
 
 @end

@@ -61,6 +61,7 @@
     [v setDocumentMode:YLDocumentModeDouble];
     [v setPageCurlEnabled:YES];
     [v setDocumentLead:YLDocumentLeadRight];
+    [v setAutoLayoutEnabled:YES];
     [v setModalPresentationStyle:UIModalPresentationFullScreen];
     [v setModalTransitionStyle:UIModalTransitionStyleCoverVertical];
     [self.navigationController presentModalViewController:v animated:YES];

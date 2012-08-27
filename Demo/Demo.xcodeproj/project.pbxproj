@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A37C9B615AB045300942D30 /* PDFTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A37C98F15AB045300942D30 /* PDFTouch.a */; };
+		0A73071815EB7B8F008B0A98 /* PDFTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A7306F015EB7B8F008B0A98 /* PDFTouch.a */; };
+		0A73071A15EB7BC2008B0A98 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A73071915EB7BC2008B0A98 /* CoreLocation.framework */; };
+		0A73071C15EB7BC8008B0A98 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A73071B15EB7BC8008B0A98 /* MapKit.framework */; };
 		0A77A6E115610004003F0DD6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A77A6E015610004003F0DD6 /* UIKit.framework */; };
 		0A77A6E315610004003F0DD6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A77A6E215610004003F0DD6 /* Foundation.framework */; };
 		0A77A6E515610004003F0DD6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A77A6E415610004003F0DD6 /* CoreGraphics.framework */; };
@@ -42,46 +44,49 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0A37C98E15AB045300942D30 /* GCDMulticastDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDMulticastDelegate.h; sourceTree = "<group>"; };
-		0A37C98F15AB045300942D30 /* PDFTouch.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = PDFTouch.a; sourceTree = "<group>"; };
-		0A37C99015AB045300942D30 /* TTTAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTAttributedLabel.h; sourceTree = "<group>"; };
-		0A37C99115AB045300942D30 /* YLAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLAnnotation.h; sourceTree = "<group>"; };
-		0A37C99215AB045300942D30 /* YLAnnotationParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLAnnotationParser.h; sourceTree = "<group>"; };
-		0A37C99315AB045300942D30 /* YLAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLAnnotationView.h; sourceTree = "<group>"; };
-		0A37C99415AB045300942D30 /* YLAudioAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLAudioAnnotationView.h; sourceTree = "<group>"; };
-		0A37C99515AB045300942D30 /* YLCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLCache.h; sourceTree = "<group>"; };
-		0A37C99615AB045300942D30 /* YLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLDocument.h; sourceTree = "<group>"; };
-		0A37C99715AB045300942D30 /* YLDocumentScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLDocumentScanner.h; sourceTree = "<group>"; };
-		0A37C99815AB045300942D30 /* YLGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLGlobal.h; sourceTree = "<group>"; };
-		0A37C99915AB045300942D30 /* YLLinkAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLLinkAnnotationView.h; sourceTree = "<group>"; };
-		0A37C99A15AB045300942D30 /* YLLoadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLLoadOperation.h; sourceTree = "<group>"; };
-		0A37C99B15AB045300942D30 /* YLOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLOperation.h; sourceTree = "<group>"; };
-		0A37C99C15AB045300942D30 /* YLOutlineItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLOutlineItem.h; sourceTree = "<group>"; };
-		0A37C99D15AB045300942D30 /* YLOutlineParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLOutlineParser.h; sourceTree = "<group>"; };
-		0A37C99E15AB045300942D30 /* YLOutlineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLOutlineViewController.h; sourceTree = "<group>"; };
-		0A37C99F15AB045300942D30 /* YLPageInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPageInfo.h; sourceTree = "<group>"; };
-		0A37C9A015AB045300942D30 /* YLPageRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPageRenderer.h; sourceTree = "<group>"; };
-		0A37C9A115AB045300942D30 /* YLPagesScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPagesScrollView.h; sourceTree = "<group>"; };
-		0A37C9A215AB045300942D30 /* YLPagesToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPagesToolbar.h; sourceTree = "<group>"; };
-		0A37C9A315AB045300942D30 /* YLPagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPagesViewController.h; sourceTree = "<group>"; };
-		0A37C9A415AB045300942D30 /* YLPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPageView.h; sourceTree = "<group>"; };
-		0A37C9A515AB045300942D30 /* YLPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPageViewController.h; sourceTree = "<group>"; };
-		0A37C9A615AB045300942D30 /* YLPatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPatch.h; sourceTree = "<group>"; };
-		0A37C9A715AB045300942D30 /* YLPDFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPDFViewController.h; sourceTree = "<group>"; };
-		0A37C9A815AB045300942D30 /* YLPDFViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPDFViewControllerDelegate.h; sourceTree = "<group>"; };
-		0A37C9A915AB045300942D30 /* YLRenderOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLRenderOperation.h; sourceTree = "<group>"; };
-		0A37C9AA15AB045300942D30 /* YLScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLScrollView.h; sourceTree = "<group>"; };
-		0A37C9AB15AB045300942D30 /* YLSearchOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLSearchOperation.h; sourceTree = "<group>"; };
-		0A37C9AC15AB045300942D30 /* YLSearchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLSearchResult.h; sourceTree = "<group>"; };
-		0A37C9AD15AB045300942D30 /* YLSearchResultCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLSearchResultCell.h; sourceTree = "<group>"; };
-		0A37C9AE15AB045300942D30 /* YLSearchStatusCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLSearchStatusCell.h; sourceTree = "<group>"; };
-		0A37C9AF15AB045300942D30 /* YLSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLSearchViewController.h; sourceTree = "<group>"; };
-		0A37C9B015AB045300942D30 /* YLThumbnailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLThumbnailCell.h; sourceTree = "<group>"; };
-		0A37C9B115AB045300942D30 /* YLTiledView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLTiledView.h; sourceTree = "<group>"; };
-		0A37C9B215AB045300942D30 /* YLVideoAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLVideoAnnotationView.h; sourceTree = "<group>"; };
-		0A37C9B315AB045300942D30 /* YLWebAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLWebAnnotationView.h; sourceTree = "<group>"; };
-		0A37C9B415AB045300942D30 /* YLWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLWebViewController.h; sourceTree = "<group>"; };
-		0A37C9B515AB045300942D30 /* YLWriteOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLWriteOperation.h; sourceTree = "<group>"; };
+		0A7306EF15EB7B8F008B0A98 /* GCDMulticastDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDMulticastDelegate.h; sourceTree = "<group>"; };
+		0A7306F015EB7B8F008B0A98 /* PDFTouch.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = PDFTouch.a; sourceTree = "<group>"; };
+		0A7306F115EB7B8F008B0A98 /* TTTAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTAttributedLabel.h; sourceTree = "<group>"; };
+		0A7306F215EB7B8F008B0A98 /* YLAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLAnnotation.h; sourceTree = "<group>"; };
+		0A7306F315EB7B8F008B0A98 /* YLAnnotationParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLAnnotationParser.h; sourceTree = "<group>"; };
+		0A7306F415EB7B8F008B0A98 /* YLAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLAnnotationView.h; sourceTree = "<group>"; };
+		0A7306F515EB7B8F008B0A98 /* YLAudioAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLAudioAnnotationView.h; sourceTree = "<group>"; };
+		0A7306F615EB7B8F008B0A98 /* YLCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLCache.h; sourceTree = "<group>"; };
+		0A7306F715EB7B8F008B0A98 /* YLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLDocument.h; sourceTree = "<group>"; };
+		0A7306F815EB7B8F008B0A98 /* YLDocumentScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLDocumentScanner.h; sourceTree = "<group>"; };
+		0A7306F915EB7B8F008B0A98 /* YLGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLGlobal.h; sourceTree = "<group>"; };
+		0A7306FA15EB7B8F008B0A98 /* YLLinkAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLLinkAnnotationView.h; sourceTree = "<group>"; };
+		0A7306FB15EB7B8F008B0A98 /* YLLoadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLLoadOperation.h; sourceTree = "<group>"; };
+		0A7306FC15EB7B8F008B0A98 /* YLMapAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLMapAnnotationView.h; sourceTree = "<group>"; };
+		0A7306FD15EB7B8F008B0A98 /* YLOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLOperation.h; sourceTree = "<group>"; };
+		0A7306FE15EB7B8F008B0A98 /* YLOutlineItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLOutlineItem.h; sourceTree = "<group>"; };
+		0A7306FF15EB7B8F008B0A98 /* YLOutlineParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLOutlineParser.h; sourceTree = "<group>"; };
+		0A73070015EB7B8F008B0A98 /* YLOutlineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLOutlineViewController.h; sourceTree = "<group>"; };
+		0A73070115EB7B8F008B0A98 /* YLPageInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPageInfo.h; sourceTree = "<group>"; };
+		0A73070215EB7B8F008B0A98 /* YLPageRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPageRenderer.h; sourceTree = "<group>"; };
+		0A73070315EB7B8F008B0A98 /* YLPagesScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPagesScrollView.h; sourceTree = "<group>"; };
+		0A73070415EB7B8F008B0A98 /* YLPagesToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPagesToolbar.h; sourceTree = "<group>"; };
+		0A73070515EB7B8F008B0A98 /* YLPagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPagesViewController.h; sourceTree = "<group>"; };
+		0A73070615EB7B8F008B0A98 /* YLPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPageView.h; sourceTree = "<group>"; };
+		0A73070715EB7B8F008B0A98 /* YLPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPageViewController.h; sourceTree = "<group>"; };
+		0A73070815EB7B8F008B0A98 /* YLPatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPatch.h; sourceTree = "<group>"; };
+		0A73070915EB7B8F008B0A98 /* YLPDFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPDFViewController.h; sourceTree = "<group>"; };
+		0A73070A15EB7B8F008B0A98 /* YLPDFViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPDFViewControllerDelegate.h; sourceTree = "<group>"; };
+		0A73070B15EB7B8F008B0A98 /* YLRenderOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLRenderOperation.h; sourceTree = "<group>"; };
+		0A73070C15EB7B8F008B0A98 /* YLScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLScrollView.h; sourceTree = "<group>"; };
+		0A73070D15EB7B8F008B0A98 /* YLSearchOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLSearchOperation.h; sourceTree = "<group>"; };
+		0A73070E15EB7B8F008B0A98 /* YLSearchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLSearchResult.h; sourceTree = "<group>"; };
+		0A73070F15EB7B8F008B0A98 /* YLSearchResultCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLSearchResultCell.h; sourceTree = "<group>"; };
+		0A73071015EB7B8F008B0A98 /* YLSearchStatusCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLSearchStatusCell.h; sourceTree = "<group>"; };
+		0A73071115EB7B8F008B0A98 /* YLSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLSearchViewController.h; sourceTree = "<group>"; };
+		0A73071215EB7B8F008B0A98 /* YLThumbnailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLThumbnailCell.h; sourceTree = "<group>"; };
+		0A73071315EB7B8F008B0A98 /* YLTiledView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLTiledView.h; sourceTree = "<group>"; };
+		0A73071415EB7B8F008B0A98 /* YLVideoAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLVideoAnnotationView.h; sourceTree = "<group>"; };
+		0A73071515EB7B8F008B0A98 /* YLWebAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLWebAnnotationView.h; sourceTree = "<group>"; };
+		0A73071615EB7B8F008B0A98 /* YLWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLWebViewController.h; sourceTree = "<group>"; };
+		0A73071715EB7B8F008B0A98 /* YLWriteOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLWriteOperation.h; sourceTree = "<group>"; };
+		0A73071915EB7BC2008B0A98 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		0A73071B15EB7BC8008B0A98 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		0A77A6DC15610004003F0DD6 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A77A6E015610004003F0DD6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0A77A6E215610004003F0DD6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -131,13 +136,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A73071C15EB7BC8008B0A98 /* MapKit.framework in Frameworks */,
+				0A73071A15EB7BC2008B0A98 /* CoreLocation.framework in Frameworks */,
 				0AFDBD5515738E41006F5214 /* MediaPlayer.framework in Frameworks */,
 				0A77A6FA1561001D003F0DD6 /* CoreText.framework in Frameworks */,
 				0A77A6F815610019003F0DD6 /* QuartzCore.framework in Frameworks */,
 				0A77A6E115610004003F0DD6 /* UIKit.framework in Frameworks */,
 				0A77A6E315610004003F0DD6 /* Foundation.framework in Frameworks */,
 				0A77A6E515610004003F0DD6 /* CoreGraphics.framework in Frameworks */,
-				0A37C9B615AB045300942D30 /* PDFTouch.a in Frameworks */,
+				0A73071815EB7B8F008B0A98 /* PDFTouch.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +174,8 @@
 		0A77A6DF15610004003F0DD6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0A73071B15EB7BC8008B0A98 /* MapKit.framework */,
+				0A73071915EB7BC2008B0A98 /* CoreLocation.framework */,
 				0AFDBD5415738E41006F5214 /* MediaPlayer.framework */,
 				0A77A6F91561001D003F0DD6 /* CoreText.framework */,
 				0A77A6F715610019003F0DD6 /* QuartzCore.framework */,
@@ -249,46 +258,47 @@
 		0A77A76715611833003F0DD6 /* PDFTouch */ = {
 			isa = PBXGroup;
 			children = (
-				0A37C98E15AB045300942D30 /* GCDMulticastDelegate.h */,
-				0A37C98F15AB045300942D30 /* PDFTouch.a */,
-				0A37C99015AB045300942D30 /* TTTAttributedLabel.h */,
-				0A37C99115AB045300942D30 /* YLAnnotation.h */,
-				0A37C99215AB045300942D30 /* YLAnnotationParser.h */,
-				0A37C99315AB045300942D30 /* YLAnnotationView.h */,
-				0A37C99415AB045300942D30 /* YLAudioAnnotationView.h */,
-				0A37C99515AB045300942D30 /* YLCache.h */,
-				0A37C99615AB045300942D30 /* YLDocument.h */,
-				0A37C99715AB045300942D30 /* YLDocumentScanner.h */,
-				0A37C99815AB045300942D30 /* YLGlobal.h */,
-				0A37C99915AB045300942D30 /* YLLinkAnnotationView.h */,
-				0A37C99A15AB045300942D30 /* YLLoadOperation.h */,
-				0A37C99B15AB045300942D30 /* YLOperation.h */,
-				0A37C99C15AB045300942D30 /* YLOutlineItem.h */,
-				0A37C99D15AB045300942D30 /* YLOutlineParser.h */,
-				0A37C99E15AB045300942D30 /* YLOutlineViewController.h */,
-				0A37C99F15AB045300942D30 /* YLPageInfo.h */,
-				0A37C9A015AB045300942D30 /* YLPageRenderer.h */,
-				0A37C9A115AB045300942D30 /* YLPagesScrollView.h */,
-				0A37C9A215AB045300942D30 /* YLPagesToolbar.h */,
-				0A37C9A315AB045300942D30 /* YLPagesViewController.h */,
-				0A37C9A415AB045300942D30 /* YLPageView.h */,
-				0A37C9A515AB045300942D30 /* YLPageViewController.h */,
-				0A37C9A615AB045300942D30 /* YLPatch.h */,
-				0A37C9A715AB045300942D30 /* YLPDFViewController.h */,
-				0A37C9A815AB045300942D30 /* YLPDFViewControllerDelegate.h */,
-				0A37C9A915AB045300942D30 /* YLRenderOperation.h */,
-				0A37C9AA15AB045300942D30 /* YLScrollView.h */,
-				0A37C9AB15AB045300942D30 /* YLSearchOperation.h */,
-				0A37C9AC15AB045300942D30 /* YLSearchResult.h */,
-				0A37C9AD15AB045300942D30 /* YLSearchResultCell.h */,
-				0A37C9AE15AB045300942D30 /* YLSearchStatusCell.h */,
-				0A37C9AF15AB045300942D30 /* YLSearchViewController.h */,
-				0A37C9B015AB045300942D30 /* YLThumbnailCell.h */,
-				0A37C9B115AB045300942D30 /* YLTiledView.h */,
-				0A37C9B215AB045300942D30 /* YLVideoAnnotationView.h */,
-				0A37C9B315AB045300942D30 /* YLWebAnnotationView.h */,
-				0A37C9B415AB045300942D30 /* YLWebViewController.h */,
-				0A37C9B515AB045300942D30 /* YLWriteOperation.h */,
+				0A7306EF15EB7B8F008B0A98 /* GCDMulticastDelegate.h */,
+				0A7306F015EB7B8F008B0A98 /* PDFTouch.a */,
+				0A7306F115EB7B8F008B0A98 /* TTTAttributedLabel.h */,
+				0A7306F215EB7B8F008B0A98 /* YLAnnotation.h */,
+				0A7306F315EB7B8F008B0A98 /* YLAnnotationParser.h */,
+				0A7306F415EB7B8F008B0A98 /* YLAnnotationView.h */,
+				0A7306F515EB7B8F008B0A98 /* YLAudioAnnotationView.h */,
+				0A7306F615EB7B8F008B0A98 /* YLCache.h */,
+				0A7306F715EB7B8F008B0A98 /* YLDocument.h */,
+				0A7306F815EB7B8F008B0A98 /* YLDocumentScanner.h */,
+				0A7306F915EB7B8F008B0A98 /* YLGlobal.h */,
+				0A7306FA15EB7B8F008B0A98 /* YLLinkAnnotationView.h */,
+				0A7306FB15EB7B8F008B0A98 /* YLLoadOperation.h */,
+				0A7306FC15EB7B8F008B0A98 /* YLMapAnnotationView.h */,
+				0A7306FD15EB7B8F008B0A98 /* YLOperation.h */,
+				0A7306FE15EB7B8F008B0A98 /* YLOutlineItem.h */,
+				0A7306FF15EB7B8F008B0A98 /* YLOutlineParser.h */,
+				0A73070015EB7B8F008B0A98 /* YLOutlineViewController.h */,
+				0A73070115EB7B8F008B0A98 /* YLPageInfo.h */,
+				0A73070215EB7B8F008B0A98 /* YLPageRenderer.h */,
+				0A73070315EB7B8F008B0A98 /* YLPagesScrollView.h */,
+				0A73070415EB7B8F008B0A98 /* YLPagesToolbar.h */,
+				0A73070515EB7B8F008B0A98 /* YLPagesViewController.h */,
+				0A73070615EB7B8F008B0A98 /* YLPageView.h */,
+				0A73070715EB7B8F008B0A98 /* YLPageViewController.h */,
+				0A73070815EB7B8F008B0A98 /* YLPatch.h */,
+				0A73070915EB7B8F008B0A98 /* YLPDFViewController.h */,
+				0A73070A15EB7B8F008B0A98 /* YLPDFViewControllerDelegate.h */,
+				0A73070B15EB7B8F008B0A98 /* YLRenderOperation.h */,
+				0A73070C15EB7B8F008B0A98 /* YLScrollView.h */,
+				0A73070D15EB7B8F008B0A98 /* YLSearchOperation.h */,
+				0A73070E15EB7B8F008B0A98 /* YLSearchResult.h */,
+				0A73070F15EB7B8F008B0A98 /* YLSearchResultCell.h */,
+				0A73071015EB7B8F008B0A98 /* YLSearchStatusCell.h */,
+				0A73071115EB7B8F008B0A98 /* YLSearchViewController.h */,
+				0A73071215EB7B8F008B0A98 /* YLThumbnailCell.h */,
+				0A73071315EB7B8F008B0A98 /* YLTiledView.h */,
+				0A73071415EB7B8F008B0A98 /* YLVideoAnnotationView.h */,
+				0A73071515EB7B8F008B0A98 /* YLWebAnnotationView.h */,
+				0A73071615EB7B8F008B0A98 /* YLWebViewController.h */,
+				0A73071715EB7B8F008B0A98 /* YLWriteOperation.h */,
 			);
 			path = PDFTouch;
 			sourceTree = "<group>";

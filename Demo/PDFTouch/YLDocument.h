@@ -16,6 +16,7 @@
 @interface YLDocument : NSObject
 
 @property (nonatomic, readonly) NSString *uuid;
+@property (nonatomic, readonly) NSString *path;
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, copy) NSString *password;
 @property (nonatomic, assign, readonly, getter=isLocked) BOOL locked;

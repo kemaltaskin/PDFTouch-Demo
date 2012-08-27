@@ -33,7 +33,10 @@ typedef enum {
 @property (nonatomic, assign) YLViewMode viewMode;
 @property (nonatomic, assign) YLDocumentMode documentMode;
 @property (nonatomic, assign) YLDocumentLead documentLead;
+// enables iBooks like page curling
 @property (nonatomic, assign) BOOL pageCurlEnabled;
+// show single page in portrait mode and double page in landscape mode
+@property (nonatomic, assign) BOOL autoLayoutEnabled;
 @property (nonatomic, assign) NSObject<YLPDFViewControllerDelegate> *delegate;
 
 - (id)initWithDocument:(YLDocument *)document;

@@ -12,7 +12,6 @@
 @interface YLPagesViewController : UIPageViewController<UIPageViewControllerDelegate,UIPageViewControllerDataSource>
 
 @property (nonatomic, readonly) NSUInteger page;
-@property (nonatomic, assign) YLDocumentMode documentMode;
 @property (nonatomic, assign) YLDocumentLead documentLead;
 
 - (id)initWithPDFController:(YLPDFViewController *)controller;

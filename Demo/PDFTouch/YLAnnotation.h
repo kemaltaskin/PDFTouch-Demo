@@ -15,7 +15,9 @@ typedef enum {
     kAnnotationTypePage,
     kAnnotationTypeLink,
     kAnnotationTypeVideo,
+    kAnnotationTypeAudio,
     kAnnotationTypeWeb,
+    kAnnotationTypeMap,
     kAnnotationTypeOther
 } AnnotationType;
 
