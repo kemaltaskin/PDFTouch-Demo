@@ -15,6 +15,7 @@ typedef enum {
 } YLPDFImageSize;
 
 @class YLDocument;
+@class YLOperation;
 
 @protocol YLCacheDelegate <NSObject>
 - (void)didCacheDocument:(YLDocument *)document page:(NSUInteger)page size:(YLPDFImageSize)size image:(UIImage *)image;
@@ -26,6 +27,8 @@ typedef enum {
 
 - (void)startCachingDocument:(YLDocument *)document startPage:(NSUInteger)page size:(YLPDFImageSize)size;
 - (void)stopCachingDocument:(YLDocument *)document;
+
+- (void)cancelOperation:(YLOperation *)operation;
 
 - (id)cachedImageForDocument:(YLDocument *)document page:(NSUInteger)page size:(YLPDFImageSize)size;
 
