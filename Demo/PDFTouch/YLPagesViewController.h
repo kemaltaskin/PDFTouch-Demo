@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "YLPDFViewController.h"
 
-@interface YLPagesViewController : UIPageViewController<UIPageViewControllerDelegate,UIPageViewControllerDataSource>
+@interface YLPagesViewController : UIPageViewController<UIPageViewControllerDelegate,UIPageViewControllerDataSource,UIGestureRecognizerDelegate>
 
 @property (nonatomic, readonly) NSUInteger page;
 @property (nonatomic, assign) YLDocumentLead documentLead;
