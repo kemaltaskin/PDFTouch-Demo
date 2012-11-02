@@ -29,6 +29,7 @@ typedef enum {
 @property (nonatomic, readonly) NSString *uri;
 @property (nonatomic, readonly) NSURL *url;
 @property (nonatomic, readonly) NSDictionary *params;
+@property (nonatomic, readonly) BOOL local;
 @property (nonatomic, assign) YLDocument *document;
 @property (nonatomic, readonly) AnnotationType type;
 
