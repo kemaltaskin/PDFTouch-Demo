@@ -10,8 +10,10 @@
 #import "YLAnnotationView.h"
 #import <MapKit/MapKit.h>
 
+/// View for displaying map annotations.
 @interface YLMapAnnotationView : UIView<YLAnnotationView>
 
+/// The MKMapView object used to render the map.
 @property (nonatomic, readonly) MKMapView *mapView;
 
 @end

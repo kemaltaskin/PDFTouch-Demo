@@ -1,0 +1,1431 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>YLDocument Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">PDFTouch SDK </a></h1>
+				<a id="developerHome" href="../index.html">Yakamoz Labs</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">YLDocument Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/annotationParser">&nbsp;&nbsp;&nbsp;&nbsp;annotationParser</option>
+	
+	<option value="//api/name/locked">&nbsp;&nbsp;&nbsp;&nbsp;locked</option>
+	
+	<option value="//api/name/outlineParser">&nbsp;&nbsp;&nbsp;&nbsp;outlineParser</option>
+	
+	<option value="//api/name/pageCount">&nbsp;&nbsp;&nbsp;&nbsp;pageCount</option>
+	
+	<option value="//api/name/password">&nbsp;&nbsp;&nbsp;&nbsp;password</option>
+	
+	<option value="//api/name/path">&nbsp;&nbsp;&nbsp;&nbsp;path</option>
+	
+	<option value="//api/name/scanner">&nbsp;&nbsp;&nbsp;&nbsp;scanner</option>
+	
+	<option value="//api/name/title">&nbsp;&nbsp;&nbsp;&nbsp;title</option>
+	
+	<option value="//api/name/uuid">&nbsp;&nbsp;&nbsp;&nbsp;uuid</option>
+	
+	<option value="//api/name/validPDF">&nbsp;&nbsp;&nbsp;&nbsp;validPDF</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/YLDocumentWithFilePath:">&nbsp;&nbsp;&nbsp;&nbsp;+ YLDocumentWithFilePath:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/addBookmarkForPage:">&nbsp;&nbsp;&nbsp;&nbsp;- addBookmarkForPage:</option>
+	
+	<option value="//api/name/bookmarkedPageNumbers">&nbsp;&nbsp;&nbsp;&nbsp;- bookmarkedPageNumbers</option>
+	
+	<option value="//api/name/hasBookmarkForPage:">&nbsp;&nbsp;&nbsp;&nbsp;- hasBookmarkForPage:</option>
+	
+	<option value="//api/name/initWithFilePath:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithFilePath:</option>
+	
+	<option value="//api/name/pageInfoForPage:">&nbsp;&nbsp;&nbsp;&nbsp;- pageInfoForPage:</option>
+	
+	<option value="//api/name/removeBookmarkForPage:">&nbsp;&nbsp;&nbsp;&nbsp;- removeBookmarkForPage:</option>
+	
+	<option value="//api/name/requestDocumentRef">&nbsp;&nbsp;&nbsp;&nbsp;- requestDocumentRef</option>
+	
+	<option value="//api/name/unlockWithPassword:">&nbsp;&nbsp;&nbsp;&nbsp;- unlockWithPassword:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Initialization Methods">Initialization Methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Encryption Methods">Encryption Methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Query Methods">Query Methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Bookmark Methods">Bookmark Methods</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/annotationParser">annotationParser</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/locked">locked</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/outlineParser">outlineParser</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pageCount">pageCount</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/password">password</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/path">path</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/scanner">scanner</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/title">title</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/uuid">uuid</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/validPDF">validPDF</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/YLDocumentWithFilePath:">YLDocumentWithFilePath:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addBookmarkForPage:">addBookmarkForPage:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/bookmarkedPageNumbers">bookmarkedPageNumbers</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hasBookmarkForPage:">hasBookmarkForPage:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithFilePath:">initWithFilePath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pageInfoForPage:">pageInfoForPage:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeBookmarkForPage:">removeBookmarkForPage:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/requestDocumentRef">requestDocumentRef</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/unlockWithPassword:">unlockWithPassword:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="YLDocument Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">YLDocument Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">YLDocument.h<br />YLDocument.m</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Model object that represents the PDF file.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/uuid">&nbsp;&nbsp;uuid</a></code>
+		<span class="tooltip"><p>UUID string value that is used internally to construct file paths for the thumbnails and bookmarks.
+Bookmarks are saved in Documents/Private Docs/Bookmarks/uuid.plist
+All thumbnail images are saved to NSCachesDirectory/YLPDFKit/uuid/</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/path">&nbsp;&nbsp;path</a></code>
+		<span class="tooltip"><p>Path of the PDF file.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/title">&nbsp;&nbsp;title</a></code>
+		<span class="tooltip"><p>Title of the PDF file. This is basically the filename minus the extension.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/password">&nbsp;&nbsp;password</a></code>
+		<span class="tooltip"><p>Password to unlock the PDF file if it&rsquo;s encrypted.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/locked">&nbsp;&nbsp;locked</a></code>
+		<span class="tooltip"><p>Boolean value that specifies wether the PDF file is locked or not. You can use this property to see if a PDF file is encrypted.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/validPDF">&nbsp;&nbsp;validPDF</a></code>
+		<span class="tooltip"><p>Boolean value that specifies if the document is a valid PDF file.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/pageCount">&nbsp;&nbsp;pageCount</a></code>
+		<span class="tooltip"><p>Number of pages in the PDF file.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/outlineParser">&nbsp;&nbsp;outlineParser</a></code>
+		<span class="tooltip"><p>Returns the <a href="#//api/name/outline">outline</a> parser for this document.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/scanner">&nbsp;&nbsp;scanner</a></code>
+		<span class="tooltip"><p>Returns the scanner you can use to search for text in this document.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/annotationParser">&nbsp;&nbsp;annotationParser</a></code>
+		<span class="tooltip"><p>Returns the annotation parser.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Initialization Methods" name="task_Initialization Methods"></a>
+						<h3 class="subsubtitle task-title">Initialization Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/YLDocumentWithFilePath:">+&nbsp;YLDocumentWithFilePath:</a></code>
+		<span class="tooltip"><p>Initializes a YLDocument instance and returns it to the caller.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithFilePath:">&ndash;&nbsp;initWithFilePath:</a></code>
+		<span class="tooltip"><p>Initializes a YLDocument instance and returns it to the caller.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Encryption Methods" name="task_Encryption Methods"></a>
+						<h3 class="subsubtitle task-title">Encryption Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/unlockWithPassword:">&ndash;&nbsp;unlockWithPassword:</a></code>
+		<span class="tooltip"><p>Use this function to unlock an encrypted PDF file.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Query Methods" name="task_Query Methods"></a>
+						<h3 class="subsubtitle task-title">Query Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/pageInfoForPage:">&ndash;&nbsp;pageInfoForPage:</a></code>
+		<span class="tooltip"><p>Returns a <a href="../Classes/YLPageInfo.html">YLPageInfo</a> object for the requested page that holds information about the page rectangle and rotation. The <a href="../Classes/YLPageInfo.html">YLPageInfo</a>
+is cached for future access.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/requestDocumentRef">&ndash;&nbsp;requestDocumentRef</a></code>
+		<span class="tooltip"><p>Returns a CGPDF reference for this document. When you&rsquo;re finished using this reference you should release it using the CGPDFDocumentRelease function.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Bookmark Methods" name="task_Bookmark Methods"></a>
+						<h3 class="subsubtitle task-title">Bookmark Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addBookmarkForPage:">&ndash;&nbsp;addBookmarkForPage:</a></code>
+		<span class="tooltip"><p>Adds bookmark for the requested page.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeBookmarkForPage:">&ndash;&nbsp;removeBookmarkForPage:</a></code>
+		<span class="tooltip"><p>Removes bookmark for the requested page.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/hasBookmarkForPage:">&ndash;&nbsp;hasBookmarkForPage:</a></code>
+		<span class="tooltip"><p>Use this function to query if there is a bookmark for a specific page.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/bookmarkedPageNumbers">&ndash;&nbsp;bookmarkedPageNumbers</a></code>
+		<span class="tooltip"><p>Returns a sorted array of all bookmarked pages.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/annotationParser" title="annotationParser"></a>
+	<h3 class="subsubtitle method-title">annotationParser</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the annotation parser.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) YLAnnotationParser *annotationParser</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the annotation parser.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">YLDocument.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/locked" title="locked"></a>
+	<h3 class="subsubtitle method-title">locked</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Boolean value that specifies wether the PDF file is locked or not. You can use this property to see if a PDF file is encrypted.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly, getter=isLocked) BOOL locked</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Boolean value that specifies wether the PDF file is locked or not. You can use this property to see if a PDF file is encrypted.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">YLDocument.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/outlineParser" title="outlineParser"></a>
+	<h3 class="subsubtitle method-title">outlineParser</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the <a href="#//api/name/outline">outline</a> parser for this document.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) YLOutlineParser *outlineParser</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the <a href="#//api/name/outline">outline</a> parser for this document.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">YLDocument.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/pageCount" title="pageCount"></a>
+	<h3 class="subsubtitle method-title">pageCount</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Number of pages in the PDF file.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSUInteger pageCount</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Number of pages in the PDF file.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">YLDocument.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/password" title="password"></a>
+	<h3 class="subsubtitle method-title">password</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Password to unlock the PDF file if it&rsquo;s encrypted.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *password</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Password to unlock the PDF file if it&rsquo;s encrypted.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">YLDocument.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/path" title="path"></a>
+	<h3 class="subsubtitle method-title">path</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Path of the PDF file.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *path</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Path of the PDF file.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">YLDocument.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/scanner" title="scanner"></a>
+	<h3 class="subsubtitle method-title">scanner</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the scanner you can use to search for text in this document.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) YLDocumentScanner *scanner</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the scanner you can use to search for text in this document.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">YLDocument.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/title" title="title"></a>
+	<h3 class="subsubtitle method-title">title</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Title of the PDF file. This is basically the filename minus the extension.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *title</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Title of the PDF file. This is basically the filename minus the extension.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">YLDocument.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/uuid" title="uuid"></a>
+	<h3 class="subsubtitle method-title">uuid</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>UUID string value that is used internally to construct file paths for the thumbnails and bookmarks.
+Bookmarks are saved in Documents/Private Docs/Bookmarks/uuid.plist
+All thumbnail images are saved to NSCachesDirectory/YLPDFKit/uuid/</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *uuid</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>UUID string value that is used internally to construct file paths for the thumbnails and bookmarks.
+Bookmarks are saved in Documents/Private Docs/Bookmarks/uuid.plist
+All thumbnail images are saved to NSCachesDirectory/YLPDFKit/uuid/</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">YLDocument.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/validPDF" title="validPDF"></a>
+	<h3 class="subsubtitle method-title">validPDF</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Boolean value that specifies if the document is a valid PDF file.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, getter=isValidPDF) BOOL validPDF</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Boolean value that specifies if the document is a valid PDF file.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">YLDocument.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/YLDocumentWithFilePath:" title="YLDocumentWithFilePath:"></a>
+	<h3 class="subsubtitle method-title">YLDocumentWithFilePath:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializes a YLDocument instance and returns it to the caller.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (YLDocument *)YLDocumentWithFilePath:(NSString *)<em>path</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>path</em></dt>
+			<dd><p>Filesystem <a href="#//api/name/path">path</a> to the PDF file.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An initialized YLDocument instance.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Initializes a YLDocument instance and returns it to the caller.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">YLDocument.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/addBookmarkForPage:" title="addBookmarkForPage:"></a>
+	<h3 class="subsubtitle method-title">addBookmarkForPage:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Adds bookmark for the requested page.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)addBookmarkForPage:(NSUInteger)<em>page</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>page</em></dt>
+			<dd><p>Page number starting from 0.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if the bookmark is added, NO if the page is invalid.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Adds bookmark for the requested page.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">YLDocument.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/bookmarkedPageNumbers" title="bookmarkedPageNumbers"></a>
+	<h3 class="subsubtitle method-title">bookmarkedPageNumbers</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a sorted array of all bookmarked pages.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)bookmarkedPageNumbers</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Sorted NSArray with all bookmarked pages.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns a sorted array of all bookmarked pages.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">YLDocument.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/hasBookmarkForPage:" title="hasBookmarkForPage:"></a>
+	<h3 class="subsubtitle method-title">hasBookmarkForPage:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Use this function to query if there is a bookmark for a specific page.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)hasBookmarkForPage:(NSUInteger)<em>page</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>page</em></dt>
+			<dd><p>Page number starting from 0.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if there is a bookmark for this page.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Use this function to query if there is a bookmark for a specific page.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">YLDocument.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithFilePath:" title="initWithFilePath:"></a>
+	<h3 class="subsubtitle method-title">initWithFilePath:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializes a YLDocument instance and returns it to the caller.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithFilePath:(NSString *)<em>path</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>path</em></dt>
+			<dd><p>Filesystem <a href="#//api/name/path">path</a> to the PDF file.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An initialized YLDocument instance.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Initializes a YLDocument instance and returns it to the caller.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">YLDocument.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/pageInfoForPage:" title="pageInfoForPage:"></a>
+	<h3 class="subsubtitle method-title">pageInfoForPage:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a <a href="../Classes/YLPageInfo.html">YLPageInfo</a> object for the requested page that holds information about the page rectangle and rotation. The <a href="../Classes/YLPageInfo.html">YLPageInfo</a>
+is cached for future access.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (YLPageInfo *)pageInfoForPage:(NSUInteger)<em>page</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>page</em></dt>
+			<dd><p>Page number starting from 0.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An initialized <a href="../Classes/YLPageInfo.html">YLPageInfo</a> object or nil when the page number is invalid.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns a <a href="../Classes/YLPageInfo.html">YLPageInfo</a> object for the requested page that holds information about the page rectangle and rotation. The <a href="../Classes/YLPageInfo.html">YLPageInfo</a>
+is cached for future access.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">YLDocument.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeBookmarkForPage:" title="removeBookmarkForPage:"></a>
+	<h3 class="subsubtitle method-title">removeBookmarkForPage:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Removes bookmark for the requested page.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)removeBookmarkForPage:(NSUInteger)<em>page</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>page</em></dt>
+			<dd><p>Page number starting from 0.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if the bookmark is removed, NO if the page is invalid or if there was no bookmark to remove.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Removes bookmark for the requested page.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">YLDocument.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/requestDocumentRef" title="requestDocumentRef"></a>
+	<h3 class="subsubtitle method-title">requestDocumentRef</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a CGPDF reference for this document. When you&rsquo;re finished using this reference you should release it using the CGPDFDocumentRelease function.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (CGPDFDocumentRef)requestDocumentRef</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns a CGPDF reference for this document. When you&rsquo;re finished using this reference you should release it using the CGPDFDocumentRelease function.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">YLDocument.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/unlockWithPassword:" title="unlockWithPassword:"></a>
+	<h3 class="subsubtitle method-title">unlockWithPassword:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Use this function to unlock an encrypted PDF file.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)unlockWithPassword:(NSString *)<em>password</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>password</em></dt>
+			<dd><p>Password to use for unlocking the PDF file.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if successfully un<a href="#//api/name/locked">locked</a>, otherwise NO.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Use this function to unlock an encrypted PDF file.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">YLDocument.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Yakamoz Labs. All rights reserved. (Last updated: 2012-11-21)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

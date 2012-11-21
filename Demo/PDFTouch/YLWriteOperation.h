@@ -9,6 +9,7 @@
 #import "YLOperation.h"
 #import "YLCache.h"
 
+/// This operation will write a pre-rendered image to disk.
 @interface YLWriteOperation : YLOperation
 
 @end

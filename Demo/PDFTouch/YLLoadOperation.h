@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "YLOperation.h"
 
+/// This operation will load a pre-rendered image from disk.
 @interface YLLoadOperation : YLOperation
 
 @end

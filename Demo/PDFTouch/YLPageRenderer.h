@@ -21,8 +21,16 @@
 
 @class YLPageInfo;
 
+/// These are utility functions to render PDF pages in a graphics context.
 @interface YLPageRenderer : NSObject
 
+/// Renders a PDF page at a given point and specified zoom scale.
+/// @param page Reference to the CGPDF page.
+/// @param context Graphics context.
+/// @param point Point defining the upper left coordinate where rendering should start.
+/// @param zoom The scale at which the PDF page should be rendered.
+/// @param pageInfo Page info object of this page.
+/// @param searchResults Array of YLSearchResult items. Can be nil.
 + (void)renderPage:(CGPDFPageRef)page 
          inContext:(CGContextRef)context 
            atPoint:(CGPoint)point 
@@ -30,10 +38,16 @@
           pageInfo:(YLPageInfo *)pageInfo
             search:(NSArray *)searchResults;
 
+/// Renders a PDF page in the specified rectangle.
+/// @param page Reference to the CGPDF page.
+/// @param context Graphics context.
+/// @param rectangle The target rectangle the PDF page will be rendered in.
+/// @param pageInfo Page info object of this page.
+/// @param searchResults Array of YLSearchResult items. Can be nil.
 + (void)renderPage:(CGPDFPageRef)page 
          inContext:(CGContextRef)context 
        inRectangle:(CGRect)rectangle 
           pageInfo:(YLPageInfo *)pageInfo
-            search:(NSArray *)searchResutls;
+            search:(NSArray *)searchResults;
 
 @end

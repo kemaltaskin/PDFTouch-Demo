@@ -13,17 +13,19 @@ typedef enum {
     kSearchStatusStopped
 } SearchStatus;
 
-@interface YLSearchStatusCell : UITableViewCell {
-    SearchStatus _searchStatus;
-    
-    UILabel *_statusLabel;
-    UILabel *_detailLabel;
-    UIActivityIndicatorView *_spinner;
-}
+/// Custom table view cell that shows progress information about the search operation.
+@interface YLSearchStatusCell : UITableViewCell
 
+/// Current status of the search operation.
 @property (nonatomic, assign) SearchStatus searchStatus;
-@property (nonatomic, retain) UILabel *statusLabel;
-@property (nonatomic, retain) UILabel *detailLabel;
-@property (nonatomic, retain) UIActivityIndicatorView *spinner;
+
+/// Returns the primary label used to display the status.
+@property (nonatomic, readonly) UILabel *statusLabel;
+
+/// Returns the secondary label used to display additional information.
+@property (nonatomic, readonly) UILabel *detailLabel;
+
+/// Returns the activity indicator that spins while search continues.
+@property (nonatomic, readonly) UIActivityIndicatorView *spinner;
 
 @end

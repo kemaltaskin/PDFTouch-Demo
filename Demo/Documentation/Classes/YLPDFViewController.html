@@ -1,0 +1,1348 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>YLPDFViewController Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">PDFTouch SDK </a></h1>
+				<a id="developerHome" href="../index.html">Yakamoz Labs</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">YLPDFViewController Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/autoLayoutEnabled">&nbsp;&nbsp;&nbsp;&nbsp;autoLayoutEnabled</option>
+	
+	<option value="//api/name/currentPage">&nbsp;&nbsp;&nbsp;&nbsp;currentPage</option>
+	
+	<option value="//api/name/datasource">&nbsp;&nbsp;&nbsp;&nbsp;datasource</option>
+	
+	<option value="//api/name/delegate">&nbsp;&nbsp;&nbsp;&nbsp;delegate</option>
+	
+	<option value="//api/name/document">&nbsp;&nbsp;&nbsp;&nbsp;document</option>
+	
+	<option value="//api/name/documentLead">&nbsp;&nbsp;&nbsp;&nbsp;documentLead</option>
+	
+	<option value="//api/name/documentMode">&nbsp;&nbsp;&nbsp;&nbsp;documentMode</option>
+	
+	<option value="//api/name/pageCurlEnabled">&nbsp;&nbsp;&nbsp;&nbsp;pageCurlEnabled</option>
+	
+	<option value="//api/name/viewMode">&nbsp;&nbsp;&nbsp;&nbsp;viewMode</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/clearSearchResults">&nbsp;&nbsp;&nbsp;&nbsp;- clearSearchResults</option>
+	
+	<option value="//api/name/hideToolbarsAnimated:">&nbsp;&nbsp;&nbsp;&nbsp;- hideToolbarsAnimated:</option>
+	
+	<option value="//api/name/initWithDocument:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithDocument:</option>
+	
+	<option value="//api/name/presentModalViewController:animated:">&nbsp;&nbsp;&nbsp;&nbsp;- presentModalViewController:animated:</option>
+	
+	<option value="//api/name/scrollToNextPageAnimated:">&nbsp;&nbsp;&nbsp;&nbsp;- scrollToNextPageAnimated:</option>
+	
+	<option value="//api/name/scrollToPage:animated:">&nbsp;&nbsp;&nbsp;&nbsp;- scrollToPage:animated:</option>
+	
+	<option value="//api/name/scrollToPreviousPageAnimated:">&nbsp;&nbsp;&nbsp;&nbsp;- scrollToPreviousPageAnimated:</option>
+	
+	<option value="//api/name/showToolbarsAnimated:">&nbsp;&nbsp;&nbsp;&nbsp;- showToolbarsAnimated:</option>
+	
+	<option value="//api/name/toggleToolbarsAnimated:">&nbsp;&nbsp;&nbsp;&nbsp;- toggleToolbarsAnimated:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Initialization">Initialization</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Toolbar Handling">Toolbar Handling</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Page Scrolling">Page Scrolling</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Helper Methods">Helper Methods</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/autoLayoutEnabled">autoLayoutEnabled</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/currentPage">currentPage</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/datasource">datasource</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delegate">delegate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/document">document</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/documentLead">documentLead</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/documentMode">documentMode</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pageCurlEnabled">pageCurlEnabled</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/viewMode">viewMode</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/clearSearchResults">clearSearchResults</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hideToolbarsAnimated:">hideToolbarsAnimated:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithDocument:">initWithDocument:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/presentModalViewController:animated:">presentModalViewController:animated:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/scrollToNextPageAnimated:">scrollToNextPageAnimated:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/scrollToPage:animated:">scrollToPage:animated:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/scrollToPreviousPageAnimated:">scrollToPreviousPageAnimated:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/showToolbarsAnimated:">showToolbarsAnimated:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/toggleToolbarsAnimated:">toggleToolbarsAnimated:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="YLPDFViewController Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">YLPDFViewController Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">UIViewController</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">YLPDFViewController.h<br />YLPDFViewController.m</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>This is the main view controller you should use to display PDF documents.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/document">&nbsp;&nbsp;document</a></code>
+		<span class="tooltip"><p>Document that should be displayed.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/currentPage">&nbsp;&nbsp;currentPage</a></code>
+		<span class="tooltip"><p>Current page number (zero based). This value will always the left page number when in double page mode.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/viewMode">&nbsp;&nbsp;viewMode</a></code>
+		<span class="tooltip"><p>Current view mode.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/documentMode">&nbsp;&nbsp;documentMode</a></code>
+		<span class="tooltip"><p>Current <a href="#//api/name/document">document</a> mode.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/documentLead">&nbsp;&nbsp;documentLead</a></code>
+		<span class="tooltip"><p>Current <a href="#//api/name/document">document</a> lead.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/pageCurlEnabled">&nbsp;&nbsp;pageCurlEnabled</a></code>
+		<span class="tooltip"><p>Default value is NO. Use this property to enable page-curl animations.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/autoLayoutEnabled">&nbsp;&nbsp;autoLayoutEnabled</a></code>
+		<span class="tooltip"><p>Default value is NO. Use this property to enable auto-layout. Auto-layout will show single pages in portrait mode and double pages in
+landscape mode. Note: auto-layout only works in YLDocumentModeDouble mode. Be sure that the <a href="#//api/name/document">document</a> mode is set to double pages before
+enabling auto-layout.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+		<span class="tooltip"><p>Reference to the delegate that should be informed.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/datasource">&nbsp;&nbsp;datasource</a></code>
+		<span class="tooltip"><p>Reference to the datasource that should be used to request additional information.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Initialization" name="task_Initialization"></a>
+						<h3 class="subsubtitle task-title">Initialization</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithDocument:">&ndash;&nbsp;initWithDocument:</a></code>
+		<span class="tooltip"><p>Initializes a YLPDFViewController object and returns it to the caller.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Toolbar Handling" name="task_Toolbar Handling"></a>
+						<h3 class="subsubtitle task-title">Toolbar Handling</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/showToolbarsAnimated:">&ndash;&nbsp;showToolbarsAnimated:</a></code>
+		<span class="tooltip"><p>Shows the top and bottom toolbars.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/hideToolbarsAnimated:">&ndash;&nbsp;hideToolbarsAnimated:</a></code>
+		<span class="tooltip"><p>Hides the top and bottom toolbars.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/toggleToolbarsAnimated:">&ndash;&nbsp;toggleToolbarsAnimated:</a></code>
+		<span class="tooltip"><p>Toggles the visibility of the top and bottom toolbars.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Page Scrolling" name="task_Page Scrolling"></a>
+						<h3 class="subsubtitle task-title">Page Scrolling</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/scrollToPage:animated:">&ndash;&nbsp;scrollToPage:animated:</a></code>
+		<span class="tooltip"><p>Scrolls to the specified page.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/scrollToNextPageAnimated:">&ndash;&nbsp;scrollToNextPageAnimated:</a></code>
+		<span class="tooltip"><p>Scrolls to the next page if there is one.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/scrollToPreviousPageAnimated:">&ndash;&nbsp;scrollToPreviousPageAnimated:</a></code>
+		<span class="tooltip"><p>Scrolls to the previous page if there is one.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Helper Methods" name="task_Helper Methods"></a>
+						<h3 class="subsubtitle task-title">Helper Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/presentModalViewController:animated:">&ndash;&nbsp;presentModalViewController:animated:</a></code>
+		<span class="tooltip"><p>This function is used by the annotation views to present a modal view controller.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/clearSearchResults">&ndash;&nbsp;clearSearchResults</a></code>
+		<span class="tooltip"><p>This function is used by the search view controller to clear previous text-highlights on pdf pages.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/autoLayoutEnabled" title="autoLayoutEnabled"></a>
+	<h3 class="subsubtitle method-title">autoLayoutEnabled</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Default value is NO. Use this property to enable auto-layout. Auto-layout will show single pages in portrait mode and double pages in
+landscape mode. Note: auto-layout only works in YLDocumentModeDouble mode. Be sure that the <a href="#//api/name/document">document</a> mode is set to double pages before
+enabling auto-layout.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL autoLayoutEnabled</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Default value is NO. Use this property to enable auto-layout. Auto-layout will show single pages in portrait mode and double pages in
+landscape mode. Note: auto-layout only works in YLDocumentModeDouble mode. Be sure that the <a href="#//api/name/document">document</a> mode is set to double pages before
+enabling auto-layout.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">YLPDFViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/currentPage" title="currentPage"></a>
+	<h3 class="subsubtitle method-title">currentPage</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Current page number (zero based). This value will always the left page number when in double page mode.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSUInteger currentPage</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Current page number (zero based). This value will always the left page number when in double page mode.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">YLPDFViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/datasource" title="datasource"></a>
+	<h3 class="subsubtitle method-title">datasource</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Reference to the datasource that should be used to request additional information.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) IBOutlet NSObject&lt;YLPDFViewControllerDataSource&gt; *datasource</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Reference to the datasource that should be used to request additional information.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">YLPDFViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="subsubtitle method-title">delegate</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Reference to the delegate that should be informed.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) IBOutlet NSObject&lt;YLPDFViewControllerDelegate&gt; *delegate</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Reference to the delegate that should be informed.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">YLPDFViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/document" title="document"></a>
+	<h3 class="subsubtitle method-title">document</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Document that should be displayed.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) YLDocument *document</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Document that should be displayed.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">YLPDFViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/documentLead" title="documentLead"></a>
+	<h3 class="subsubtitle method-title">documentLead</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Current <a href="#//api/name/document">document</a> lead.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) YLDocumentLead documentLead</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Current <a href="#//api/name/document">document</a> lead.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">YLPDFViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/documentMode" title="documentMode"></a>
+	<h3 class="subsubtitle method-title">documentMode</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Current <a href="#//api/name/document">document</a> mode.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) YLDocumentMode documentMode</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Current <a href="#//api/name/document">document</a> mode.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">YLPDFViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/pageCurlEnabled" title="pageCurlEnabled"></a>
+	<h3 class="subsubtitle method-title">pageCurlEnabled</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Default value is NO. Use this property to enable page-curl animations.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL pageCurlEnabled</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Default value is NO. Use this property to enable page-curl animations.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">YLPDFViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/viewMode" title="viewMode"></a>
+	<h3 class="subsubtitle method-title">viewMode</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Current view mode.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) YLViewMode viewMode</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Current view mode.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">YLPDFViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/clearSearchResults" title="clearSearchResults"></a>
+	<h3 class="subsubtitle method-title">clearSearchResults</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This function is used by the search view controller to clear previous text-highlights on pdf pages.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)clearSearchResults</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This function is used by the search view controller to clear previous text-highlights on pdf pages.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">YLPDFViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/hideToolbarsAnimated:" title="hideToolbarsAnimated:"></a>
+	<h3 class="subsubtitle method-title">hideToolbarsAnimated:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Hides the top and bottom toolbars.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)hideToolbarsAnimated:(BOOL)<em>animated</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>animated</em></dt>
+			<dd><p>Boolean value that enables/disables animation.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Hides the top and bottom toolbars.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">YLPDFViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithDocument:" title="initWithDocument:"></a>
+	<h3 class="subsubtitle method-title">initWithDocument:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializes a YLPDFViewController object and returns it to the caller.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithDocument:(YLDocument *)<em>document</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>document</em></dt>
+			<dd><p>Model object of the PDF <a href="#//api/name/document">document</a>.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An initialized YLPDFViewController instance.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Initializes a YLPDFViewController object and returns it to the caller.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">YLPDFViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/presentModalViewController:animated:" title="presentModalViewController:animated:"></a>
+	<h3 class="subsubtitle method-title">presentModalViewController:animated:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This function is used by the annotation views to present a modal view controller.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)presentModalViewController:(UIViewController *)<em>modalViewController</em> animated:(BOOL)<em>animated</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>modalViewController</em></dt>
+			<dd><p>The view controller that should be presented.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>animated</em></dt>
+			<dd><p>Boolean value that enables/disables animation.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This function is used by the annotation views to present a modal view controller.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">YLPDFViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/scrollToNextPageAnimated:" title="scrollToNextPageAnimated:"></a>
+	<h3 class="subsubtitle method-title">scrollToNextPageAnimated:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Scrolls to the next page if there is one.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)scrollToNextPageAnimated:(BOOL)<em>animated</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>animated</em></dt>
+			<dd><p>Boolean value that enables/disables animation.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Scrolls to the next page if there is one.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">YLPDFViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/scrollToPage:animated:" title="scrollToPage:animated:"></a>
+	<h3 class="subsubtitle method-title">scrollToPage:animated:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Scrolls to the specified page.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)scrollToPage:(NSUInteger)<em>page</em> animated:(BOOL)<em>animated</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>page</em></dt>
+			<dd><p>Page number starting from 0.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>animated</em></dt>
+			<dd><p>Boolean value that enables/disables animation.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Scrolls to the specified page.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">YLPDFViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/scrollToPreviousPageAnimated:" title="scrollToPreviousPageAnimated:"></a>
+	<h3 class="subsubtitle method-title">scrollToPreviousPageAnimated:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Scrolls to the previous page if there is one.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)scrollToPreviousPageAnimated:(BOOL)<em>animated</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>animated</em></dt>
+			<dd><p>Boolean value that enables/disables animation.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Scrolls to the previous page if there is one.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">YLPDFViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/showToolbarsAnimated:" title="showToolbarsAnimated:"></a>
+	<h3 class="subsubtitle method-title">showToolbarsAnimated:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Shows the top and bottom toolbars.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)showToolbarsAnimated:(BOOL)<em>animated</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>animated</em></dt>
+			<dd><p>Boolean value that enables/disables animation.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Shows the top and bottom toolbars.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">YLPDFViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/toggleToolbarsAnimated:" title="toggleToolbarsAnimated:"></a>
+	<h3 class="subsubtitle method-title">toggleToolbarsAnimated:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Toggles the visibility of the top and bottom toolbars.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)toggleToolbarsAnimated:(BOOL)<em>animated</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>animated</em></dt>
+			<dd><p>Boolean value that enables/disables animation.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Toggles the visibility of the top and bottom toolbars.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">YLPDFViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Yakamoz Labs. All rights reserved. (Last updated: 2012-11-21)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

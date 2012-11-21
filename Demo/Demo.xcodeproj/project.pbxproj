@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A1AB1C2165D0C2C002118B4 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A1AB1C1165D0C2C002118B4 /* MessageUI.framework */; };
 		0A73071815EB7B8F008B0A98 /* PDFTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A7306F015EB7B8F008B0A98 /* PDFTouch.a */; };
 		0A73071A15EB7BC2008B0A98 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A73071915EB7BC2008B0A98 /* CoreLocation.framework */; };
 		0A73071C15EB7BC8008B0A98 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A73071B15EB7BC8008B0A98 /* MapKit.framework */; };
@@ -45,6 +46,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A1AB1C1165D0C2C002118B4 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		0A7306EF15EB7B8F008B0A98 /* GCDMulticastDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDMulticastDelegate.h; sourceTree = "<group>"; };
 		0A7306F015EB7B8F008B0A98 /* PDFTouch.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = PDFTouch.a; sourceTree = "<group>"; };
 		0A7306F115EB7B8F008B0A98 /* TTTAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTAttributedLabel.h; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A1AB1C2165D0C2C002118B4 /* MessageUI.framework in Frameworks */,
 				0A73071C15EB7BC8008B0A98 /* MapKit.framework in Frameworks */,
 				0A73071A15EB7BC2008B0A98 /* CoreLocation.framework in Frameworks */,
 				0AFDBD5515738E41006F5214 /* MediaPlayer.framework in Frameworks */,
@@ -176,6 +179,7 @@
 		0A77A6DF15610004003F0DD6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0A1AB1C1165D0C2C002118B4 /* MessageUI.framework */,
 				0A73071B15EB7BC8008B0A98 /* MapKit.framework */,
 				0A73071915EB7BC2008B0A98 /* CoreLocation.framework */,
 				0AFDBD5415738E41006F5214 /* MediaPlayer.framework */,

@@ -9,8 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "YLAnnotationView.h"
 
+/// View for displaying web annotations.
 @interface YLWebAnnotationView : UIView<YLAnnotationView>
 
+/// The UIWebView object used to display the web page.
 @property (nonatomic, readonly) UIWebView *webView;
 
 @end
