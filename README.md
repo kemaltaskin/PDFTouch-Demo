@@ -20,3 +20,6 @@ PDFTouch SDK offers you a solid framework that's easy to use and customize to yo
 - Annotation support: page and web links, video and web pages.
 - Retina Display ready.
 - Optimized for both the iPhone and iPad.
+
+#Documentation
+All public classes of PDFTouch SDK are fully documented. See the [Technical Documentation](http://yakamozlabs.com/static/pdftouch/index.html) for further information.
