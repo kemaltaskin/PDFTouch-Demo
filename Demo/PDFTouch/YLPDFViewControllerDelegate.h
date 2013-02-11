@@ -20,6 +20,11 @@
 ///@param document The YLDocument object displayed by the controller.
 - (void)pdfViewController:(YLPDFViewController *)controller didDisplayDocument:(YLDocument *)document;
 
+/// Called when YLPDFViewController will be dismissed (when the done button is tapped).
+///@param controller The YLPDFViewController object informing the delegate.
+///@param document The YLDocument object displayed by the controller.
+- (void)pdfViewController:(YLPDFViewController *)controller willDismissDocument:(YLDocument *)document;
+
 /// Return YES if you want to override the default action for this annotation. The default value is NO.
 ///@param controller The YLPDFViewController object requesting this information.
 ///@param annotation The YLAnnotation object that was tapped on.

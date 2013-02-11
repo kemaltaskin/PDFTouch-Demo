@@ -60,11 +60,13 @@
 /// @param path Filesystem path to the PDF file.
 - (id)initWithFilePath:(NSString *)path;
 
+
 /** @name Encryption Methods*/
 /// Use this function to unlock an encrypted PDF file.
 /// @returns YES if successfully unlocked, otherwise NO.
 /// @param password Password to use for unlocking the PDF file.
 - (BOOL)unlockWithPassword:(NSString *)password;
+
 
 /** @name Query Methods*/
 /// Returns a YLPageInfo object for the requested page that holds information about the page rectangle and rotation. The YLPageInfo
@@ -73,8 +75,25 @@
 /// @param page Page number starting from 0.
 - (YLPageInfo *)pageInfoForPage:(NSUInteger)page;
 
-/// Returns a CGPDF reference for this document. When you're finished using this reference you should release it using the CGPDFDocumentRelease function.
+/// Returns a CGPDF reference for this document. Retain this reference by using the CGPDFDocumentRetain method. When you're finished
+/// using this reference you should release it with the CGPDFDocumentRelease function.
 - (CGPDFDocumentRef)requestDocumentRef;
+
+
+/** @name Render Methods */
+/// Renders a PDF page in the specified graphics context.
+/// @param page Page number starting from 0.
+/// @param targetRect The target rectangle the PDF page will be rendered in.
+/// @param scale The scale at which the PDF page should be rendered.
+/// @param context Graphics context.
+- (void)renderPage:(NSUInteger)page targetRect:(CGRect)targetRect scale:(CGFloat)scale inContext:(CGContextRef)context;
+
+/// Renders a PDF page in the specified graphics context. This function also highlights search results if there are any.
+/// @param page Page number starting from 0.
+/// @param targetRect The target rectangle the PDF page will be rendered in.
+/// @param context Graphics context.
+- (void)renderPage:(NSUInteger)page targetRect:(CGRect)targetRect inContext:(CGContextRef)context;
+
 
 /** @name Bookmark Methods */
 /// Adds bookmark for the requested page.
