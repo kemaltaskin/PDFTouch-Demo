@@ -5,7 +5,7 @@ PDFTouch SDK offers you a solid framework that's easy to use and customize to yo
 
 ![image](http://dl.dropbox.com/u/1413757/PDFTouch/1.png)
 
-###You can purchase a license with the full source code at [Yakamoz Labs](http://yakamozlabs.com/products/pdftouch).
+###You can purchase a license with the full source code at [Binpress](http://www.binpress.com/app/pdftouch-sdk-for-ios/859).
 
 # Features
 
