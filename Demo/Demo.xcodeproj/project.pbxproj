@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0A1AB1C2165D0C2C002118B4 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A1AB1C1165D0C2C002118B4 /* MessageUI.framework */; };
-		0A73071815EB7B8F008B0A98 /* PDFTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A7306F015EB7B8F008B0A98 /* PDFTouch.a */; };
+		0A43C56D16F3526500B7CF72 /* PDFTouch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A43C56C16F3526500B7CF72 /* PDFTouch.framework */; };
+		0A43C56F16F3526E00B7CF72 /* PDFTouch.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0A43C56E16F3526E00B7CF72 /* PDFTouch.bundle */; };
 		0A73071A15EB7BC2008B0A98 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A73071915EB7BC2008B0A98 /* CoreLocation.framework */; };
 		0A73071C15EB7BC8008B0A98 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A73071B15EB7BC8008B0A98 /* MapKit.framework */; };
 		0A77A6E115610004003F0DD6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A77A6E015610004003F0DD6 /* UIKit.framework */; };
@@ -31,11 +32,6 @@
 		0A77A71115610076003F0DD6 /* toc.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A77A70915610076003F0DD6 /* toc.png */; };
 		0A77A71215610076003F0DD6 /* toc@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A77A70A15610076003F0DD6 /* toc@2x.png */; };
 		0A77A732156100FF003F0DD6 /* Developers.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0A77A731156100FF003F0DD6 /* Developers.pdf */; };
-		0A77A761156117FF003F0DD6 /* GMGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A77A757156117FF003F0DD6 /* GMGridView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		0A77A762156117FF003F0DD6 /* GMGridViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A77A759156117FF003F0DD6 /* GMGridViewCell.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		0A77A763156117FF003F0DD6 /* GMGridViewLayoutStrategies.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A77A75C156117FF003F0DD6 /* GMGridViewLayoutStrategies.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		0A77A764156117FF003F0DD6 /* UIGestureRecognizer+GMGridViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A77A75E156117FF003F0DD6 /* UIGestureRecognizer+GMGridViewAdditions.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		0A77A765156117FF003F0DD6 /* UIView+GMGridViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A77A760156117FF003F0DD6 /* UIView+GMGridViewAdditions.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		0A77A78915611983003F0DD6 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A77A78515611983003F0DD6 /* Icon.png */; };
 		0A77A78A15611983003F0DD6 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A77A78615611983003F0DD6 /* Icon@2x.png */; };
 		0A77A78B15611983003F0DD6 /* IconiPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A77A78715611983003F0DD6 /* IconiPad.png */; };
@@ -53,47 +49,8 @@
 
 /* Begin PBXFileReference section */
 		0A1AB1C1165D0C2C002118B4 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
-		0A7306EF15EB7B8F008B0A98 /* GCDMulticastDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDMulticastDelegate.h; sourceTree = "<group>"; };
-		0A7306F015EB7B8F008B0A98 /* PDFTouch.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = PDFTouch.a; sourceTree = "<group>"; };
-		0A7306F115EB7B8F008B0A98 /* TTTAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTAttributedLabel.h; sourceTree = "<group>"; };
-		0A7306F215EB7B8F008B0A98 /* YLAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLAnnotation.h; sourceTree = "<group>"; };
-		0A7306F315EB7B8F008B0A98 /* YLAnnotationParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLAnnotationParser.h; sourceTree = "<group>"; };
-		0A7306F415EB7B8F008B0A98 /* YLAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLAnnotationView.h; sourceTree = "<group>"; };
-		0A7306F515EB7B8F008B0A98 /* YLAudioAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLAudioAnnotationView.h; sourceTree = "<group>"; };
-		0A7306F615EB7B8F008B0A98 /* YLCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLCache.h; sourceTree = "<group>"; };
-		0A7306F715EB7B8F008B0A98 /* YLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLDocument.h; sourceTree = "<group>"; };
-		0A7306F815EB7B8F008B0A98 /* YLDocumentScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLDocumentScanner.h; sourceTree = "<group>"; };
-		0A7306F915EB7B8F008B0A98 /* YLGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLGlobal.h; sourceTree = "<group>"; };
-		0A7306FA15EB7B8F008B0A98 /* YLLinkAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLLinkAnnotationView.h; sourceTree = "<group>"; };
-		0A7306FB15EB7B8F008B0A98 /* YLLoadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLLoadOperation.h; sourceTree = "<group>"; };
-		0A7306FC15EB7B8F008B0A98 /* YLMapAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLMapAnnotationView.h; sourceTree = "<group>"; };
-		0A7306FD15EB7B8F008B0A98 /* YLOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLOperation.h; sourceTree = "<group>"; };
-		0A7306FE15EB7B8F008B0A98 /* YLOutlineItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLOutlineItem.h; sourceTree = "<group>"; };
-		0A7306FF15EB7B8F008B0A98 /* YLOutlineParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLOutlineParser.h; sourceTree = "<group>"; };
-		0A73070015EB7B8F008B0A98 /* YLOutlineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLOutlineViewController.h; sourceTree = "<group>"; };
-		0A73070115EB7B8F008B0A98 /* YLPageInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPageInfo.h; sourceTree = "<group>"; };
-		0A73070215EB7B8F008B0A98 /* YLPageRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPageRenderer.h; sourceTree = "<group>"; };
-		0A73070315EB7B8F008B0A98 /* YLPagesScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPagesScrollView.h; sourceTree = "<group>"; };
-		0A73070415EB7B8F008B0A98 /* YLPagesToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPagesToolbar.h; sourceTree = "<group>"; };
-		0A73070515EB7B8F008B0A98 /* YLPagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPagesViewController.h; sourceTree = "<group>"; };
-		0A73070615EB7B8F008B0A98 /* YLPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPageView.h; sourceTree = "<group>"; };
-		0A73070715EB7B8F008B0A98 /* YLPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPageViewController.h; sourceTree = "<group>"; };
-		0A73070815EB7B8F008B0A98 /* YLPatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPatch.h; sourceTree = "<group>"; };
-		0A73070915EB7B8F008B0A98 /* YLPDFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPDFViewController.h; sourceTree = "<group>"; };
-		0A73070A15EB7B8F008B0A98 /* YLPDFViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPDFViewControllerDelegate.h; sourceTree = "<group>"; };
-		0A73070B15EB7B8F008B0A98 /* YLRenderOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLRenderOperation.h; sourceTree = "<group>"; };
-		0A73070C15EB7B8F008B0A98 /* YLScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLScrollView.h; sourceTree = "<group>"; };
-		0A73070D15EB7B8F008B0A98 /* YLSearchOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLSearchOperation.h; sourceTree = "<group>"; };
-		0A73070E15EB7B8F008B0A98 /* YLSearchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLSearchResult.h; sourceTree = "<group>"; };
-		0A73070F15EB7B8F008B0A98 /* YLSearchResultCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLSearchResultCell.h; sourceTree = "<group>"; };
-		0A73071015EB7B8F008B0A98 /* YLSearchStatusCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLSearchStatusCell.h; sourceTree = "<group>"; };
-		0A73071115EB7B8F008B0A98 /* YLSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLSearchViewController.h; sourceTree = "<group>"; };
-		0A73071215EB7B8F008B0A98 /* YLThumbnailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLThumbnailCell.h; sourceTree = "<group>"; };
-		0A73071315EB7B8F008B0A98 /* YLTiledView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLTiledView.h; sourceTree = "<group>"; };
-		0A73071415EB7B8F008B0A98 /* YLVideoAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLVideoAnnotationView.h; sourceTree = "<group>"; };
-		0A73071515EB7B8F008B0A98 /* YLWebAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLWebAnnotationView.h; sourceTree = "<group>"; };
-		0A73071615EB7B8F008B0A98 /* YLWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLWebViewController.h; sourceTree = "<group>"; };
-		0A73071715EB7B8F008B0A98 /* YLWriteOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLWriteOperation.h; sourceTree = "<group>"; };
+		0A43C56C16F3526500B7CF72 /* PDFTouch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PDFTouch.framework; sourceTree = "<group>"; };
+		0A43C56E16F3526E00B7CF72 /* PDFTouch.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PDFTouch.bundle; sourceTree = SOURCE_ROOT; };
 		0A73071915EB7BC2008B0A98 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		0A73071B15EB7BC8008B0A98 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		0A77A6DC15610004003F0DD6 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,17 +78,6 @@
 		0A77A70915610076003F0DD6 /* toc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toc.png; sourceTree = "<group>"; };
 		0A77A70A15610076003F0DD6 /* toc@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toc@2x.png"; sourceTree = "<group>"; };
 		0A77A731156100FF003F0DD6 /* Developers.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Developers.pdf; sourceTree = "<group>"; };
-		0A77A756156117FF003F0DD6 /* GMGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GMGridView.h; path = GMGridView/GMGridView.h; sourceTree = "<group>"; };
-		0A77A757156117FF003F0DD6 /* GMGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GMGridView.m; path = GMGridView/GMGridView.m; sourceTree = "<group>"; };
-		0A77A758156117FF003F0DD6 /* GMGridViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GMGridViewCell.h; path = GMGridView/GMGridViewCell.h; sourceTree = "<group>"; };
-		0A77A759156117FF003F0DD6 /* GMGridViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GMGridViewCell.m; path = GMGridView/GMGridViewCell.m; sourceTree = "<group>"; };
-		0A77A75A156117FF003F0DD6 /* GMGridViewCell+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "GMGridViewCell+Extended.h"; path = "GMGridView/GMGridViewCell+Extended.h"; sourceTree = "<group>"; };
-		0A77A75B156117FF003F0DD6 /* GMGridViewLayoutStrategies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GMGridViewLayoutStrategies.h; path = GMGridView/GMGridViewLayoutStrategies.h; sourceTree = "<group>"; };
-		0A77A75C156117FF003F0DD6 /* GMGridViewLayoutStrategies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GMGridViewLayoutStrategies.m; path = GMGridView/GMGridViewLayoutStrategies.m; sourceTree = "<group>"; };
-		0A77A75D156117FF003F0DD6 /* UIGestureRecognizer+GMGridViewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIGestureRecognizer+GMGridViewAdditions.h"; path = "GMGridView/UIGestureRecognizer+GMGridViewAdditions.h"; sourceTree = "<group>"; };
-		0A77A75E156117FF003F0DD6 /* UIGestureRecognizer+GMGridViewAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIGestureRecognizer+GMGridViewAdditions.m"; path = "GMGridView/UIGestureRecognizer+GMGridViewAdditions.m"; sourceTree = "<group>"; };
-		0A77A75F156117FF003F0DD6 /* UIView+GMGridViewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+GMGridViewAdditions.h"; path = "GMGridView/UIView+GMGridViewAdditions.h"; sourceTree = "<group>"; };
-		0A77A760156117FF003F0DD6 /* UIView+GMGridViewAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+GMGridViewAdditions.m"; path = "GMGridView/UIView+GMGridViewAdditions.m"; sourceTree = "<group>"; };
 		0A77A78515611983003F0DD6 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		0A77A78615611983003F0DD6 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		0A77A78715611983003F0DD6 /* IconiPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IconiPad.png; sourceTree = "<group>"; };
@@ -161,7 +107,7 @@
 				0A77A6E115610004003F0DD6 /* UIKit.framework in Frameworks */,
 				0A77A6E315610004003F0DD6 /* Foundation.framework in Frameworks */,
 				0A77A6E515610004003F0DD6 /* CoreGraphics.framework in Frameworks */,
-				0A73071815EB7B8F008B0A98 /* PDFTouch.a in Frameworks */,
+				0A43C56D16F3526500B7CF72 /* PDFTouch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,8 +117,6 @@
 		0A77A6D115610004003F0DD6 = {
 			isa = PBXGroup;
 			children = (
-				0A77A76715611833003F0DD6 /* PDFTouch */,
-				0A77A76615611803003F0DD6 /* GMGridView */,
 				0A77A730156100FF003F0DD6 /* Samples */,
 				0A77A6E615610004003F0DD6 /* Demo */,
 				0A77A6DF15610004003F0DD6 /* Frameworks */,
@@ -191,6 +135,7 @@
 		0A77A6DF15610004003F0DD6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0A43C56C16F3526500B7CF72 /* PDFTouch.framework */,
 				0A1AB1C1165D0C2C002118B4 /* MessageUI.framework */,
 				0A73071B15EB7BC8008B0A98 /* MapKit.framework */,
 				0A73071915EB7BC2008B0A98 /* CoreLocation.framework */,
@@ -221,6 +166,7 @@
 		0A77A6E715610004003F0DD6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0A43C56E16F3526E00B7CF72 /* PDFTouch.bundle */,
 				0AA83CF7161C187D00C0A391 /* Default-568h@2x.png */,
 				0A77A78415611983003F0DD6 /* AppImages */,
 				0A77A70215610076003F0DD6 /* Images */,
@@ -262,72 +208,6 @@
 			path = Samples;
 			sourceTree = "<group>";
 		};
-		0A77A76615611803003F0DD6 /* GMGridView */ = {
-			isa = PBXGroup;
-			children = (
-				0A77A756156117FF003F0DD6 /* GMGridView.h */,
-				0A77A757156117FF003F0DD6 /* GMGridView.m */,
-				0A77A758156117FF003F0DD6 /* GMGridViewCell.h */,
-				0A77A759156117FF003F0DD6 /* GMGridViewCell.m */,
-				0A77A75A156117FF003F0DD6 /* GMGridViewCell+Extended.h */,
-				0A77A75B156117FF003F0DD6 /* GMGridViewLayoutStrategies.h */,
-				0A77A75C156117FF003F0DD6 /* GMGridViewLayoutStrategies.m */,
-				0A77A75D156117FF003F0DD6 /* UIGestureRecognizer+GMGridViewAdditions.h */,
-				0A77A75E156117FF003F0DD6 /* UIGestureRecognizer+GMGridViewAdditions.m */,
-				0A77A75F156117FF003F0DD6 /* UIView+GMGridViewAdditions.h */,
-				0A77A760156117FF003F0DD6 /* UIView+GMGridViewAdditions.m */,
-			);
-			name = GMGridView;
-			sourceTree = "<group>";
-		};
-		0A77A76715611833003F0DD6 /* PDFTouch */ = {
-			isa = PBXGroup;
-			children = (
-				0A7306EF15EB7B8F008B0A98 /* GCDMulticastDelegate.h */,
-				0A7306F015EB7B8F008B0A98 /* PDFTouch.a */,
-				0A7306F115EB7B8F008B0A98 /* TTTAttributedLabel.h */,
-				0A7306F215EB7B8F008B0A98 /* YLAnnotation.h */,
-				0A7306F315EB7B8F008B0A98 /* YLAnnotationParser.h */,
-				0A7306F415EB7B8F008B0A98 /* YLAnnotationView.h */,
-				0A7306F515EB7B8F008B0A98 /* YLAudioAnnotationView.h */,
-				0A7306F615EB7B8F008B0A98 /* YLCache.h */,
-				0A7306F715EB7B8F008B0A98 /* YLDocument.h */,
-				0A7306F815EB7B8F008B0A98 /* YLDocumentScanner.h */,
-				0A7306F915EB7B8F008B0A98 /* YLGlobal.h */,
-				0A7306FA15EB7B8F008B0A98 /* YLLinkAnnotationView.h */,
-				0A7306FB15EB7B8F008B0A98 /* YLLoadOperation.h */,
-				0A7306FC15EB7B8F008B0A98 /* YLMapAnnotationView.h */,
-				0A7306FD15EB7B8F008B0A98 /* YLOperation.h */,
-				0A7306FE15EB7B8F008B0A98 /* YLOutlineItem.h */,
-				0A7306FF15EB7B8F008B0A98 /* YLOutlineParser.h */,
-				0A73070015EB7B8F008B0A98 /* YLOutlineViewController.h */,
-				0A73070115EB7B8F008B0A98 /* YLPageInfo.h */,
-				0A73070215EB7B8F008B0A98 /* YLPageRenderer.h */,
-				0A73070315EB7B8F008B0A98 /* YLPagesScrollView.h */,
-				0A73070415EB7B8F008B0A98 /* YLPagesToolbar.h */,
-				0A73070515EB7B8F008B0A98 /* YLPagesViewController.h */,
-				0A73070615EB7B8F008B0A98 /* YLPageView.h */,
-				0A73070715EB7B8F008B0A98 /* YLPageViewController.h */,
-				0A73070815EB7B8F008B0A98 /* YLPatch.h */,
-				0A73070915EB7B8F008B0A98 /* YLPDFViewController.h */,
-				0A73070A15EB7B8F008B0A98 /* YLPDFViewControllerDelegate.h */,
-				0A73070B15EB7B8F008B0A98 /* YLRenderOperation.h */,
-				0A73070C15EB7B8F008B0A98 /* YLScrollView.h */,
-				0A73070D15EB7B8F008B0A98 /* YLSearchOperation.h */,
-				0A73070E15EB7B8F008B0A98 /* YLSearchResult.h */,
-				0A73070F15EB7B8F008B0A98 /* YLSearchResultCell.h */,
-				0A73071015EB7B8F008B0A98 /* YLSearchStatusCell.h */,
-				0A73071115EB7B8F008B0A98 /* YLSearchViewController.h */,
-				0A73071215EB7B8F008B0A98 /* YLThumbnailCell.h */,
-				0A73071315EB7B8F008B0A98 /* YLTiledView.h */,
-				0A73071415EB7B8F008B0A98 /* YLVideoAnnotationView.h */,
-				0A73071515EB7B8F008B0A98 /* YLWebAnnotationView.h */,
-				0A73071615EB7B8F008B0A98 /* YLWebViewController.h */,
-				0A73071715EB7B8F008B0A98 /* YLWriteOperation.h */,
-			);
-			path = PDFTouch;
-			sourceTree = "<group>";
-		};
 		0A77A78415611983003F0DD6 /* AppImages */ = {
 			isa = PBXGroup;
 			children = (
@@ -365,7 +245,7 @@
 		0A77A6D315610004003F0DD6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0460;
 			};
 			buildConfigurationList = 0A77A6D615610004003F0DD6 /* Build configuration list for PBXProject "Demo" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -413,6 +293,7 @@
 				0A958DEA165D0C8900147673 /* bookmark_on@2x.png in Resources */,
 				0A958DEB165D0C8900147673 /* bookmark_small.png in Resources */,
 				0A958DEC165D0C8900147673 /* bookmark_small@2x.png in Resources */,
+				0A43C56F16F3526E00B7CF72 /* PDFTouch.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,11 +307,6 @@
 				0A77A6ED15610004003F0DD6 /* main.m in Sources */,
 				0A77A6F115610004003F0DD6 /* AppDelegate.m in Sources */,
 				0A77A6FF15610058003F0DD6 /* MainViewController.m in Sources */,
-				0A77A761156117FF003F0DD6 /* GMGridView.m in Sources */,
-				0A77A762156117FF003F0DD6 /* GMGridViewCell.m in Sources */,
-				0A77A763156117FF003F0DD6 /* GMGridViewLayoutStrategies.m in Sources */,
-				0A77A764156117FF003F0DD6 /* UIGestureRecognizer+GMGridViewAdditions.m in Sources */,
-				0A77A765156117FF003F0DD6 /* UIView+GMGridViewAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,6 +329,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -478,6 +358,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -496,13 +380,18 @@
 		0A77A6F515610004003F0DD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Demo/Demo-Prefix.pch";
-				HEADER_SEARCH_PATHS = $SRCROOT/PDFTouch;
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "Demo/Demo-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/PDFTouch\"",
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -512,13 +401,18 @@
 		0A77A6F615610004003F0DD6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Demo/Demo-Prefix.pch";
-				HEADER_SEARCH_PATHS = $SRCROOT/PDFTouch;
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "Demo/Demo-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/PDFTouch\"",
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

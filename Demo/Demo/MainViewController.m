@@ -7,8 +7,7 @@
 //
 
 #import "MainViewController.h"
-#import "YLPDFViewController.h"
-#import "YLDocument.h"
+#import <PDFTouch/PDFTouch.h>
 
 @interface MainViewController(Private)
 - (void)viewTapped;
