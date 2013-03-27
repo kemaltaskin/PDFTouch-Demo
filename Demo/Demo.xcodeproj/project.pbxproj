@@ -35,13 +35,13 @@
 		0A77A78B15611983003F0DD6 /* IconiPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A77A78715611983003F0DD6 /* IconiPad.png */; };
 		0A77A78C15611983003F0DD6 /* IconiPad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A77A78815611983003F0DD6 /* IconiPad@2x.png */; };
 		0A7B782916F35420001520B6 /* PDFTouch.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0A7B782816F35420001520B6 /* PDFTouch.bundle */; };
-		0A7B782B16F35426001520B6 /* PDFTouch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A7B782A16F35426001520B6 /* PDFTouch.framework */; };
 		0A958DE7165D0C8900147673 /* bookmark_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A958DE1165D0C8900147673 /* bookmark_off.png */; };
 		0A958DE8165D0C8900147673 /* bookmark_off@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A958DE2165D0C8900147673 /* bookmark_off@2x.png */; };
 		0A958DE9165D0C8900147673 /* bookmark_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A958DE3165D0C8900147673 /* bookmark_on.png */; };
 		0A958DEA165D0C8900147673 /* bookmark_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A958DE4165D0C8900147673 /* bookmark_on@2x.png */; };
 		0A958DEB165D0C8900147673 /* bookmark_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A958DE5165D0C8900147673 /* bookmark_small.png */; };
 		0A958DEC165D0C8900147673 /* bookmark_small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A958DE6165D0C8900147673 /* bookmark_small@2x.png */; };
+		0AA372621702FA1B00143D60 /* PDFTouch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA372611702FA1B00143D60 /* PDFTouch.framework */; };
 		0AA83CF8161C187D00C0A391 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AA83CF7161C187D00C0A391 /* Default-568h@2x.png */; };
 		0AFDBD5515738E41006F5214 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFDBD5415738E41006F5214 /* MediaPlayer.framework */; };
 		0AFDBD5715738EA0006F5214 /* pdftouch.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0AFDBD5615738EA0006F5214 /* pdftouch.pdf */; };
@@ -81,13 +81,13 @@
 		0A77A78715611983003F0DD6 /* IconiPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IconiPad.png; sourceTree = "<group>"; };
 		0A77A78815611983003F0DD6 /* IconiPad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IconiPad@2x.png"; sourceTree = "<group>"; };
 		0A7B782816F35420001520B6 /* PDFTouch.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PDFTouch.bundle; sourceTree = SOURCE_ROOT; };
-		0A7B782A16F35426001520B6 /* PDFTouch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PDFTouch.framework; sourceTree = "<group>"; };
 		0A958DE1165D0C8900147673 /* bookmark_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bookmark_off.png; sourceTree = "<group>"; };
 		0A958DE2165D0C8900147673 /* bookmark_off@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bookmark_off@2x.png"; sourceTree = "<group>"; };
 		0A958DE3165D0C8900147673 /* bookmark_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bookmark_on.png; sourceTree = "<group>"; };
 		0A958DE4165D0C8900147673 /* bookmark_on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bookmark_on@2x.png"; sourceTree = "<group>"; };
 		0A958DE5165D0C8900147673 /* bookmark_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bookmark_small.png; sourceTree = "<group>"; };
 		0A958DE6165D0C8900147673 /* bookmark_small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bookmark_small@2x.png"; sourceTree = "<group>"; };
+		0AA372611702FA1B00143D60 /* PDFTouch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PDFTouch.framework; sourceTree = "<group>"; };
 		0AA83CF7161C187D00C0A391 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		0AFDBD5415738E41006F5214 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		0AFDBD5615738EA0006F5214 /* pdftouch.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = pdftouch.pdf; sourceTree = "<group>"; };
@@ -107,7 +107,7 @@
 				0A77A6E115610004003F0DD6 /* UIKit.framework in Frameworks */,
 				0A77A6E315610004003F0DD6 /* Foundation.framework in Frameworks */,
 				0A77A6E515610004003F0DD6 /* CoreGraphics.framework in Frameworks */,
-				0A7B782B16F35426001520B6 /* PDFTouch.framework in Frameworks */,
+				0AA372621702FA1B00143D60 /* PDFTouch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +135,7 @@
 		0A77A6DF15610004003F0DD6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0A7B782A16F35426001520B6 /* PDFTouch.framework */,
+				0AA372611702FA1B00143D60 /* PDFTouch.framework */,
 				0A1AB1C1165D0C2C002118B4 /* MessageUI.framework */,
 				0A73071B15EB7BC8008B0A98 /* MapKit.framework */,
 				0A73071915EB7BC2008B0A98 /* CoreLocation.framework */,

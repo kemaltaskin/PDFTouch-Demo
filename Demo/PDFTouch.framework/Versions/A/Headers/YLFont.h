@@ -31,7 +31,7 @@ extern const char *kPDFFontFile3Key;
 @property (nonatomic, readonly) NSString *type;
 @property (nonatomic, readonly) NSString *baseFont;
 
-@property (nonatomic, readonly) YLCMap *cmap;
+@property (nonatomic, retain) YLCMap *cmap;
 @property (nonatomic, readonly) YLFontDescriptor *fontDescriptor;
 @property (nonatomic, readonly) NSMutableDictionary *widths;
 @property (nonatomic, readonly) NSStringEncoding encoding;
@@ -45,6 +45,7 @@ extern const char *kPDFFontFile3Key;
 - (id)initWithFontDictionary:(CGPDFDictionaryRef)dict;
 
 - (void)setWidthsWithFontDictionary:(CGPDFDictionaryRef)dict;
+- (void)setToUnicodeWithFontDictionary:(CGPDFDictionaryRef)dict;
 
 - (NSString *)stringWithPDFString:(CGPDFStringRef)pdfString ligatures:(BOOL *)ligatures;
 
