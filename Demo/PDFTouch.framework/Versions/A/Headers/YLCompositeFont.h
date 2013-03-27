@@ -20,6 +20,6 @@
 
 @interface YLCompositeFont : YLFont
 
-@property (nonatomic, readonly) NSUInteger defaultWidth;
+@property (nonatomic, readonly) CGFloat defaultWidth;
 
 @end

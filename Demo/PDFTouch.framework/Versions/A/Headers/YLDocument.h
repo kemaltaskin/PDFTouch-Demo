@@ -12,6 +12,16 @@
 @class YLDocumentScanner;
 @class YLAnnotationParser;
 
+extern NSString *const kYLDocumentMetadataKeyTitle;
+extern NSString *const kYLDocumentMetadataKeyAuthor;
+extern NSString *const kYLDocumentMetadataKeySubject;
+extern NSString *const kYLDocumentMetadataKeyKeywords;
+extern NSString *const kYLDocumentMetadataKeyCreator;
+extern NSString *const kYLDocumentMetadataKeyProducer;
+extern NSString *const kYLDocumentMetadataKeyCreationDate;
+extern NSString *const kYLDocumentMetadataKeyModDate;
+extern NSString *const kYLDocumentMetadataKeyVersion;
+
 /// Model object that represents the PDF file.
 @interface YLDocument : NSObject
 
@@ -76,7 +86,13 @@
 
 /// Returns a CGPDF reference for this document. Retain this reference by using the CGPDFDocumentRetain method. When you're finished
 /// using this reference you should release it with the CGPDFDocumentRelease function.
+/// @returns A CGPDFDocumentRef instance.
 - (CGPDFDocumentRef)requestDocumentRef;
+
+/// Returns the requested metadata as NSString if there's any.
+/// @returns A NSString value representing the metadata.
+/// @param key NSString value. Use one of the predefined kYLDocumentMetadataKey* strings.
+- (NSString *)metadataForKey:(NSString *)key;
 
 
 /** @name Render Methods */
