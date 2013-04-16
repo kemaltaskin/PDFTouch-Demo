@@ -18,12 +18,7 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor blackColor];
     
-    if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
-        _mainViewController = [[MainViewController alloc] initWithNibName:@"MainViewiPad" bundle:nil];
-    } else {
-        _mainViewController = [[MainViewController alloc] initWithNibName:@"MainViewiPhone" bundle:nil];
-    }
-    
+    _mainViewController = [[MainViewController alloc] initWithStyle:UITableViewStyleGrouped];
     _navController = [[UINavigationController alloc] initWithRootViewController:_mainViewController];
     [[_navController navigationBar] setBarStyle:UIBarStyleBlack];
     
