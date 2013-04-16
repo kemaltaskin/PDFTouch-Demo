@@ -1,70 +1,164 @@
 //
 //  MainViewController.m
-//  YLPDFKit
 //
-//  Created by Kemal Taskin on 3/27/12.
 //  Copyright (c) 2012 Yakamoz Labs. All rights reserved.
 //
 
 #import "MainViewController.h"
+#import "ChildViewController.h"
 #import <PDFTouch/PDFTouch.h>
 
-@interface MainViewController(Private)
-- (void)viewTapped;
+@interface MainViewController()<YLPDFViewControllerDelegate> {
+    YLDocument *_document;
+}
+
+@property (nonatomic, readonly) YLDocument *document;
+
+- (void)pushPDFView;
+- (void)modalPDFView;
+- (void)containmentPDFView;
+
 @end
 
 @implementation MainViewController
 
-@synthesize label = _label;
+@synthesize document = _document;
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
+- (id)initWithStyle:(UITableViewStyle)style {
+    self = [super initWithStyle:style];
+    if(self) {
         self.title = @"PDFTouch SDK Demo";
+        
+        self.navigationItem.backBarButtonItem = [[[UIBarButtonItem alloc] initWithTitle:@"Examples" style:UIBarButtonItemStyleDone target:nil action:nil] autorelease];
     }
     
     return self;
 }
 
 - (void)dealloc {
-    [_label release];
+    [_document release];
     
     [super dealloc];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    UITapGestureRecognizer *t = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(viewTapped)];
-    [self.view addGestureRecognizer:t];
-    [t release];
 }
 
-- (void)viewDidUnload {
-    [super viewDidUnload];
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     
-    self.label = nil;
+    [self.navigationController setNavigationBarHidden:NO animated:animated];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     return YES;
 }
 
+- (YLDocument *)document {
+    if(_document == nil) {
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"Developers" ofType:@"pdf"];
+        _document = [[YLDocument alloc] initWithFilePath:path];
+        if(_document.isLocked) {
+            // unlock pdf document
+            [_document unlockWithPassword:@""];
+        }
+    }
+    
+    return _document;
+}
+
+#pragma mark -
+#pragma mark UITableViewDataSource and UITableViewDelegate Methods
+- (int)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (int)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    if(section == 0) {
+        return 3;
+    }
+    
+    return 0;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    if(section == 0) {
+        return @"Examples";
+    }
+    
+    return nil;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *CellIdentifier = @"CellIdentifier";
+    
+    UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if(cell == nil) {
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+    }
+    
+    if(indexPath.row == 0) {
+        [[cell textLabel] setText:@"Push PDF ViewController"];
+    } else if(indexPath.row == 1) {
+        [[cell textLabel] setText:@"Open Modal PDF ViewController"];
+    } else if(indexPath.row == 2) {
+        [[cell textLabel] setText:@"Embed PDF ViewController"];
+    }
+    
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    if(indexPath.row == 0) {
+        [self pushPDFView];
+    } else if(indexPath.row == 1) {
+        [self modalPDFView];
+    } else if(indexPath.row == 2) {
+        [self containmentPDFView];
+    }
+}
+
+
+#pragma mark -
+#pragma mark YLPDFViewControllerDelegate Methods
+- (void)pdfViewController:(YLPDFViewController *)controller didDisplayDocument:(YLDocument *)document {
+    NSLog(@"Did display document.");
+}
+
+- (void)pdfViewController:(YLPDFViewController *)controller willDismissDocument:(YLDocument *)document {
+    NSLog(@"Will dismiss document.");
+}
 
 #pragma mark -
 #pragma mark Private Methods
-- (void)viewTapped {
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"Developers" ofType:@"pdf"];
-    YLDocument *document = [[[YLDocument alloc] initWithFilePath:path] autorelease];
-    YLPDFViewController *v = [[YLPDFViewController alloc] initWithDocument:document];
+- (void)pushPDFView {
+    YLPDFViewController *v = [[[YLPDFViewController alloc] initWithDocument:self.document] autorelease];
+    [v setDelegate:self];
     [v setDocumentMode:YLDocumentModeDouble];
+    [v setDocumentLead:YLDocumentLeadRight];
+    [v setPageCurlEnabled:YES];
+    [v setDismissButtonStyle:YLDismissButtonStyleBack];
+    [v setDismissButtonText:@"Examples"];
+    [self.navigationController pushViewController:v animated:YES];
+}
+
+- (void)modalPDFView {
+    YLPDFViewController *v = [[[YLPDFViewController alloc] initWithDocument:self.document] autorelease];
+    [v setDelegate:self];
+    [v setDocumentMode:YLDocumentModeSingle];
     [v setPageCurlEnabled:YES];
     [v setDocumentLead:YLDocumentLeadRight];
-    [v setAutoLayoutEnabled:YES];
     [v setModalPresentationStyle:UIModalPresentationFullScreen];
     [v setModalTransitionStyle:UIModalTransitionStyleCoverVertical];
     [self.navigationController presentModalViewController:v animated:YES];
-    [v release];
+}
+
+- (void)containmentPDFView {
+    ChildViewController *c = [[[ChildViewController alloc] initWithDocument:self.document] autorelease];
+    [self.navigationController pushViewController:c animated:YES];
 }
 
 @end

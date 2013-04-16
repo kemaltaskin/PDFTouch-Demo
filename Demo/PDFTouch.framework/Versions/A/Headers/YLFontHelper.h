@@ -1,11 +1,11 @@
 //
 //  YLFontHelper.h
 //
-//  Created by Kemal Taskin on 2/26/13.
 //  Copyright (c) 2013 Yakamoz Labs. All rights reserved.
 //
 
 @class YLCMap;
+@class YLFont;
 
 @interface YLFontHelper : NSObject
 
@@ -18,5 +18,19 @@
 - (NSString *)ligatureForCharacter:(unichar)character;
 
 - (NSString *)coreTextFontNameForFont:(NSString *)name standardFont:(BOOL *)standardFont;
+
+- (CGFloat)minYForFontName:(NSString *)name;
+
+- (CGFloat)maxYForFontName:(NSString *)name;
+
+- (NSNumber *)widthForFontName:(NSString *)name character:(unichar)character;
+
+- (void)setWidth:(CGFloat)width forFontName:(NSString *)name character:(unichar)character;
+
+- (YLFont *)fontWithKey:(NSString *)key;
+
+- (void)setFont:(YLFont *)font key:(NSString *)key;
+
+- (void)clearCache;
 
 @end

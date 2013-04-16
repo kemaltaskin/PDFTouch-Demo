@@ -3,7 +3,7 @@
 //  Demo
 //
 //  Created by Kemal Taskin on 5/14/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2012 Yakamoz Labs. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

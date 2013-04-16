@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "YLCache.h"
 
 /// Model object that holds various information about a PDF page like rectangle, rotation and page number.
 @interface YLPageInfo : NSObject
@@ -35,5 +36,10 @@
 /// @param rect The original rectangle.
 /// @param rotation The rotation angle.
 - (id)initWithPage:(NSUInteger)page rect:(CGRect)rect rotation:(int)rotation;
+
+/// Calculates the target page rectangle for a specific size and caches the result for future usage.
+/// @returns A CGRect value with the correct aspect ratio and offset for the specified size.
+/// @param size Size of the target rectangle.
+- (CGRect)targetRectForSize:(YLPDFImageSize)size;
 
 @end
