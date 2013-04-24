@@ -31,6 +31,8 @@
 
 - (void)setFont:(YLFont *)font key:(NSString *)key;
 
+- (NSDictionary *)fontCollection;
+
 - (void)clearCache;
 
 @end

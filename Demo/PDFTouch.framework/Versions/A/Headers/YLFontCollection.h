@@ -9,6 +9,7 @@
 @interface YLFontCollection : NSObject
 
 - (id)initWithFontDictionary:(CGPDFDictionaryRef)dict;
+- (id)initWithFonts:(NSDictionary *)fonts;
 
 - (YLFont *)fontNamed:(NSString *)fontName;
 - (NSDictionary *)fonts;
