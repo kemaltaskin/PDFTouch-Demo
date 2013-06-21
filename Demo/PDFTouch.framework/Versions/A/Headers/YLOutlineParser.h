@@ -22,6 +22,9 @@
 /// Parse the TOC of the PDF file.
 - (void)parse;
 
+/// Cancel parsing of TOC.
+- (void)cancel;
+
 /// Returns an array with YLOutlineItem objects. This method will return nil if parsing is not finished yet.
 - (NSArray *)outline;
 
