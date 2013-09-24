@@ -28,4 +28,18 @@ __VA_ARGS__ \
 #define IF_IOS5_OR_GREATER(...)
 #endif
 
+#ifndef kCFCoreFoundationVersionNumber_iPhoneOS_7_0
+#define kCFCoreFoundationVersionNumber_iPhoneOS_7_0 838.0
+#endif
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 70000
+#define IF_IOS7_OR_GREATER(...) \
+if (kCFCoreFoundationVersionNumber >= kCFCoreFoundationVersionNumber_iPhoneOS_7_0) \
+{ \
+__VA_ARGS__ \
+}
+#else
+#define IF_IOS7_OR_GREATER(...)
+#endif
+
+
 #endif
