@@ -20,7 +20,6 @@
     
     _mainViewController = [[MainViewController alloc] initWithStyle:UITableViewStyleGrouped];
     _navController = [[UINavigationController alloc] initWithRootViewController:_mainViewController];
-    [[_navController navigationBar] setBarStyle:UIBarStyleBlack];
     
     [self.window setRootViewController:_navController];
     [self.window makeKeyAndVisible];

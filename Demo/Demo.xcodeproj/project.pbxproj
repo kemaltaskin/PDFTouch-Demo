@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0A1AB1C2165D0C2C002118B4 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A1AB1C1165D0C2C002118B4 /* MessageUI.framework */; };
+		0A2BA75D17F1DB8E00B122CD /* iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A2BA75A17F1DB8E00B122CD /* iPad.png */; };
+		0A2BA75E17F1DB8E00B122CD /* iPad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A2BA75B17F1DB8E00B122CD /* iPad@2x.png */; };
+		0A2BA75F17F1DB8E00B122CD /* iPhoneRetina.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A2BA75C17F1DB8E00B122CD /* iPhoneRetina.png */; };
 		0A6777C6171D7FB70071CE7B /* ChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6777C5171D7FB70071CE7B /* ChildViewController.m */; };
 		0A73071A15EB7BC2008B0A98 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A73071915EB7BC2008B0A98 /* CoreLocation.framework */; };
 		0A73071C15EB7BC8008B0A98 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A73071B15EB7BC8008B0A98 /* MapKit.framework */; };
@@ -48,6 +51,9 @@
 
 /* Begin PBXFileReference section */
 		0A1AB1C1165D0C2C002118B4 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		0A2BA75A17F1DB8E00B122CD /* iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPad.png; sourceTree = "<group>"; };
+		0A2BA75B17F1DB8E00B122CD /* iPad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPad@2x.png"; sourceTree = "<group>"; };
+		0A2BA75C17F1DB8E00B122CD /* iPhoneRetina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhoneRetina.png; sourceTree = "<group>"; };
 		0A6777C4171D7FB70071CE7B /* ChildViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildViewController.h; sourceTree = "<group>"; };
 		0A6777C5171D7FB70071CE7B /* ChildViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildViewController.m; sourceTree = "<group>"; };
 		0A73071915EB7BC2008B0A98 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -210,6 +216,9 @@
 		0A77A78415611983003F0DD6 /* AppImages */ = {
 			isa = PBXGroup;
 			children = (
+				0A2BA75A17F1DB8E00B122CD /* iPad.png */,
+				0A2BA75B17F1DB8E00B122CD /* iPad@2x.png */,
+				0A2BA75C17F1DB8E00B122CD /* iPhoneRetina.png */,
 				0A77A78515611983003F0DD6 /* Icon.png */,
 				0A77A78615611983003F0DD6 /* Icon@2x.png */,
 				0A77A78715611983003F0DD6 /* IconiPad.png */,
@@ -273,6 +282,7 @@
 				0A77A70C15610076003F0DD6 /* grid@2x.png in Resources */,
 				0A77A70D15610076003F0DD6 /* magnifier.png in Resources */,
 				0A77A70E15610076003F0DD6 /* magnifier@2x.png in Resources */,
+				0A2BA75E17F1DB8E00B122CD /* iPad@2x.png in Resources */,
 				0A77A70F15610076003F0DD6 /* single_page.png in Resources */,
 				0A77A71015610076003F0DD6 /* single_page@2x.png in Resources */,
 				0A77A71115610076003F0DD6 /* toc.png in Resources */,
@@ -285,12 +295,14 @@
 				0AFDBD5715738EA0006F5214 /* pdftouch.pdf in Resources */,
 				0AA83CF8161C187D00C0A391 /* Default-568h@2x.png in Resources */,
 				0A958DE7165D0C8900147673 /* bookmark_off.png in Resources */,
+				0A2BA75D17F1DB8E00B122CD /* iPad.png in Resources */,
 				0A958DE8165D0C8900147673 /* bookmark_off@2x.png in Resources */,
 				0A958DE9165D0C8900147673 /* bookmark_on.png in Resources */,
 				0A958DEA165D0C8900147673 /* bookmark_on@2x.png in Resources */,
 				0A958DEB165D0C8900147673 /* bookmark_small.png in Resources */,
 				0A958DEC165D0C8900147673 /* bookmark_small@2x.png in Resources */,
 				0A7B782916F35420001520B6 /* PDFTouch.bundle in Resources */,
+				0A2BA75F17F1DB8E00B122CD /* iPhoneRetina.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

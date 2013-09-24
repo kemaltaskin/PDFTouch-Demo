@@ -11,7 +11,7 @@
 
 + (YLFontHelper *)sharedInstance;
 
-- (YLCMap *)cmapWithRegistry:(NSString *)registry ordering:(NSString *)ordering;
+- (YLCMap *)cmapWithRegistry:(NSString *)registry ordering:(NSString *)ordering supplement:(NSString *)supplement;
 
 - (NSNumber *)unicodeForName:(NSString *)name;
 
