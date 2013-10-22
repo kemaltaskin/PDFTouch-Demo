@@ -29,6 +29,7 @@ extern const char *kPDFFontFile3Key;
 
 @property (nonatomic, readonly) NSString *type;
 @property (nonatomic, readonly) NSString *baseFont;
+@property (nonatomic, readonly) NSString *origEncoding;
 
 @property (nonatomic, retain) YLCMap *cmap;
 @property (nonatomic, readonly) YLFontDescriptor *fontDescriptor;

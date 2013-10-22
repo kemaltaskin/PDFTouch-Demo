@@ -50,6 +50,12 @@ typedef enum {
 /// Current document lead.
 @property (nonatomic, assign) YLDocumentLead documentLead;
 
+/// Top toolbar.
+@property (nonatomic, readonly) UIToolbar *topToolbar;
+
+/// Bottom toolbar.
+@property (nonatomic, readonly) UIToolbar *bottomToolbar;
+
 /// Style of the dismiss button.
 @property (nonatomic, assign) YLDismissButtonStyle dismissButtonStyle;
 
@@ -69,6 +75,15 @@ typedef enum {
 /// landscape mode. Note: auto-layout only works in YLDocumentModeDouble mode. Be sure that the document mode is set to double pages before
 /// enabling auto-layout.
 @property (nonatomic, assign) BOOL autoLayoutEnabled;
+
+/// Default value is YES. Use this property to hide/show the search button in the top toolbar.
+@property (nonatomic, assign) BOOL searchEnabled;
+
+/// Default value is YES. Use this property to hide/show the toc button in the top toolbar.
+@property (nonatomic, assign) BOOL tocEnabled;
+
+/// Default value is YES. Use this property to hide/show the bookmark button in the top toolbar.
+@property (nonatomic, assign) BOOL bookmarksEnabled;
 
 /// Reference to the delegate that should be informed.
 @property (nonatomic, assign) IBOutlet NSObject<YLPDFViewControllerDelegate> *delegate;
