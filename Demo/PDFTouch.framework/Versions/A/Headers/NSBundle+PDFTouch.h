@@ -11,4 +11,6 @@
 
 + (NSBundle *)myLibraryResourcesBundle;
 
++ (NSString *)myLocalizedStringForKey:(NSString *)key;
+
 @end
