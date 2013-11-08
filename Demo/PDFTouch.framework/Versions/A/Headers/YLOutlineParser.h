@@ -8,9 +8,12 @@
 #import <Foundation/Foundation.h>
 
 @class YLDocument;
+@protocol YLOutlineParserDelegate;
 
 /// YLOutlineParser is responsible for parsing the TOC of a PDF file.
 @interface YLOutlineParser : NSObject
+
+@property (nonatomic, assign) NSObject<YLOutlineParserDelegate> *delegate;
 
 /** @name Initialization */
 /// Initializes a YLOutlineParser instance and returns it to the caller.
@@ -25,7 +28,14 @@
 /// Cancel parsing of TOC.
 - (void)cancel;
 
-/// Returns an array with YLOutlineItem objects. This method will return nil if parsing is not finished yet.
+/// Returns an array with YLOutlineItem objects. This method will return nil if
+/// parsing is not finished yet or when there's no outline available.
 - (NSArray *)outline;
 
+@end
+
+
+@protocol YLOutlineParserDelegate <NSObject>
+@required
+- (void)outlineParsed:(YLOutlineParser *)parser;
 @end
