@@ -5,6 +5,10 @@
 //  Copyright (c) 2013 Yakamoz Labs. All rights reserved.
 //
 
+#if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_6_0
+#error PDFTouch supports iOS SDK 6.0 and later.
+#endif
+
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 

@@ -7,7 +7,8 @@
 
 #import <Foundation/Foundation.h>
 
-@class YLPDFViewController, YLDocument, YLAnnotation;
+@class YLPDFViewController, YLDocument, YLAnnotation, YLPageView;
+@protocol YLAnnotationView;
 
 /// Implement this delegate in your UIViewController to get notified about YLPDFViewController and change
 /// its behaviour.
@@ -28,5 +29,12 @@
 ///@param controller The YLPDFViewController object requesting this information.
 ///@param annotation The YLAnnotation object that was tapped on.
 - (BOOL)pdfViewController:(YLPDFViewController *)controller tappedOnAnnotation:(YLAnnotation *)annotation;
+
+/// Called before an annotation view is added to a page. You can use this function to configure the appearance
+/// of annotation views.
+///@param controller The YLPDFViewController object informing the delegate.
+///@param annotationView The annotation view conforming to the YLAnnotationView protocol.
+///@param pageView The view object which represents the page.
+- (void)pdfViewController:(YLPDFViewController *)controller willDisplayAnnotationView:(UIView<YLAnnotationView> *)annotationView onPageView:(YLPageView *)pageView;
 
 @end

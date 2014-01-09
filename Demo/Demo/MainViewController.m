@@ -153,7 +153,7 @@
     [v setDocumentLead:YLDocumentLeadRight];
     [v setModalPresentationStyle:UIModalPresentationFullScreen];
     [v setModalTransitionStyle:UIModalTransitionStyleCoverVertical];
-    [self.navigationController presentModalViewController:v animated:YES];
+    [self.navigationController presentViewController:v animated:YES completion:nil];
 }
 
 - (void)containmentPDFView {
