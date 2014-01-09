@@ -70,11 +70,11 @@
 
 #pragma mark -
 #pragma mark UITableViewDataSource and UITableViewDelegate Methods
-- (int)numberOfSectionsInTableView:(UITableView *)tableView {
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
 }
 
-- (int)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if(section == 0) {
         return 3;
     }
@@ -153,7 +153,7 @@
     [v setDocumentLead:YLDocumentLeadRight];
     [v setModalPresentationStyle:UIModalPresentationFullScreen];
     [v setModalTransitionStyle:UIModalTransitionStyleCoverVertical];
-    [self.navigationController presentModalViewController:v animated:YES];
+    [self.navigationController presentViewController:v animated:YES completion:nil];
 }
 
 - (void)containmentPDFView {

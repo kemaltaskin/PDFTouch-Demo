@@ -35,10 +35,9 @@
     [super viewDidLoad];
     
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= 70000
-    IF_IOS7_OR_GREATER
-    (
-     self.edgesForExtendedLayout = UIRectEdgeNone;
-     )
+    if(YLIsIOS7OrGreater()) {
+        self.edgesForExtendedLayout = UIRectEdgeNone;
+    }
 #endif
     
     YLPDFViewController *v = [[[YLPDFViewController alloc] initWithDocument:_document] autorelease];
@@ -51,11 +50,10 @@
     [v didMoveToParentViewController:self];
     CGRect frame = self.view.bounds;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= 70000
-    IF_IOS7_OR_GREATER
-    (
-     frame.origin.y += self.topLayoutGuide.length;
-     frame.size.height -= self.topLayoutGuide.length;
-     )
+    if(YLIsIOS7OrGreater()) {
+        frame.origin.y += self.topLayoutGuide.length;
+        frame.size.height -= self.topLayoutGuide.length;
+    }
 #endif
     v.view.frame = frame;
     
