@@ -59,6 +59,9 @@ typedef enum {
 /// Style of the dismiss button.
 @property (nonatomic, assign) YLDismissButtonStyle dismissButtonStyle;
 
+/// Document title.
+@property (nonatomic, copy) NSString *documentTitle;
+
 /// Text of dimiss button.
 @property (nonatomic, copy) NSString *dismissButtonText;
 
@@ -84,6 +87,22 @@ typedef enum {
 
 /// Default value is YES. Use this property to hide/show the bookmark button in the top toolbar.
 @property (nonatomic, assign) BOOL bookmarksEnabled;
+
+/// Default value is 10. Use this property to change the padding around a PDF page view. This property should be set before YLPDFViewController
+/// is displayed.
+@property (nonatomic, assign) CGFloat contentPadding;
+
+/// Default value is 4. Use this property to change the shadow radius around a PDF page view. This property should be set before YLPDFViewController
+/// is displayed.
+@property (nonatomic, assign) CGFloat shadowRadius;
+
+/// Default value is 1. Use this property to change the shadow offset around a PDF page view. This property should be set before YLPDFViewController
+/// is displayed.
+@property (nonatomic, assign) CGFloat shadowOffset;
+
+/// Default value is 0,8. Use this property to change the shadow opacity around a PDF page view. This property should be set before YLPDFViewController
+/// is displayed.
+@property (nonatomic, assign) CGFloat shadowOpacity;
 
 /// Reference to the delegate that should be informed.
 @property (nonatomic, assign) IBOutlet NSObject<YLPDFViewControllerDelegate> *delegate;
