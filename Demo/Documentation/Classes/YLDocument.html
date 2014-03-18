@@ -80,9 +80,15 @@
 	
 	<option value="//api/name/initWithFilePath:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithFilePath:</option>
 	
+	<option value="//api/name/metadataForKey:">&nbsp;&nbsp;&nbsp;&nbsp;- metadataForKey:</option>
+	
 	<option value="//api/name/pageInfoForPage:">&nbsp;&nbsp;&nbsp;&nbsp;- pageInfoForPage:</option>
 	
 	<option value="//api/name/removeBookmarkForPage:">&nbsp;&nbsp;&nbsp;&nbsp;- removeBookmarkForPage:</option>
+	
+	<option value="//api/name/renderPage:targetRect:inContext:">&nbsp;&nbsp;&nbsp;&nbsp;- renderPage:targetRect:inContext:</option>
+	
+	<option value="//api/name/renderPage:targetRect:scale:inContext:">&nbsp;&nbsp;&nbsp;&nbsp;- renderPage:targetRect:scale:inContext:</option>
 	
 	<option value="//api/name/requestDocumentRef">&nbsp;&nbsp;&nbsp;&nbsp;- requestDocumentRef</option>
 	
@@ -109,6 +115,8 @@
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Encryption Methods">Encryption Methods</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Query Methods">Query Methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Render Methods">Render Methods</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Bookmark Methods">Bookmark Methods</a></span></li>
 	
@@ -162,9 +170,15 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithFilePath:">initWithFilePath:</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/metadataForKey:">metadataForKey:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pageInfoForPage:">pageInfoForPage:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeBookmarkForPage:">removeBookmarkForPage:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/renderPage:targetRect:inContext:">renderPage:targetRect:inContext:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/renderPage:targetRect:scale:inContext:">renderPage:targetRect:scale:inContext:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/requestDocumentRef">requestDocumentRef</a></span></li>
 	
@@ -351,7 +365,37 @@ is cached for future access.</p></span>
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/requestDocumentRef">&ndash;&nbsp;requestDocumentRef</a></code>
-		<span class="tooltip"><p>Returns a CGPDF reference for this document. When you&rsquo;re finished using this reference you should release it using the CGPDFDocumentRelease function.</p></span>
+		<span class="tooltip"><p>Returns a CGPDF reference for this document. Retain this reference by using the CGPDFDocumentRetain method. When you&rsquo;re finished
+using this reference you should release it with the CGPDFDocumentRelease function.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/metadataForKey:">&ndash;&nbsp;metadataForKey:</a></code>
+		<span class="tooltip"><p>Returns the requested metadata as NSString if there&rsquo;s any.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Render Methods" name="task_Render Methods"></a>
+						<h3 class="subsubtitle task-title">Render Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/renderPage:targetRect:scale:inContext:">&ndash;&nbsp;renderPage:targetRect:scale:inContext:</a></code>
+		<span class="tooltip"><p>Renders a PDF page in the specified graphics context.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/renderPage:targetRect:inContext:">&ndash;&nbsp;renderPage:targetRect:inContext:</a></code>
+		<span class="tooltip"><p>Renders a PDF page in the specified graphics context. This function also highlights search results if there are any.</p></span>
 	</span>
 	
 	
@@ -1105,6 +1149,62 @@ All thumbnail images are saved to NSCachesDirectory/YLPDFKit/uuid/</p>
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/metadataForKey:" title="metadataForKey:"></a>
+	<h3 class="subsubtitle method-title">metadataForKey:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the requested metadata as NSString if there&rsquo;s any.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)metadataForKey:(NSString *)<em>key</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>NSString value. Use one of the predefined kYLDocumentMetadataKey* strings.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A NSString value representing the metadata.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the requested metadata as NSString if there&rsquo;s any.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">YLDocument.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/pageInfoForPage:" title="pageInfoForPage:"></a>
 	<h3 class="subsubtitle method-title">pageInfoForPage:</h3>
 	
@@ -1219,13 +1319,141 @@ is cached for future access.</p>
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/renderPage:targetRect:inContext:" title="renderPage:targetRect:inContext:"></a>
+	<h3 class="subsubtitle method-title">renderPage:targetRect:inContext:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Renders a PDF page in the specified graphics context. This function also highlights search results if there are any.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)renderPage:(NSUInteger)<em>page</em> targetRect:(CGRect)<em>targetRect</em> inContext:(CGContextRef)<em>context</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>page</em></dt>
+			<dd><p>Page number starting from 0.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>targetRect</em></dt>
+			<dd><p>The target rectangle the PDF page will be rendered in.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>context</em></dt>
+			<dd><p>Graphics context.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Renders a PDF page in the specified graphics context. This function also highlights search results if there are any.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">YLDocument.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/renderPage:targetRect:scale:inContext:" title="renderPage:targetRect:scale:inContext:"></a>
+	<h3 class="subsubtitle method-title">renderPage:targetRect:scale:inContext:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Renders a PDF page in the specified graphics context.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)renderPage:(NSUInteger)<em>page</em> targetRect:(CGRect)<em>targetRect</em> scale:(CGFloat)<em>scale</em> inContext:(CGContextRef)<em>context</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>page</em></dt>
+			<dd><p>Page number starting from 0.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>targetRect</em></dt>
+			<dd><p>The target rectangle the PDF page will be rendered in.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>scale</em></dt>
+			<dd><p>The scale at which the PDF page should be rendered.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>context</em></dt>
+			<dd><p>Graphics context.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Renders a PDF page in the specified graphics context.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">YLDocument.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/requestDocumentRef" title="requestDocumentRef"></a>
 	<h3 class="subsubtitle method-title">requestDocumentRef</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Returns a CGPDF reference for this document. When you&rsquo;re finished using this reference you should release it using the CGPDFDocumentRelease function.</p>
+		<p>Returns a CGPDF reference for this document. Retain this reference by using the CGPDFDocumentRetain method. When you&rsquo;re finished
+using this reference you should release it with the CGPDFDocumentRelease function.</p>
 	</div>		
 	
     
@@ -1236,13 +1464,19 @@ is cached for future access.</p>
 	
 	
 	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A CGPDFDocumentRef instance.</p>
+	</div>
+	
 	
 	
 	
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Returns a CGPDF reference for this document. When you&rsquo;re finished using this reference you should release it using the CGPDFDocumentRelease function.</p>
+		<p>Returns a CGPDF reference for this document. Retain this reference by using the CGPDFDocumentRetain method. When you&rsquo;re finished
+using this reference you should release it with the CGPDFDocumentRelease function.</p>
 	</div>
 	
 	
@@ -1328,7 +1562,7 @@ is cached for future access.</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2012 Yakamoz Labs. All rights reserved. (Last updated: 2012-11-21)</span><br />
+						<p><span class="copyright">&copy; 2014 Yakamoz Labs. All rights reserved. (Last updated: 2014-03-18)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
 						

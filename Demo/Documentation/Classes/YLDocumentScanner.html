@@ -61,6 +61,10 @@
 	
 	<option value="//api/name/searchText:">&nbsp;&nbsp;&nbsp;&nbsp;- searchText:</option>
 	
+	<option value="//api/name/setTextContent:forPage:">&nbsp;&nbsp;&nbsp;&nbsp;- setTextContent:forPage:</option>
+	
+	<option value="//api/name/textContentForPage:">&nbsp;&nbsp;&nbsp;&nbsp;- textContentForPage:</option>
+	
 	
 	
 </select>
@@ -108,6 +112,10 @@
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/searchResultsForPage:">searchResultsForPage:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/searchText:">searchText:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setTextContent:forPage:">setTextContent:forPage:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/textContentForPage:">textContentForPage:</a></span></li>
 	
 </ul></li>
 
@@ -218,6 +226,20 @@ inform the caller via the delegate.</p></span>
 	<span class="tooltip">
 		<code><a href="#//api/name/cancelSearch">&ndash;&nbsp;cancelSearch</a></code>
 		<span class="tooltip"><p>Cancels the ongoing search operation if any.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/textContentForPage:">&ndash;&nbsp;textContentForPage:</a></code>
+		<span class="tooltip"><p>Returns the text content for a specific page.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setTextContent:forPage:">&ndash;&nbsp;setTextContent:forPage:</a></code>
+		<span class="tooltip"><p>The text extraction operation uses this method to set the extracted text for a specific page.</p></span>
 	</span>
 	
 	
@@ -575,6 +597,118 @@ inform the caller via the delegate.</p>
 	
 </div>
 						
+						<div class="section-method">
+	<a name="//api/name/setTextContent:forPage:" title="setTextContent:forPage:"></a>
+	<h3 class="subsubtitle method-title">setTextContent:forPage:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The text extraction operation uses this method to set the extracted text for a specific page.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setTextContent:(NSString *)<em>content</em> forPage:(NSUInteger)<em>page</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>content</em></dt>
+			<dd><p>Text content.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>page</em></dt>
+			<dd><p>Page number starting from 0.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The text extraction operation uses this method to set the extracted text for a specific page.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">YLDocumentScanner.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/textContentForPage:" title="textContentForPage:"></a>
+	<h3 class="subsubtitle method-title">textContentForPage:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the text content for a specific page.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)textContentForPage:(NSUInteger)<em>page</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>page</em></dt>
+			<dd><p>Page number starting from 0.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>NSString with the text of the specified page or nil if it&rsquo;s not extracted yet.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the text content for a specific page.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">YLDocumentScanner.h</code><br />
+	</div>				
+	
+	
+</div>
+						
 					</div>
 					
 					
@@ -588,7 +722,7 @@ inform the caller via the delegate.</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2012 Yakamoz Labs. All rights reserved. (Last updated: 2012-11-21)</span><br />
+						<p><span class="copyright">&copy; 2014 Yakamoz Labs. All rights reserved. (Last updated: 2014-03-18)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
 						

@@ -48,6 +48,10 @@
 	
 	<option value="//api/name/pdfViewController:tappedOnAnnotation:">&nbsp;&nbsp;&nbsp;&nbsp;- pdfViewController:tappedOnAnnotation:</option>
 	
+	<option value="//api/name/pdfViewController:willDismissDocument:">&nbsp;&nbsp;&nbsp;&nbsp;- pdfViewController:willDismissDocument:</option>
+	
+	<option value="//api/name/pdfViewController:willDisplayAnnotationView:onPageView:">&nbsp;&nbsp;&nbsp;&nbsp;- pdfViewController:willDisplayAnnotationView:onPageView:</option>
+	
 	
 	
 </select>
@@ -79,6 +83,10 @@
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pdfViewController:didDisplayDocument:">pdfViewController:didDisplayDocument:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pdfViewController:tappedOnAnnotation:">pdfViewController:tappedOnAnnotation:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pdfViewController:willDismissDocument:">pdfViewController:willDismissDocument:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pdfViewController:willDisplayAnnotationView:onPageView:">pdfViewController:willDisplayAnnotationView:onPageView:</a></span></li>
 	
 </ul></li>
 
@@ -143,8 +151,23 @@ its behaviour.</p>
 	
 </li><li>
 	<span class="tooltip">
+		<code><a href="#//api/name/pdfViewController:willDismissDocument:">&ndash;&nbsp;pdfViewController:willDismissDocument:</a></code>
+		<span class="tooltip"><p>Called when <a href="../Classes/YLPDFViewController.html">YLPDFViewController</a> will be dismissed (when the done button is tapped).</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
 		<code><a href="#//api/name/pdfViewController:tappedOnAnnotation:">&ndash;&nbsp;pdfViewController:tappedOnAnnotation:</a></code>
 		<span class="tooltip"><p>Return YES if you want to override the default action for this annotation. The default value is NO.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/pdfViewController:willDisplayAnnotationView:onPageView:">&ndash;&nbsp;pdfViewController:willDisplayAnnotationView:onPageView:</a></code>
+		<span class="tooltip"><p>Called before an annotation view is added to a page. You can use this function to configure the appearance
+of annotation views.</p></span>
 	</span>
 	
 	
@@ -277,6 +300,125 @@ its behaviour.</p>
 	
 </div>
 						
+						<div class="section-method">
+	<a name="//api/name/pdfViewController:willDismissDocument:" title="pdfViewController:willDismissDocument:"></a>
+	<h3 class="subsubtitle method-title">pdfViewController:willDismissDocument:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when <a href="../Classes/YLPDFViewController.html">YLPDFViewController</a> will be dismissed (when the done button is tapped).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)pdfViewController:(YLPDFViewController *)<em>controller</em> willDismissDocument:(YLDocument *)<em>document</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>controller</em></dt>
+			<dd><p>The <a href="../Classes/YLPDFViewController.html">YLPDFViewController</a> object informing the delegate.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>document</em></dt>
+			<dd><p>The <a href="../Classes/YLDocument.html">YLDocument</a> object displayed by the controller.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Called when <a href="../Classes/YLPDFViewController.html">YLPDFViewController</a> will be dismissed (when the done button is tapped).</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">YLPDFViewControllerDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/pdfViewController:willDisplayAnnotationView:onPageView:" title="pdfViewController:willDisplayAnnotationView:onPageView:"></a>
+	<h3 class="subsubtitle method-title">pdfViewController:willDisplayAnnotationView:onPageView:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called before an annotation view is added to a page. You can use this function to configure the appearance
+of annotation views.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)pdfViewController:(YLPDFViewController *)<em>controller</em> willDisplayAnnotationView:(UIView&lt;YLAnnotationView&gt; *)<em>annotationView</em> onPageView:(YLPageView *)<em>pageView</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>controller</em></dt>
+			<dd><p>The <a href="../Classes/YLPDFViewController.html">YLPDFViewController</a> object informing the delegate.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>annotationView</em></dt>
+			<dd><p>The annotation view conforming to the <a href="../Protocols/YLAnnotationView.html">YLAnnotationView</a> protocol.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>pageView</em></dt>
+			<dd><p>The view object which represents the page.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Called before an annotation view is added to a page. You can use this function to configure the appearance
+of annotation views.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">YLPDFViewControllerDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
 					</div>
 					
 					
@@ -290,7 +432,7 @@ its behaviour.</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2012 Yakamoz Labs. All rights reserved. (Last updated: 2012-11-21)</span><br />
+						<p><span class="copyright">&copy; 2014 Yakamoz Labs. All rights reserved. (Last updated: 2014-03-18)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
 						

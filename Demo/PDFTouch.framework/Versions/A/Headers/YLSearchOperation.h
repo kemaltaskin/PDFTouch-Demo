@@ -13,6 +13,9 @@
 /// This operation will search for text in the PDF file.
 @interface YLSearchOperation : NSOperation
 
+/// Reference to the document.
+@property (nonatomic, readonly) YLDocument *document;
+
 /// The search term.
 @property (nonatomic, readonly) NSString *keyword;
 
