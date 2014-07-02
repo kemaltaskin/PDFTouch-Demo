@@ -22,6 +22,12 @@ extern NSString *const kYLDocumentMetadataKeyCreationDate;
 extern NSString *const kYLDocumentMetadataKeyModDate;
 extern NSString *const kYLDocumentMetadataKeyVersion;
 
+typedef enum {
+    kDocumentCachingEnabled = 0,             // Caches rendered pages as images on filesystem. (Default)
+    kDocumentCachingDisabled                // Disables caching of rendered pages to filesystem.
+} YLDocumentCachingBehavior;
+
+
 /// Model object that represents the PDF file.
 @interface YLDocument : NSObject
 
@@ -44,6 +50,9 @@ extern NSString *const kYLDocumentMetadataKeyVersion;
 
 /// Boolean value that specifies if the document is a valid PDF file.
 @property (nonatomic, readonly, getter=isValidPDF) BOOL validPDF;
+
+/// Caching behavior.
+@property (nonatomic, readwrite) YLDocumentCachingBehavior cachingBehavior;
 
 /// Number of pages in the PDF file.
 @property (nonatomic, readonly) NSUInteger pageCount;
