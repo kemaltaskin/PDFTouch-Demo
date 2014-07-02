@@ -9,7 +9,6 @@
 #import "YLPDFViewController.h"
 
 @class YLPageView;
-@class YLTiledView;
 @class YLDocument;
 
 /// This is the view that can display one or two PDF pages. It also serves as a container for these

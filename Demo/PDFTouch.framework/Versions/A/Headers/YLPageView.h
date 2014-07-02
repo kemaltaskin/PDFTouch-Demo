@@ -18,6 +18,9 @@
 /// Reference to the parent YLPDFViewController instance.
 @property (nonatomic, assign) YLPDFViewController *pdfViewController;
 
+/// Page number that is displayed (zero based).
+@property (nonatomic, readonly) NSUInteger page;
+
 /** @name Initialization */
 /// Initializes a YLPageView object and returns it to the caller.
 /// @returns An initialized YLPageView instance.
