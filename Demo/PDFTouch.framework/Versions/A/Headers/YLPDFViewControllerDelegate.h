@@ -15,6 +15,11 @@
 @protocol YLPDFViewControllerDelegate <NSObject>
 @optional
 
+/// Called before YLPDFViewController will display the document.
+///@param controller The YLPDFViewController object informing the delegate.
+///@param document The YLDocument object displayed by the controller.
+- (void)pdfViewController:(YLPDFViewController *)controller willDisplayDocument:(YLDocument *)document;
+
 /// Called when YLPDFViewController finished loading document.
 ///@param controller The YLPDFViewController object informing the delegate.
 ///@param document The YLDocument object displayed by the controller.
