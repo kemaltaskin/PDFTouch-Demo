@@ -41,6 +41,7 @@
 @required
 ///
 /// @param operation The YLSearchOperation object informing the delegate.
+/// @param results Array with YLSearchResult items.
 - (void)searchOperation:(YLSearchOperation *)operation didUpdateResults:(NSArray *)results;
 
 ///
