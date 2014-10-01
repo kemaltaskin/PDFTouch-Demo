@@ -34,12 +34,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 70000
-    if(YLIsIOS7OrGreater()) {
-        self.edgesForExtendedLayout = UIRectEdgeNone;
-    }
-#endif
-    
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+
     YLPDFViewController *v = [[[YLPDFViewController alloc] initWithDocument:_document] autorelease];
     [v setDocumentMode:YLDocumentModeSingle];
     [v setPageCurlEnabled:YES];
@@ -49,12 +45,8 @@
     [self addChildViewController:v];
     [v didMoveToParentViewController:self];
     CGRect frame = self.view.bounds;
-#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 70000
-    if(YLIsIOS7OrGreater()) {
-        frame.origin.y += self.topLayoutGuide.length;
-        frame.size.height -= self.topLayoutGuide.length;
-    }
-#endif
+    frame.origin.y += self.topLayoutGuide.length;
+    frame.size.height -= self.topLayoutGuide.length;
     v.view.frame = frame;
     
     [self.view addSubview:v.view];

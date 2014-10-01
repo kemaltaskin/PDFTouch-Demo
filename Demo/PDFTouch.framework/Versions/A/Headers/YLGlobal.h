@@ -10,6 +10,4 @@
 
 #define ZOOM_LEVELS                     4
 
-BOOL YLIsIOS7OrGreater(void);
-
 #endif

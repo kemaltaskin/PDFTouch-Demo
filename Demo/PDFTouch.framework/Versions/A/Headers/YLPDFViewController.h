@@ -71,6 +71,12 @@ typedef enum {
 /// Default value is YES. Use this property to hide/show the navigation bar. This is not the top toolbar of YLPDFViewController!
 @property (nonatomic, assign) BOOL hideNavigationBar;
 
+/// Default value is YES. Use this property to hide/show the status bar.
+@property (nonatomic, assign) BOOL hideStatusBar;
+
+/// Default value is UIStatusBarStyleDefault. Use this property to change the status bar style.
+@property (nonatomic, assign) UIStatusBarStyle statusBarStyle;
+
 /// Default value is NO. Use this property to enable page-curl animations.
 @property (nonatomic, assign) BOOL pageCurlEnabled;
 
