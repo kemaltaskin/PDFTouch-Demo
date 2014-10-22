@@ -33,7 +33,7 @@ typedef enum {
 
 /// UUID string value that is used internally to construct file paths for the thumbnails and bookmarks.
 /// Bookmarks are saved in Documents/Private Docs/Bookmarks/uuid.plist
-/// All thumbnail images are saved to NSCachesDirectory/YLPDFKit/uuid/
+/// All thumbnail images are saved to NSCachesDirectory/PDFTouch/uuid/
 @property (nonatomic, readonly) NSString *uuid;
 
 /// Path of the PDF file.
