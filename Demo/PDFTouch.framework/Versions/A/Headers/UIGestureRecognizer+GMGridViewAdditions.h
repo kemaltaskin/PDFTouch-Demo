@@ -28,9 +28,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIGestureRecognizer (GMGridViewAdditions)
+@interface UIGestureRecognizer (YLGMGridViewAdditions)
 
-- (void)end;
-- (BOOL)hasRecognizedValidGesture;
+- (void)ylEnd;
+- (BOOL)ylHasRecognizedValidGesture;
 
 @end

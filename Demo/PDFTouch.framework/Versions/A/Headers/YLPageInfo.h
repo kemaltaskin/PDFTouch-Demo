@@ -5,8 +5,11 @@
 //  Copyright (c) 2012 Yakamoz Labs. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import "YLCache.h"
+typedef enum {
+    YLPDFImageSizeOriginal,             // Original size of the PDF page.
+    YLPDFImageSizeThumbnail,            // 200x400
+    YLPDFImageSizeSmall                 // 50x100
+} YLPDFImageSize;
 
 /// Model object that holds various information about a PDF page like rectangle, rotation and page number.
 @interface YLPageInfo : NSObject

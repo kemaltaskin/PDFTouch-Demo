@@ -5,8 +5,6 @@
 //  Copyright (c) 2013 Yakamoz Labs. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-
 @interface UIImage (PDFTouch)
 
 + (UIImage *)myLibraryImageNamed:(NSString *)name;

@@ -31,15 +31,15 @@
 
 #define GMGV_INVALID_POSITION -1
 
-@protocol GMGridViewLayoutStrategy;
+@protocol YLGMGridViewLayoutStrategy;
 
 
 typedef enum {
-    GMGridViewLayoutVertical = 0,
-    GMGridViewLayoutHorizontal,
-    GMGridViewLayoutHorizontalPagedLTR,   // LTR: left to right
-    GMGridViewLayoutHorizontalPagedTTB    // TTB: top to bottom
-} GMGridViewLayoutStrategyType;
+    YLGMGridViewLayoutVertical = 0,
+    YLGMGridViewLayoutHorizontal,
+    YLGMGridViewLayoutHorizontalPagedLTR,   // LTR: left to right
+    YLGMGridViewLayoutHorizontalPagedTTB    // TTB: top to bottom
+} YLGMGridViewLayoutStrategyType;
 
 
 
@@ -47,9 +47,9 @@ typedef enum {
 #pragma mark - Strategy Factory
 //////////////////////////////////////////////////////////////
 
-@interface GMGridViewLayoutStrategyFactory : NSObject
+@interface YLGMGridViewLayoutStrategyFactory : NSObject
 
-+ (id<GMGridViewLayoutStrategy>)strategyFromType:(GMGridViewLayoutStrategyType)type;
++ (id<YLGMGridViewLayoutStrategy>)strategyFromType:(YLGMGridViewLayoutStrategyType)type;
 
 @end
 
@@ -58,11 +58,11 @@ typedef enum {
 #pragma mark - The strategy protocol
 //////////////////////////////////////////////////////////////
 
-@protocol GMGridViewLayoutStrategy <NSObject>
+@protocol YLGMGridViewLayoutStrategy <NSObject>
 
 + (BOOL)requiresEnablingPaging;
 
-- (GMGridViewLayoutStrategyType)type;
+- (YLGMGridViewLayoutStrategyType)type;
 
 // Setup
 - (void)setupItemSize:(CGSize)itemSize andItemSpacing:(NSInteger)spacing withMinEdgeInsets:(UIEdgeInsets)edgeInsets andCenteredGrid:(BOOL)centered;
@@ -84,11 +84,11 @@ typedef enum {
 #pragma mark - Strategy Base class
 //////////////////////////////////////////////////////////////
 
-@interface GMGridViewLayoutStrategyBase : NSObject
+@interface YLGMGridViewLayoutStrategyBase : NSObject
 {
     @protected
     // All of these vars should be set in the init method
-    GMGridViewLayoutStrategyType _type;
+    YLGMGridViewLayoutStrategyType _type;
     
     // All of these vars should be set in the setup method of the child class
     CGSize _itemSize;
@@ -103,7 +103,7 @@ typedef enum {
     CGSize _contentSize;
 }
 
-@property (nonatomic, readonly) GMGridViewLayoutStrategyType type;
+@property (nonatomic, readonly) YLGMGridViewLayoutStrategyType type;
 
 @property (nonatomic, readonly) CGSize itemSize;
 @property (nonatomic, readonly) NSInteger itemSpacing;
@@ -127,7 +127,7 @@ typedef enum {
 #pragma mark - Vertical strategy
 //////////////////////////////////////////////////////////////
 
-@interface GMGridViewLayoutVerticalStrategy : GMGridViewLayoutStrategyBase <GMGridViewLayoutStrategy>
+@interface YLGMGridViewLayoutVerticalStrategy : YLGMGridViewLayoutStrategyBase <YLGMGridViewLayoutStrategy>
 {
     @protected
     NSInteger _numberOfItemsPerRow;
@@ -141,7 +141,7 @@ typedef enum {
 #pragma mark - Horizontal strategy
 //////////////////////////////////////////////////////////////
 
-@interface GMGridViewLayoutHorizontalStrategy : GMGridViewLayoutStrategyBase <GMGridViewLayoutStrategy>
+@interface YLGMGridViewLayoutHorizontalStrategy : YLGMGridViewLayoutStrategyBase <YLGMGridViewLayoutStrategy>
 {
     @protected
     NSInteger _numberOfItemsPerColumn;
@@ -156,7 +156,7 @@ typedef enum {
 #pragma mark - Horizontal Paged strategy (LTR behavior)
 //////////////////////////////////////////////////////////////
 
-@interface GMGridViewLayoutHorizontalPagedStrategy : GMGridViewLayoutHorizontalStrategy
+@interface YLGMGridViewLayoutHorizontalPagedStrategy : YLGMGridViewLayoutHorizontalStrategy
 {
     @protected
     NSInteger _numberOfItemsPerRow;
@@ -181,7 +181,7 @@ typedef enum {
 #pragma mark - Horizontal Paged Left to Right strategy
 //////////////////////////////////////////////////////////////
 
-@interface GMGridViewLayoutHorizontalPagedLTRStrategy : GMGridViewLayoutHorizontalPagedStrategy
+@interface YLGMGridViewLayoutHorizontalPagedLTRStrategy : YLGMGridViewLayoutHorizontalPagedStrategy
 
 @end
 
@@ -189,6 +189,6 @@ typedef enum {
 #pragma mark - Horizontal Paged Top To Bottom strategy
 //////////////////////////////////////////////////////////////
 
-@interface GMGridViewLayoutHorizontalPagedTTBStrategy : GMGridViewLayoutHorizontalPagedStrategy
+@interface YLGMGridViewLayoutHorizontalPagedTTBStrategy : YLGMGridViewLayoutHorizontalPagedStrategy
 
 @end

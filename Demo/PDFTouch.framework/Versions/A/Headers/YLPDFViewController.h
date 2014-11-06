@@ -62,6 +62,9 @@ typedef enum {
 /// Document title.
 @property (nonatomic, copy) NSString *documentTitle;
 
+/// Document title color.
+@property (nonatomic, retain) UIColor *documentTitleColor;
+
 /// Text of dimiss button.
 @property (nonatomic, copy) NSString *dismissButtonText;
 
