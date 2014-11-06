@@ -11,7 +11,7 @@
 @class YLDocument;
 
 /// Thumbnail cell used in the grid view to display pdf page thumbnails.
-@interface YLThumbnailCell : GMGridViewCell<YLCacheDelegate>
+@interface YLThumbnailCell : YLGMGridViewCell<YLCacheDelegate>
 
 /// A reference to the document.
 @property (nonatomic, retain) YLDocument *document;

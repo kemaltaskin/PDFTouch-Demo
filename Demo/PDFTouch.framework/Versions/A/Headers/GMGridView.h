@@ -41,43 +41,43 @@
 
 #import "GMGridViewCell.h"
 
-@protocol GMGridViewDataSource;
-@protocol GMGridViewActionDelegate;
-@protocol GMGridViewSortingDelegate;
-@protocol GMGridViewTransformationDelegate;
-@protocol GMGridViewLayoutStrategy;
+@protocol YLGMGridViewDataSource;
+@protocol YLGMGridViewActionDelegate;
+@protocol YLGMGridViewSortingDelegate;
+@protocol YLGMGridViewTransformationDelegate;
+@protocol YLGMGridViewLayoutStrategy;
 
 typedef enum
 {
-    GMGridViewStylePush = 0,
-    GMGridViewStyleSwap
-} GMGridViewStyle;
+    YLGMGridViewStylePush = 0,
+    YLGMGridViewStyleSwap
+} YLGMGridViewStyle;
 
 
 //////////////////////////////////////////////////////////////
 #pragma mark Interface GMGridView
 //////////////////////////////////////////////////////////////
 
-@interface GMGridView : UIView
+@interface YLGMGridView : UIView
 {
     
 }
 
 // Delegates
-@property (nonatomic, gm_weak) NSObject<GMGridViewDataSource> *dataSource;                    // Required
-@property (nonatomic, gm_weak) NSObject<GMGridViewActionDelegate> *actionDelegate;            // Optional - to get taps callback
-@property (nonatomic, gm_weak) NSObject<GMGridViewSortingDelegate> *sortingDelegate;          // Optional - to enable sorting
-@property (nonatomic, gm_weak) NSObject<GMGridViewTransformationDelegate> *transformDelegate; // Optional - to enable fullsize mode
+@property (nonatomic, gm_weak) NSObject<YLGMGridViewDataSource> *dataSource;                    // Required
+@property (nonatomic, gm_weak) NSObject<YLGMGridViewActionDelegate> *actionDelegate;            // Optional - to get taps callback
+@property (nonatomic, gm_weak) NSObject<YLGMGridViewSortingDelegate> *sortingDelegate;          // Optional - to enable sorting
+@property (nonatomic, gm_weak) NSObject<YLGMGridViewTransformationDelegate> *transformDelegate; // Optional - to enable fullsize mode
 
 // Layout Strategy
-@property (nonatomic, strong) id<GMGridViewLayoutStrategy> layoutStrategy; // Default is GMGridViewLayoutVerticalStrategy
+@property (nonatomic, strong) id<YLGMGridViewLayoutStrategy> layoutStrategy; // Default is GMGridViewLayoutVerticalStrategy
 
 // Editing Mode
 @property (nonatomic, getter=isEditing) BOOL editing; // Default is NO - When set to YES, all gestures are disabled and delete buttons shows up on cells
 
 // Customizing Options
 @property (nonatomic, gm_weak) UIView *mainSuperView;                 // Default is self
-@property (nonatomic) GMGridViewStyle style;                          // Default is GMGridViewStyleSwap
+@property (nonatomic) YLGMGridViewStyle style;                          // Default is GMGridViewStyleSwap
 @property (nonatomic) NSInteger itemSpacing;                          // Default is 10
 @property (nonatomic) BOOL centerGrid;                                // Default is YES
 @property (nonatomic) UIEdgeInsets minEdgeInsets;                     // Default is (5, 5, 5, 5)
@@ -88,10 +88,10 @@ typedef enum
 
 
 // Reusable cells
-- (GMGridViewCell *)dequeueReusableCell;
+- (YLGMGridViewCell *)dequeueReusableCell;
 
 // Cells
-- (GMGridViewCell *)cellForItemAtIndex:(NSInteger)position;
+- (YLGMGridViewCell *)cellForItemAtIndex:(NSInteger)position;
 
 // Actions
 - (void)reloadData;
@@ -108,17 +108,17 @@ typedef enum
 #pragma mark Protocol GMGridViewDataSource
 //////////////////////////////////////////////////////////////
 
-@protocol GMGridViewDataSource <NSObject>
+@protocol YLGMGridViewDataSource <NSObject>
 
 @required
 // Populating subview items 
-- (NSInteger)numberOfItemsInGMGridView:(GMGridView *)gridView;
-- (CGSize)sizeForItemsInGMGridView:(GMGridView *)gridView;
-- (GMGridViewCell *)GMGridView:(GMGridView *)gridView cellForItemAtIndex:(NSInteger)index;
+- (NSInteger)numberOfItemsInGMGridView:(YLGMGridView *)gridView;
+- (CGSize)sizeForItemsInGMGridView:(YLGMGridView *)gridView;
+- (YLGMGridViewCell *)GMGridView:(YLGMGridView *)gridView cellForItemAtIndex:(NSInteger)index;
 
 @optional
 // Required to enable editing mode
-- (void)GMGridView:(GMGridView *)gridView deleteItemAtIndex:(NSInteger)index;
+- (void)GMGridView:(YLGMGridView *)gridView deleteItemAtIndex:(NSInteger)index;
 
 @end
 
@@ -127,10 +127,10 @@ typedef enum
 #pragma mark Protocol GMGridViewActionDelegate
 //////////////////////////////////////////////////////////////
 
-@protocol GMGridViewActionDelegate <NSObject>
+@protocol YLGMGridViewActionDelegate <NSObject>
 
 @required
-- (void)GMGridView:(GMGridView *)gridView didTapOnItemAtIndex:(NSInteger)position;
+- (void)GMGridView:(YLGMGridView *)gridView didTapOnItemAtIndex:(NSInteger)position;
 
 @end
 
@@ -139,19 +139,19 @@ typedef enum
 #pragma mark Protocol GMGridViewSortingDelegate
 //////////////////////////////////////////////////////////////
 
-@protocol GMGridViewSortingDelegate <NSObject>
+@protocol YLGMGridViewSortingDelegate <NSObject>
 
 @required
 // Item moved - right place to update the data structure
-- (void)GMGridView:(GMGridView *)gridView moveItemAtIndex:(NSInteger)oldIndex toIndex:(NSInteger)newIndex;
-- (void)GMGridView:(GMGridView *)gridView exchangeItemAtIndex:(NSInteger)index1 withItemAtIndex:(NSInteger)index2;
+- (void)GMGridView:(YLGMGridView *)gridView moveItemAtIndex:(NSInteger)oldIndex toIndex:(NSInteger)newIndex;
+- (void)GMGridView:(YLGMGridView *)gridView exchangeItemAtIndex:(NSInteger)index1 withItemAtIndex:(NSInteger)index2;
 
 @optional
 // Sorting started/ended - indexes are not specified on purpose (not the right place to update data structure)
-- (void)GMGridView:(GMGridView *)gridView didStartMovingCell:(GMGridViewCell *)cell;
-- (void)GMGridView:(GMGridView *)gridView didEndMovingCell:(GMGridViewCell *)cell;
+- (void)GMGridView:(YLGMGridView *)gridView didStartMovingCell:(YLGMGridViewCell *)cell;
+- (void)GMGridView:(YLGMGridView *)gridView didEndMovingCell:(YLGMGridViewCell *)cell;
 // Enable/Disable the shaking behavior of an item being moved
-- (BOOL)GMGridView:(GMGridView *)gridView shouldAllowShakingBehaviorWhenMovingCell:(GMGridViewCell *)view atIndex:(NSInteger)index;
+- (BOOL)GMGridView:(YLGMGridView *)gridView shouldAllowShakingBehaviorWhenMovingCell:(YLGMGridViewCell *)view atIndex:(NSInteger)index;
 
 @end
 
@@ -159,17 +159,17 @@ typedef enum
 #pragma mark Protocol GMGridViewTransformationDelegate
 //////////////////////////////////////////////////////////////
 
-@protocol GMGridViewTransformationDelegate <NSObject>
+@protocol YLGMGridViewTransformationDelegate <NSObject>
 
 @required
 // Fullsize
-- (CGSize)GMGridView:(GMGridView *)gridView sizeInFullSizeForCell:(GMGridViewCell *)cell atIndex:(NSInteger)index;
-- (UIView *)GMGridView:(GMGridView *)gridView fullSizeViewForCell:(GMGridViewCell *)cell atIndex:(NSInteger)index;
+- (CGSize)GMGridView:(YLGMGridView *)gridView sizeInFullSizeForCell:(YLGMGridViewCell *)cell atIndex:(NSInteger)index;
+- (UIView *)GMGridView:(YLGMGridView *)gridView fullSizeViewForCell:(YLGMGridViewCell *)cell atIndex:(NSInteger)index;
 
 // Transformation (pinch, drag, rotate) of the item
 @optional
-- (void)GMGridView:(GMGridView *)gridView didStartTransformingCell:(GMGridViewCell *)cell;
-- (void)GMGridView:(GMGridView *)gridView didEnterFullSizeForCell:(GMGridViewCell *)cell;
-- (void)GMGridView:(GMGridView *)gridView didEndTransformingCell:(GMGridViewCell *)cell;
+- (void)GMGridView:(YLGMGridView *)gridView didStartTransformingCell:(YLGMGridViewCell *)cell;
+- (void)GMGridView:(YLGMGridView *)gridView didEnterFullSizeForCell:(YLGMGridViewCell *)cell;
+- (void)GMGridView:(YLGMGridView *)gridView didEndTransformingCell:(YLGMGridViewCell *)cell;
 
 @end

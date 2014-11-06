@@ -28,8 +28,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIView (GMGridViewAdditions)
+@interface UIView (YLGMGridViewAdditions)
 
-- (void)shakeStatus:(BOOL)enabled;
+- (void)ylShakeStatus:(BOOL)enabled;
 
 @end

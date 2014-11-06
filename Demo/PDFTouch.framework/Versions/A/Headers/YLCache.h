@@ -6,12 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
-typedef enum {
-    YLPDFImageSizeOriginal,             // Original size of the PDF page.
-    YLPDFImageSizeThumbnail,            // 200x400
-    YLPDFImageSizeSmall                 // 50x100
-} YLPDFImageSize;
+#import "YLPageInfo.h"
 
 @class YLDocument;
 @class YLOperation;

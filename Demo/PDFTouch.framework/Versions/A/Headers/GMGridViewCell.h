@@ -29,7 +29,7 @@
 #import <UIKit/UIKit.h>
 
 
-@interface GMGridViewCell : UIView
+@interface YLGMGridViewCell : UIView
 {
     
 }

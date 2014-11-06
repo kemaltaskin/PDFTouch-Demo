@@ -16,12 +16,12 @@
 //  as being the original software.
 //  3. This notice may not be removed or altered from any source distribution.
 
-#import <Foundation/Foundation.h>
-
 @class YLPageInfo;
 
 /// These are utility functions to render PDF pages in a graphics context.
 @interface YLPageRenderer : NSObject
+
++ (instancetype)sharedInstance;
 
 /// Renders a PDF page at a given point and specified zoom scale.
 /// @param page Reference to the CGPDF page.
@@ -29,24 +29,24 @@
 /// @param point Point defining the upper left coordinate where rendering should start.
 /// @param zoom The scale at which the PDF page should be rendered.
 /// @param pageInfo Page info object of this page.
-/// @param searchResults Array of YLSearchResult items. Can be nil.
-+ (void)renderPage:(CGPDFPageRef)page 
+/// @param searchBlock Block function for rendering search results.
+- (void)renderPage:(CGPDFPageRef)page
          inContext:(CGContextRef)context 
            atPoint:(CGPoint)point 
           withZoom:(float)zoom 
           pageInfo:(YLPageInfo *)pageInfo
-            search:(NSArray *)searchResults;
+            search:(void (^)(CGContextRef context))searchBlock;
 
 /// Renders a PDF page in the specified rectangle.
 /// @param page Reference to the CGPDF page.
 /// @param context Graphics context.
 /// @param rectangle The target rectangle the PDF page will be rendered in.
 /// @param pageInfo Page info object of this page.
-/// @param searchResults Array of YLSearchResult items. Can be nil.
-+ (void)renderPage:(CGPDFPageRef)page 
+/// @param searchBlock Block function for rendering search results.
+- (void)renderPage:(CGPDFPageRef)page
          inContext:(CGContextRef)context 
        inRectangle:(CGRect)rectangle 
           pageInfo:(YLPageInfo *)pageInfo
-            search:(NSArray *)searchResults;
+            search:(void (^)(CGContextRef context))searchBlock;
 
 @end
