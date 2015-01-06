@@ -9,6 +9,7 @@
 
 @interface ChildViewController () {
     YLDocument *_document;
+    YLPDFViewController *_pdfViewController;
 }
 
 @end
@@ -18,8 +19,6 @@
 - (id)initWithDocument:(YLDocument *)document {
     self = [super initWithNibName:nil bundle:nil];
     if(self) {
-        self.title = @"Embed PDF ViewController";
-        
         _document = [document retain];
     }
     
@@ -28,28 +27,34 @@
 
 - (void)dealloc {
     [_document release];
+    [_pdfViewController release];
+    
     [super dealloc];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.edgesForExtendedLayout = UIRectEdgeNone;
-
-    YLPDFViewController *v = [[[YLPDFViewController alloc] initWithDocument:_document] autorelease];
-    [v setDocumentMode:YLDocumentModeSingle];
-    [v setPageCurlEnabled:YES];
-    [v setHideDismissButton:YES];
-    [v setHideNavigationBar:NO];
+    self.automaticallyAdjustsScrollViewInsets = NO;
     
-    [self addChildViewController:v];
-    [v didMoveToParentViewController:self];
+    _pdfViewController = [[YLPDFViewController alloc] initWithDocument:_document];
+    [_pdfViewController setDocumentMode:YLDocumentModeSingle];
+    [_pdfViewController setPageCurlEnabled:YES];
+    [_pdfViewController setHideDismissButton:YES];
+    [_pdfViewController setHideStatusBar:NO];
+    
+    [self addChildViewController:_pdfViewController];
+    [_pdfViewController didMoveToParentViewController:self];
     CGRect frame = self.view.bounds;
     frame.origin.y += self.topLayoutGuide.length;
     frame.size.height -= self.topLayoutGuide.length;
-    v.view.frame = frame;
+    _pdfViewController.view.frame = frame;
     
-    [self.view addSubview:v.view];
+    [self.view addSubview:_pdfViewController.view];
+}
+
+- (BOOL)prefersStatusBarHidden {
+    return _pdfViewController.prefersStatusBarHidden;
 }
 
 - (void)didReceiveMemoryWarning {

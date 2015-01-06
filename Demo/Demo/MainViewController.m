@@ -140,8 +140,8 @@
     [v setDocumentMode:YLDocumentModeDouble];
     [v setDocumentLead:YLDocumentLeadRight];
     [v setPageCurlEnabled:YES];
-    [v setDismissButtonStyle:YLDismissButtonStyleBack];
-    [v setDismissButtonText:@"Examples"];
+    [v setHideStatusBar:NO];
+    [v setHideDismissButton:NO];
     [self.navigationController pushViewController:v animated:YES];
 }
 
@@ -153,7 +153,8 @@
     [v setDocumentLead:YLDocumentLeadRight];
     [v setModalPresentationStyle:UIModalPresentationFullScreen];
     [v setModalTransitionStyle:UIModalTransitionStyleCoverVertical];
-    [self.navigationController presentViewController:v animated:YES completion:nil];
+    UINavigationController *navController = [[[UINavigationController alloc] initWithRootViewController:v] autorelease];
+    [self.navigationController presentViewController:navController animated:YES completion:nil];
 }
 
 - (void)containmentPDFView {

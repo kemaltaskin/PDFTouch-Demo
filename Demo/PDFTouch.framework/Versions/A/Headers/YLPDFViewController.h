@@ -14,11 +14,6 @@ typedef enum {
 } YLViewMode;
 
 typedef enum {
-    YLDismissButtonStyleBack = 0,   // UIBarButtonItem with a back arrow
-    YLDismissButtonStyleDone        // UIBarButtonItem with UIBarButtonItemStyleDone style
-} YLDismissButtonStyle;
-
-typedef enum {
     YLDocumentModeSingle = 0,       // Show single page per view. (Default)
     YLDocumentModeDouble            // Show two pages per view.
 } YLDocumentMode;
@@ -50,14 +45,8 @@ typedef enum {
 /// Current document lead.
 @property (nonatomic, assign) YLDocumentLead documentLead;
 
-/// Top toolbar.
-@property (nonatomic, readonly) UIToolbar *topToolbar;
-
 /// Bottom toolbar.
 @property (nonatomic, readonly) UIToolbar *bottomToolbar;
-
-/// Style of the dismiss button.
-@property (nonatomic, assign) YLDismissButtonStyle dismissButtonStyle;
 
 /// Document title.
 @property (nonatomic, copy) NSString *documentTitle;
@@ -70,9 +59,6 @@ typedef enum {
 
 /// Default value is NO. Use this property to remove the dismiss button from the top toolbar.
 @property (nonatomic, assign) BOOL hideDismissButton;
-
-/// Default value is YES. Use this property to hide/show the navigation bar. This is not the top toolbar of YLPDFViewController!
-@property (nonatomic, assign) BOOL hideNavigationBar;
 
 /// Default value is YES. Use this property to hide/show the status bar.
 @property (nonatomic, assign) BOOL hideStatusBar;
