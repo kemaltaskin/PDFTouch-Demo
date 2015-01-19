@@ -11,16 +11,12 @@
 @class YLDocument;
 @class YLOperation;
 
-/// Implement this delegate if you want to get notified about rendered PDF pages.
-@protocol YLCacheDelegate <NSObject>
-@required
-/// Called when YLCache rendered a PDF page into an image.
-/// @param document Reference to the document.
-/// @param page Page number starting from 0.
-/// @param size Size of the rendered image.
-/// @param image Rendered image of the PDF page.
-- (void)didCacheDocument:(YLDocument *)document page:(NSUInteger)page size:(YLPDFImageSize)size image:(UIImage *)image;
-@end
+extern NSString *const YLCacheDidRenderPageNotification;
+
+extern NSString *const YLCacheDocumentKey;
+extern NSString *const YLCachePageKey;
+extern NSString *const YLCacheSizeKey;
+extern NSString *const YLCacheImageKey;
 
 
 /// YLCache is responsible for all PDF rendering related things. It can render PDF pages into images, load pre-rendered
@@ -60,17 +56,6 @@
 /// @param size Type of image that should be created for this page.
 - (id)cachedImageForDocument:(YLDocument *)document page:(NSUInteger)page size:(YLPDFImageSize)size;
 
-
-/** @name Delegate Methods */
-/// Use this function to register yourself as a delegate.
-/// @param delegate Reference to the delegate object.
-/// @param delegateQueue The queue on which the delegate should be informed. If you want to get informed on the main thread use
-/// dispatch_get_main_queue() here.
-- (void)addDelegate:(id)delegate delegateQueue:(dispatch_queue_t)delegateQueue;
-
-/// Use this function to unregister yourself as a delegate.
-/// @param delegate Reference to the delegate object.
-- (void)removeDelegate:(id)delegate;
 
 /** @name Helper Methods */
 /// Use this function to pause rendering/caching operations running in the background. The search operation uses this function
