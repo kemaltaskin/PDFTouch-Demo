@@ -6,8 +6,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "YLPageInfo.h"
 
-@class YLPageInfo;
 @class YLOutlineParser;
 @class YLDocumentScanner;
 @class YLAnnotationParser;
@@ -50,6 +50,10 @@ typedef enum {
 
 /// Boolean value that specifies if the document is a valid PDF file.
 @property (nonatomic, readonly, getter=isValidPDF) BOOL validPDF;
+
+/// Boolean value that specifies wether the PDF file should be pre-cached. Default value is YES. Setting this value to NO for
+/// big PDF files will decrease memory usage.
+@property (nonatomic, assign, getter=isPreCachingEnabled) BOOL preCachingEnabled;
 
 /// Caching behavior.
 @property (nonatomic, readwrite) YLDocumentCachingBehavior cachingBehavior;
@@ -110,13 +114,15 @@ typedef enum {
 /// @param targetRect The target rectangle the PDF page will be rendered in.
 /// @param scale The scale at which the PDF page should be rendered.
 /// @param context Graphics context.
-- (void)renderPage:(NSUInteger)page targetRect:(CGRect)targetRect scale:(CGFloat)scale inContext:(CGContextRef)context;
+/// @param size Used internally for performance reasons.
+- (void)renderPage:(NSUInteger)page targetRect:(CGRect)targetRect scale:(CGFloat)scale inContext:(CGContextRef)context size:(YLPDFImageSize)size;
 
 /// Renders a PDF page in the specified graphics context. This function also highlights search results if there are any.
 /// @param page Page number starting from 0.
 /// @param targetRect The target rectangle the PDF page will be rendered in.
 /// @param context Graphics context.
-- (void)renderPage:(NSUInteger)page targetRect:(CGRect)targetRect inContext:(CGContextRef)context;
+/// @param size Used internally for performance reasons.
+- (void)renderPage:(NSUInteger)page targetRect:(CGRect)targetRect inContext:(CGContextRef)context size:(YLPDFImageSize)size;
 
 
 /** @name Bookmark Methods */

@@ -6,14 +6,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "YLCache.h"
 
 @class YLDocument;
 @class YLPDFViewController;
 @protocol YLPagesToolbarDelegate;
 
 /// This is the toolbar at the bottom in YLPDFViewController that displays the page thumbnails and also tracks which page number was tapped.
-@interface YLPagesToolbar : UIView<YLCacheDelegate> 
+@interface YLPagesToolbar : UIView
 
 /// Delegate that informs which page number was tapped.
 @property (nonatomic, assign) NSObject<YLPagesToolbarDelegate> *delegate;

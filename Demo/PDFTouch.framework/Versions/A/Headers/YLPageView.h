@@ -6,14 +6,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "YLCache.h"
 
 @class YLDocument;
 @class YLPDFViewController;
 
 /// This is the view that displays the actual PDF page either rendered as an image or rendered
 /// real-time by YLTiledView which layer is a CATiledLayer.
-@interface YLPageView : UIView<YLCacheDelegate>
+@interface YLPageView : UIView
 
 /// Reference to the parent YLPDFViewController instance.
 @property (nonatomic, assign) YLPDFViewController *pdfViewController;
