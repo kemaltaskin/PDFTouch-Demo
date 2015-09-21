@@ -328,6 +328,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yakamozlabs.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "arm64 armv7";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -353,6 +354,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yakamozlabs.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "arm64 armv7";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
