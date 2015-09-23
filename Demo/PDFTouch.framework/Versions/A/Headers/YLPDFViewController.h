@@ -147,4 +147,14 @@ typedef enum {
 /// This function is used by the search view controller to clear previous text-highlights on pdf pages.
 - (void)clearSearchResults;
 
+
+/** @name Bookmark Methods */
+/// Adds bookmark for the current page.
+/// @returns YES if the bookmark is added, NO if the page is invalid.
+- (BOOL)addBookmarkForCurrentPage;
+
+/// Removes bookmark for the current page.
+/// @returns YES if the bookmark is removed, NO if the page is invalid or if there was no bookmark to remove.
+- (BOOL)removeBookmarkForCurrentPage;
+
 @end
