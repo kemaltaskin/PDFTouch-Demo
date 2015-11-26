@@ -23,11 +23,13 @@
 /// Returns a reference to the UIToolbar object.
 @property (nonatomic, readonly) UIToolbar *toolbar;
 
+
 /// Initializes a YLPagesToolbar instance and returns it to the caller.
 /// @returns An initialized YLPagesToolbar instance.
 /// @param frame Frame of the toolbar.
 /// @param document Reference to the pdf document.
-- (id)initWithFrame:(CGRect)frame document:(YLDocument *)document;
+/// @param thumbnailsHidden BOOL value to hide/show the thumbnail bar.
+- (id)initWithFrame:(CGRect)frame document:(YLDocument *)document thumbnailsHidden:(BOOL)thumbnailsHidden;
 
 /// This function calculates the number of thumbnails that should be shown and updates the toolbar. The parent
 /// YLPDFViewController uses this function to initialize the toolbar and after rotations to update the number

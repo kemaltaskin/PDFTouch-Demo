@@ -36,6 +36,10 @@ typedef enum {
 /// Current page number (zero based). This value will always the left page number when in double page mode.
 @property (nonatomic, readonly) NSUInteger currentPage;
 
+/// The initial page number (zero based) that will be displayed. This property must be set before the
+/// view controller is presented.
+@property (nonatomic, readwrite) NSUInteger initialPage;
+
 /// Current view mode.
 @property (nonatomic, assign) YLViewMode viewMode;
 
@@ -63,6 +67,9 @@ typedef enum {
 /// Default value is YES. Use this property to hide/show the status bar.
 @property (nonatomic, assign) BOOL hideStatusBar;
 
+/// Default value is NO. Use this property to hide/show the bottom thumbnail bar.
+@property (nonatomic, assign) BOOL hideThumbnailBar;
+
 /// Default value is UIStatusBarStyleDefault. Use this property to change the status bar style.
 @property (nonatomic, assign) UIStatusBarStyle statusBarStyle;
 
@@ -82,6 +89,9 @@ typedef enum {
 
 /// Default value is YES. Use this property to hide/show the bookmark button in the top toolbar.
 @property (nonatomic, assign) BOOL bookmarksEnabled;
+
+/// Use this property to display an additional bar button in the top toolbar.
+@property (nonatomic, retain) UIBarButtonItem *customBarButton;
 
 /// Default value is 10. Use this property to change the padding around a PDF page view. This property should be set before YLPDFViewController
 /// is displayed.
