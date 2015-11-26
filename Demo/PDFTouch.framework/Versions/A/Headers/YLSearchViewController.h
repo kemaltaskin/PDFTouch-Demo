@@ -12,12 +12,7 @@
 
 /// This is the view controller that handles searching for text in PDF files. The YLSearchViewController implements the
 /// YLSearchDelegate protocol to get updates about the search operation.
-@interface YLSearchViewController : UITableViewController<UISearchBarDelegate,YLSearchDelegate>
-
-/// The parent controller must set the popover controller that should be used to present the outline view controller.
-/// This is only required on the iPad.
-@property (nonatomic, assign) UIPopoverController *popoverController;
-
+@interface YLSearchViewController : UITableViewController<UISearchBarDelegate,YLSearchDelegate,UIPopoverPresentationControllerDelegate>
 
 /// Initializes a YLSearchViewController object and returns it to the caller.
 /// @returns An initialized YLSearchViewController instance.

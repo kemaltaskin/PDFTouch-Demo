@@ -10,11 +10,7 @@
 @class YLPDFViewController;
 
 /// This view controller is used to display the outline a PDF file.
-@interface YLOutlineViewController : UITableViewController 
-
-/// The parent controller must set the popover controller that should be used to present the outline view controller.
-/// This is only required on the iPad.
-@property (nonatomic, assign) UIPopoverController *popoverController;
+@interface YLOutlineViewController : UITableViewController<UIPopoverPresentationControllerDelegate>
 
 /// Initializes a YLOutlineViewController object and returns it to the caller.
 /// @returns An initialized YLOutlineViewController instance.

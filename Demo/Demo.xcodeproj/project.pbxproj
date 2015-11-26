@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		0A1AB1C2165D0C2C002118B4 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A1AB1C1165D0C2C002118B4 /* MessageUI.framework */; };
 		0A3EF75119DC2FAE00258643 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A3EF75019DC2FAE00258643 /* Images.xcassets */; };
+		0A4873871C0723E400EFC590 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A4873851C0723E400EFC590 /* AVFoundation.framework */; };
+		0A4873881C0723E400EFC590 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A4873861C0723E400EFC590 /* AVKit.framework */; };
+		0A48738A1C07241600EFC590 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A4873891C07241600EFC590 /* Launch Screen.storyboard */; };
 		0A6777C6171D7FB70071CE7B /* ChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6777C5171D7FB70071CE7B /* ChildViewController.m */; };
 		0A73071A15EB7BC2008B0A98 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A73071915EB7BC2008B0A98 /* CoreLocation.framework */; };
 		0A73071C15EB7BC8008B0A98 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A73071B15EB7BC8008B0A98 /* MapKit.framework */; };
@@ -25,13 +28,15 @@
 		0A7B782916F35420001520B6 /* PDFTouch.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0A7B782816F35420001520B6 /* PDFTouch.bundle */; };
 		0AA372621702FA1B00143D60 /* PDFTouch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA372611702FA1B00143D60 /* PDFTouch.framework */; };
 		0AA83CF8161C187D00C0A391 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AA83CF7161C187D00C0A391 /* Default-568h@2x.png */; };
-		0AFDBD5515738E41006F5214 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFDBD5415738E41006F5214 /* MediaPlayer.framework */; };
 		0AFDBD5715738EA0006F5214 /* pdftouch.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0AFDBD5615738EA0006F5214 /* pdftouch.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0A1AB1C1165D0C2C002118B4 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		0A3EF75019DC2FAE00258643 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0A4873851C0723E400EFC590 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		0A4873861C0723E400EFC590 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		0A4873891C07241600EFC590 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		0A6777C4171D7FB70071CE7B /* ChildViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildViewController.h; sourceTree = "<group>"; };
 		0A6777C5171D7FB70071CE7B /* ChildViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildViewController.m; sourceTree = "<group>"; };
 		0A73071915EB7BC2008B0A98 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -63,10 +68,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A4873871C0723E400EFC590 /* AVFoundation.framework in Frameworks */,
+				0A4873881C0723E400EFC590 /* AVKit.framework in Frameworks */,
 				0A1AB1C2165D0C2C002118B4 /* MessageUI.framework in Frameworks */,
 				0A73071C15EB7BC8008B0A98 /* MapKit.framework in Frameworks */,
 				0A73071A15EB7BC2008B0A98 /* CoreLocation.framework in Frameworks */,
-				0AFDBD5515738E41006F5214 /* MediaPlayer.framework in Frameworks */,
 				0A77A6FA1561001D003F0DD6 /* CoreText.framework in Frameworks */,
 				0A77A6F815610019003F0DD6 /* QuartzCore.framework in Frameworks */,
 				0A77A6E115610004003F0DD6 /* UIKit.framework in Frameworks */,
@@ -100,6 +106,8 @@
 		0A77A6DF15610004003F0DD6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0A4873851C0723E400EFC590 /* AVFoundation.framework */,
+				0A4873861C0723E400EFC590 /* AVKit.framework */,
 				0AA372611702FA1B00143D60 /* PDFTouch.framework */,
 				0A1AB1C1165D0C2C002118B4 /* MessageUI.framework */,
 				0A73071B15EB7BC8008B0A98 /* MapKit.framework */,
@@ -138,6 +146,7 @@
 				0A77A6E915610004003F0DD6 /* InfoPlist.strings */,
 				0A77A6EC15610004003F0DD6 /* main.m */,
 				0A77A6EE15610004003F0DD6 /* Demo-Prefix.pch */,
+				0A4873891C07241600EFC590 /* Launch Screen.storyboard */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -207,6 +216,7 @@
 				0AFDBD5715738EA0006F5214 /* pdftouch.pdf in Resources */,
 				0AA83CF8161C187D00C0A391 /* Default-568h@2x.png in Resources */,
 				0A7B782916F35420001520B6 /* PDFTouch.bundle in Resources */,
+				0A48738A1C07241600EFC590 /* Launch Screen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,7 +266,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -273,7 +283,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -285,8 +295,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -295,7 +304,7 @@
 				GCC_PREFIX_HEADER = "Demo/Demo-Prefix.pch";
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "Demo/Demo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = "";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
@@ -311,8 +320,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -321,7 +329,7 @@
 				GCC_PREFIX_HEADER = "Demo/Demo-Prefix.pch";
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "Demo/Demo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = (
 					"-all_load",
