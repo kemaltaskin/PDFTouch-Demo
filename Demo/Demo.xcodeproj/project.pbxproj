@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0A1AB1C2165D0C2C002118B4 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A1AB1C1165D0C2C002118B4 /* MessageUI.framework */; };
+		0A34BD761C24480C00F9FBC7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A34BD751C24480C00F9FBC7 /* Security.framework */; };
 		0A3EF74F19DC2EB300258643 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A3EF74E19DC2EB300258643 /* Images.xcassets */; };
 		0A43C56F16F3526E00B7CF72 /* PDFTouch.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0A43C56E16F3526E00B7CF72 /* PDFTouch.bundle */; };
 		0A48737F1C07231C00EFC590 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A48737D1C07231C00EFC590 /* AVFoundation.framework */; };
@@ -33,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		0A1AB1C1165D0C2C002118B4 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		0A34BD751C24480C00F9FBC7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		0A3EF74E19DC2EB300258643 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0A43C56E16F3526E00B7CF72 /* PDFTouch.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PDFTouch.bundle; sourceTree = SOURCE_ROOT; };
 		0A48737D1C07231C00EFC590 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -68,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A34BD761C24480C00F9FBC7 /* Security.framework in Frameworks */,
 				0A48737F1C07231C00EFC590 /* AVFoundation.framework in Frameworks */,
 				0A4873801C07231C00EFC590 /* AVKit.framework in Frameworks */,
 				0A1AB1C2165D0C2C002118B4 /* MessageUI.framework in Frameworks */,
@@ -106,6 +109,7 @@
 		0A77A6DF15610004003F0DD6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0A34BD751C24480C00F9FBC7 /* Security.framework */,
 				0A48737D1C07231C00EFC590 /* AVFoundation.framework */,
 				0A48737E1C07231C00EFC590 /* AVKit.framework */,
 				0AA3725F1702F9BF00143D60 /* PDFTouch.framework */,
