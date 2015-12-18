@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		0A1AB1C2165D0C2C002118B4 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A1AB1C1165D0C2C002118B4 /* MessageUI.framework */; };
-		0A3EF75119DC2FAE00258643 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A3EF75019DC2FAE00258643 /* Images.xcassets */; };
-		0A4873871C0723E400EFC590 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A4873851C0723E400EFC590 /* AVFoundation.framework */; };
-		0A4873881C0723E400EFC590 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A4873861C0723E400EFC590 /* AVKit.framework */; };
-		0A48738A1C07241600EFC590 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A4873891C07241600EFC590 /* Launch Screen.storyboard */; };
-		0A6777C6171D7FB70071CE7B /* ChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6777C5171D7FB70071CE7B /* ChildViewController.m */; };
+		0A34BD761C24480C00F9FBC7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A34BD751C24480C00F9FBC7 /* Security.framework */; };
+		0A3EF74F19DC2EB300258643 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A3EF74E19DC2EB300258643 /* Images.xcassets */; };
+		0A43C56F16F3526E00B7CF72 /* PDFTouch.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0A43C56E16F3526E00B7CF72 /* PDFTouch.bundle */; };
+		0A48737F1C07231C00EFC590 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A48737D1C07231C00EFC590 /* AVFoundation.framework */; };
+		0A4873801C07231C00EFC590 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A48737E1C07231C00EFC590 /* AVKit.framework */; };
+		0A4873821C07233700EFC590 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A4873811C07233700EFC590 /* Launch Screen.storyboard */; };
+		0A6777C3171D7DF10071CE7B /* ChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6777C2171D7DF10071CE7B /* ChildViewController.m */; };
 		0A73071A15EB7BC2008B0A98 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A73071915EB7BC2008B0A98 /* CoreLocation.framework */; };
 		0A73071C15EB7BC8008B0A98 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A73071B15EB7BC8008B0A98 /* MapKit.framework */; };
 		0A77A6E115610004003F0DD6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A77A6E015610004003F0DD6 /* UIKit.framework */; };
@@ -25,21 +27,21 @@
 		0A77A6FA1561001D003F0DD6 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A77A6F91561001D003F0DD6 /* CoreText.framework */; };
 		0A77A6FF15610058003F0DD6 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A77A6FC15610058003F0DD6 /* MainViewController.m */; };
 		0A77A732156100FF003F0DD6 /* Developers.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0A77A731156100FF003F0DD6 /* Developers.pdf */; };
-		0A7B782916F35420001520B6 /* PDFTouch.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0A7B782816F35420001520B6 /* PDFTouch.bundle */; };
-		0AA372621702FA1B00143D60 /* PDFTouch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA372611702FA1B00143D60 /* PDFTouch.framework */; };
+		0AA372601702F9BF00143D60 /* PDFTouch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA3725F1702F9BF00143D60 /* PDFTouch.framework */; };
 		0AA83CF8161C187D00C0A391 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AA83CF7161C187D00C0A391 /* Default-568h@2x.png */; };
-		0ACB66771C244C0200352972 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ACB66761C244C0200352972 /* Security.framework */; };
 		0AFDBD5715738EA0006F5214 /* pdftouch.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0AFDBD5615738EA0006F5214 /* pdftouch.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0A1AB1C1165D0C2C002118B4 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
-		0A3EF75019DC2FAE00258643 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		0A4873851C0723E400EFC590 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		0A4873861C0723E400EFC590 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
-		0A4873891C07241600EFC590 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		0A6777C4171D7FB70071CE7B /* ChildViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildViewController.h; sourceTree = "<group>"; };
-		0A6777C5171D7FB70071CE7B /* ChildViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildViewController.m; sourceTree = "<group>"; };
+		0A34BD751C24480C00F9FBC7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		0A3EF74E19DC2EB300258643 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0A43C56E16F3526E00B7CF72 /* PDFTouch.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PDFTouch.bundle; sourceTree = SOURCE_ROOT; };
+		0A48737D1C07231C00EFC590 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		0A48737E1C07231C00EFC590 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		0A4873811C07233700EFC590 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		0A6777C1171D7DF10071CE7B /* ChildViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildViewController.h; sourceTree = "<group>"; };
+		0A6777C2171D7DF10071CE7B /* ChildViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildViewController.m; sourceTree = "<group>"; };
 		0A73071915EB7BC2008B0A98 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		0A73071B15EB7BC8008B0A98 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		0A77A6DC15610004003F0DD6 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,8 +59,7 @@
 		0A77A6FB15610058003F0DD6 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		0A77A6FC15610058003F0DD6 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		0A77A731156100FF003F0DD6 /* Developers.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Developers.pdf; sourceTree = "<group>"; };
-		0A7B782816F35420001520B6 /* PDFTouch.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PDFTouch.bundle; sourceTree = SOURCE_ROOT; };
-		0AA372611702FA1B00143D60 /* PDFTouch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PDFTouch.framework; sourceTree = "<group>"; };
+		0AA3725F1702F9BF00143D60 /* PDFTouch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PDFTouch.framework; sourceTree = "<group>"; };
 		0AA83CF7161C187D00C0A391 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		0ACB66761C244C0200352972 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		0AFDBD5415738E41006F5214 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
@@ -70,9 +71,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0ACB66771C244C0200352972 /* Security.framework in Frameworks */,
-				0A4873871C0723E400EFC590 /* AVFoundation.framework in Frameworks */,
-				0A4873881C0723E400EFC590 /* AVKit.framework in Frameworks */,
+				0A34BD761C24480C00F9FBC7 /* Security.framework in Frameworks */,
+				0A48737F1C07231C00EFC590 /* AVFoundation.framework in Frameworks */,
+				0A4873801C07231C00EFC590 /* AVKit.framework in Frameworks */,
 				0A1AB1C2165D0C2C002118B4 /* MessageUI.framework in Frameworks */,
 				0A73071C15EB7BC8008B0A98 /* MapKit.framework in Frameworks */,
 				0A73071A15EB7BC2008B0A98 /* CoreLocation.framework in Frameworks */,
@@ -81,7 +82,7 @@
 				0A77A6E115610004003F0DD6 /* UIKit.framework in Frameworks */,
 				0A77A6E315610004003F0DD6 /* Foundation.framework in Frameworks */,
 				0A77A6E515610004003F0DD6 /* CoreGraphics.framework in Frameworks */,
-				0AA372621702FA1B00143D60 /* PDFTouch.framework in Frameworks */,
+				0AA372601702F9BF00143D60 /* PDFTouch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,10 +110,10 @@
 		0A77A6DF15610004003F0DD6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0ACB66761C244C0200352972 /* Security.framework */,
-				0A4873851C0723E400EFC590 /* AVFoundation.framework */,
-				0A4873861C0723E400EFC590 /* AVKit.framework */,
-				0AA372611702FA1B00143D60 /* PDFTouch.framework */,
+				0A34BD751C24480C00F9FBC7 /* Security.framework */,
+				0A48737D1C07231C00EFC590 /* AVFoundation.framework */,
+				0A48737E1C07231C00EFC590 /* AVKit.framework */,
+				0AA3725F1702F9BF00143D60 /* PDFTouch.framework */,
 				0A1AB1C1165D0C2C002118B4 /* MessageUI.framework */,
 				0A73071B15EB7BC8008B0A98 /* MapKit.framework */,
 				0A73071915EB7BC2008B0A98 /* CoreLocation.framework */,
@@ -129,8 +130,8 @@
 		0A77A6E615610004003F0DD6 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				0A6777C4171D7FB70071CE7B /* ChildViewController.h */,
-				0A6777C5171D7FB70071CE7B /* ChildViewController.m */,
+				0A6777C1171D7DF10071CE7B /* ChildViewController.h */,
+				0A6777C2171D7DF10071CE7B /* ChildViewController.m */,
 				0A77A6FB15610058003F0DD6 /* MainViewController.h */,
 				0A77A6FC15610058003F0DD6 /* MainViewController.m */,
 				0A77A6EF15610004003F0DD6 /* AppDelegate.h */,
@@ -143,14 +144,14 @@
 		0A77A6E715610004003F0DD6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				0A3EF75019DC2FAE00258643 /* Images.xcassets */,
-				0A7B782816F35420001520B6 /* PDFTouch.bundle */,
+				0A3EF74E19DC2EB300258643 /* Images.xcassets */,
+				0A43C56E16F3526E00B7CF72 /* PDFTouch.bundle */,
 				0AA83CF7161C187D00C0A391 /* Default-568h@2x.png */,
 				0A77A6E815610004003F0DD6 /* Demo-Info.plist */,
 				0A77A6E915610004003F0DD6 /* InfoPlist.strings */,
 				0A77A6EC15610004003F0DD6 /* main.m */,
 				0A77A6EE15610004003F0DD6 /* Demo-Prefix.pch */,
-				0A4873891C07241600EFC590 /* Launch Screen.storyboard */,
+				0A4873811C07233700EFC590 /* Launch Screen.storyboard */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -215,12 +216,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A77A6EB15610004003F0DD6 /* InfoPlist.strings in Resources */,
-				0A3EF75119DC2FAE00258643 /* Images.xcassets in Resources */,
+				0A3EF74F19DC2EB300258643 /* Images.xcassets in Resources */,
 				0A77A732156100FF003F0DD6 /* Developers.pdf in Resources */,
 				0AFDBD5715738EA0006F5214 /* pdftouch.pdf in Resources */,
 				0AA83CF8161C187D00C0A391 /* Default-568h@2x.png in Resources */,
-				0A7B782916F35420001520B6 /* PDFTouch.bundle in Resources */,
-				0A48738A1C07241600EFC590 /* Launch Screen.storyboard in Resources */,
+				0A43C56F16F3526E00B7CF72 /* PDFTouch.bundle in Resources */,
+				0A4873821C07233700EFC590 /* Launch Screen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,7 +235,7 @@
 				0A77A6ED15610004003F0DD6 /* main.m in Sources */,
 				0A77A6F115610004003F0DD6 /* AppDelegate.m in Sources */,
 				0A77A6FF15610058003F0DD6 /* MainViewController.m in Sources */,
-				0A6777C6171D7FB70071CE7B /* ChildViewController.m in Sources */,
+				0A6777C3171D7DF10071CE7B /* ChildViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +257,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -277,6 +285,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +295,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -321,12 +337,11 @@
 				INFOPLIST_FILE = "Demo/Demo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = "";
-				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.yakamozlabs.PDFTouch;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yakamozlabs.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALID_ARCHS = "arm64 armv7";
 				WRAPPER_EXTENSION = app;
@@ -352,7 +367,7 @@
 					"-all_load",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.yakamozlabs.PDFTouch;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yakamozlabs.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALID_ARCHS = "arm64 armv7";
 				WRAPPER_EXTENSION = app;
