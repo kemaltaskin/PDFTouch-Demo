@@ -5,12 +5,10 @@
 //  Copyright (c) 2012 Yakamoz Labs. All rights reserved.
 //
 
-#import "GMGridViewCell.h"
-
 @class YLDocument;
 
 /// Thumbnail cell used in the grid view to display pdf page thumbnails.
-@interface YLThumbnailCell : YLGMGridViewCell
+@interface YLThumbnailCell : UICollectionViewCell
 
 /// A reference to the document.
 @property (nonatomic, retain) YLDocument *document;
