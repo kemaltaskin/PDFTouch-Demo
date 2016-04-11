@@ -16,4 +16,7 @@
 /// Page number of the thumbnail.
 @property (nonatomic, assign) NSUInteger page;
 
+/// Calculated size of the thumbnail image.
+@property (nonatomic, assign) CGSize imageSize;
+
 @end
