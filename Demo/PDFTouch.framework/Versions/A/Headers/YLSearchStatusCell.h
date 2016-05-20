@@ -7,16 +7,19 @@
 
 #import <UIKit/UIKit.h>
 
-typedef enum {
+/** Search status */
+typedef NS_ENUM(NSInteger, YLSearchStatus) {
+    /** Searching state */
     kSearchStatusSearching,
+    /** Stopped state */
     kSearchStatusStopped
-} SearchStatus;
+};
 
 /// Custom table view cell that shows progress information about the search operation.
 @interface YLSearchStatusCell : UITableViewCell
 
 /// Current status of the search operation.
-@property (nonatomic, assign) SearchStatus searchStatus;
+@property (nonatomic, assign) YLSearchStatus searchStatus;
 
 /// Returns the primary label used to display the status.
 @property (nonatomic, readonly) UILabel *statusLabel;

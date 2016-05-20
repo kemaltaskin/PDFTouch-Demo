@@ -10,16 +10,25 @@
 @class YLDocument;
 @class YLPageInfo;
 
-typedef enum {
+/** Annotation types */
+typedef NS_ENUM(NSInteger, YLAnnotationType) {
+    /** Invalid annotation */
     kAnnotationTypeInvalid = 0,
+    /** Go To Page annotation */
     kAnnotationTypePage,
+    /** Link annotation */
     kAnnotationTypeLink,
+    /** Video annotation */
     kAnnotationTypeVideo,
+    /** Audio annotation */
     kAnnotationTypeAudio,
+    /** Web page annotation */
     kAnnotationTypeWeb,
+    /** Map annotation */
     kAnnotationTypeMap,
+    /** Custom annotation */
     kAnnotationTypeCustom
-} AnnotationType;
+};
 
 /// Model object that holds information about an annotation.
 @interface YLAnnotation : NSObject 
@@ -49,7 +58,7 @@ typedef enum {
 @property (nonatomic, assign) YLDocument *document;
 
 /// Type of the annotation.
-@property (nonatomic, readonly) AnnotationType type;
+@property (nonatomic, readonly) YLAnnotationType type;
 
 /// Converts a point from PDF coordinates to view coordinates.
 /// @returns Point that is converted to view coordinates.
