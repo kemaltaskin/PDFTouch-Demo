@@ -10,11 +10,15 @@
 
 @protocol YLLinkAnnotationViewDelegate;
 
-typedef enum {
+/** Link annotation type */
+typedef NS_ENUM(NSInteger, YLLinkAnnotationViewType) {
+    /** Invalid annotation */
     kLinkAnnotationViewTypeInvalid = 0,
+    /** Web url annotation */
     kLinkAnnotationViewTypeWeb,
+    /** Mail url annotation */
     kLinkAnnotationViewTypeMail
-} LinkAnnotationViewType;
+};
 
 /// View for displaying link annotations.
 @interface YLLinkAnnotationView : UIView<YLAnnotationView>
@@ -29,7 +33,7 @@ typedef enum {
 @property (nonatomic, assign) CGFloat borderRadius;
 
 /// Type of the link annotation view.
-@property (nonatomic, readonly) LinkAnnotationViewType type;
+@property (nonatomic, readonly) YLLinkAnnotationViewType type;
 
 /// Delegate to inform about tap events on the button representing the link annotation.
 @property (nonatomic, assign) NSObject<YLLinkAnnotationViewDelegate> *delegate;

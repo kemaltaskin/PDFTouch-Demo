@@ -5,11 +5,15 @@
 //  Copyright (c) 2012 Yakamoz Labs. All rights reserved.
 //
 
-typedef enum {
-    YLPDFImageSizeOriginal,             // Original size of the PDF page.
-    YLPDFImageSizeThumbnail,            // 200x400
-    YLPDFImageSizeSmall                 // 50x100
-} YLPDFImageSize;
+/** PDF Image sizes */
+typedef NS_ENUM(NSInteger, YLPDFImageSize) {
+    /** Original size of the PDF page. */
+    YLPDFImageSizeOriginal,
+    /** 200x400 */
+    YLPDFImageSizeThumbnail,
+    /** 50x100 */
+    YLPDFImageSizeSmall
+};
 
 /// Model object that holds various information about a PDF page like rectangle, rotation and page number.
 @interface YLPageInfo : NSObject

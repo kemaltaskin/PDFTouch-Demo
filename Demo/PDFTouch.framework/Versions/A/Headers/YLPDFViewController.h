@@ -7,21 +7,31 @@
 
 #import <UIKit/UIKit.h>
 
-typedef enum {
-    YLViewModeDocument = 0,         // View mode that displays the PDF document.
-    YLViewModeThumbnails,           // View mode that displays page thumbnails.
-    YLViewModeBookmarks             // View mode that displays thumbnails for bookmarked pages.
-} YLViewMode;
+/** Document view mode */
+typedef NS_ENUM(NSInteger, YLViewMode) {
+    /** View mode that displays the PDF document. */
+    YLViewModeDocument = 0,
+    /** View mode that displays page thumbnails. */
+    YLViewModeThumbnails,
+    /** View mode that displays thumbnails for bookmarked pages. */
+    YLViewModeBookmarks
+};
 
-typedef enum {
-    YLDocumentModeSingle = 0,       // Show single page per view. (Default)
-    YLDocumentModeDouble            // Show two pages per view.
-} YLDocumentMode;
+/** Document page mode */
+typedef NS_ENUM(NSInteger, YLDocumentMode) {
+    /** Show single page per view. (Default) */
+    YLDocumentModeSingle = 0,
+    /** Show two pages per view. */
+    YLDocumentModeDouble
+};
 
-typedef enum {
-    YLDocumentLeadLeft = 0,         // First page starts left in double page mode. (Default)
-    YLDocumentLeadRight             // First page starts right in double page mode.
-} YLDocumentLead;
+/** Document page lead */
+typedef NS_ENUM(NSInteger, YLDocumentLead) {
+    /** First page starts left in double page mode. (Default) */
+    YLDocumentLeadLeft = 0,
+    /** First page starts right in double page mode. */
+    YLDocumentLeadRight
+};
 
 @class YLDocument;
 @protocol YLPDFViewControllerDelegate;

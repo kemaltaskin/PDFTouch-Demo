@@ -22,10 +22,13 @@ extern NSString *const kYLDocumentMetadataKeyCreationDate;
 extern NSString *const kYLDocumentMetadataKeyModDate;
 extern NSString *const kYLDocumentMetadataKeyVersion;
 
-typedef enum {
-    kDocumentCachingEnabled = 0,             // Caches rendered pages as images on filesystem. (Default)
-    kDocumentCachingDisabled                // Disables caching of rendered pages to filesystem.
-} YLDocumentCachingBehavior;
+/** Caching Behavior */
+typedef NS_ENUM(NSInteger, YLDocumentCachingBehavior) {
+    /** Caches rendered pages as images on filesystem. (Default) */
+    kDocumentCachingEnabled = 0,
+    /** Disables caching of rendered pages to filesystem. */
+    kDocumentCachingDisabled
+};
 
 
 /// Model object that represents the PDF file.
@@ -33,8 +36,10 @@ typedef enum {
 
 /// UUID string value that is used internally to construct file paths for the thumbnails and bookmarks.
 /// Bookmarks are saved in Documents/Private Docs/Bookmarks/uuid.plist
-/// All thumbnail images are saved to NSCachesDirectory/PDFTouch/uuid/
-@property (nonatomic, readonly) NSString *uuid;
+/// All thumbnail images are saved to NSCachesDirectory/PDFTouch/uuid.
+/// WARNING: You should provide a uuid if the PDF is loaded from NSData. If you don't provide one, bookmarks and
+/// caching will be disabled!
+@property (nonatomic, copy) NSString *uuid;
 
 /// Path of the PDF file.
 @property (nonatomic, readonly) NSString *path;
@@ -54,6 +59,9 @@ typedef enum {
 /// Boolean value that specifies wether the PDF file should be pre-cached. Default value is YES. Setting this value to NO for
 /// big PDF files will decrease memory usage.
 @property (nonatomic, assign, getter=isPreCachingEnabled) BOOL preCachingEnabled;
+
+/// Boolean value that specifies if syncing bookmarks and caching to filesystem is possible.
+@property (nonatomic, readonly) BOOL syncAvailable;
 
 /// Caching behavior.
 @property (nonatomic, readwrite) YLDocumentCachingBehavior cachingBehavior;
@@ -75,12 +83,22 @@ typedef enum {
 /// Initializes a YLDocument instance and returns it to the caller.
 /// @returns An initialized YLDocument instance.
 /// @param path Filesystem path to the PDF file.
-+ (YLDocument *)YLDocumentWithFilePath:(NSString *)path;
++ (YLDocument *)documentWithFilePath:(NSString *)path;
+
+/// Initializes a YLDocument instance and returns it to the caller.
+/// @returns An initialized YLDocument instance.
+/// @param data NSData with contents of the PDF file.
++ (YLDocument *)documentWithData:(NSData *)data;
 
 /// Initializes a YLDocument instance and returns it to the caller.
 /// @returns An initialized YLDocument instance.
 /// @param path Filesystem path to the PDF file.
 - (id)initWithFilePath:(NSString *)path;
+
+/// Initializes a YLDocument instance and returns it to the caller.
+/// @returns An initialized YLDocument instance.
+/// @param data NSData with contents of the PDF file.
+- (id)initWithData:(NSData *)data;
 
 
 /** @name Encryption Methods*/
